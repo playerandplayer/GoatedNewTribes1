@@ -5,6 +5,13 @@ state={
 		733 4012 19579 19583 19598 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=56000
         state_category = town
+	history={
+		owner = ACR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ACR
+	}
 }

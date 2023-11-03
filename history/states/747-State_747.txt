@@ -5,6 +5,17 @@ state={
 		221 1716 3352 5102 6020 8276 19609 19610 19618 19620 19625 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=147000
         state_category = town
+		history={
+		owner = ACR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			1716 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = ACR
+	}
 }
