@@ -1,0 +1,116 @@
+capital = 79
+
+set_research_slots = 10
+
+set_stability = 0.9
+
+set_war_support = 0.01
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 60
+	communism = 10
+	fascism = 0
+	neutrality = 30
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.8"
+	election_frequency = 24
+	elections_allowed = Yes
+}
+
+create_country_leader = {
+	name = "Leslie"
+	desc = "POLITICS_CHADDIE_KIRK_DESC"
+	picture = "gfx/leaders/Leslie.dds"
+	expire = "1970.9.25"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Leslie"
+	desc = "POLITICS_NEVIL_JOWETT_DESC"
+	picture = "gfx/leaders/Leslie.dds"
+	expire = "1977.2.10"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Leslie"
+	desc = "POLITICS_HAYDON_EALES_DESC"
+	picture = "gfx/leaders/Leslie.dds"
+	expire = "1969.4.1"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Leslie"
+	desc = "POLITICS_VENKAT_LONG_DESC"
+	picture = "gfx/leaders/Leslie.dds"
+	expire = "1972.5.13"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Joao Dickens"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Russ Leaver"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vernon Middleton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Clemente Ridge"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Donny Warn"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+

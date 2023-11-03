@@ -1,0 +1,116 @@
+capital = 89
+
+set_research_slots = 1
+
+set_stability = 0.7
+
+set_war_support = 0.05
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 90
+	communism = 0
+	fascism = 0
+	neutrality = 10
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.8"
+	election_frequency = 18
+	elections_allowed = Yes
+}
+
+create_country_leader = {
+	name = "BTEP"
+	desc = "POLITICS_SANDY_HYDE_DESC"
+	picture = "gfx/leaders/BTEP.dds"
+	expire = "1968.6.22"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "BTEP"
+	desc = "POLITICS_MONTAGUE_CURTIS_DESC"
+	picture = "gfx/leaders/BTEP.dds"
+	expire = "1968.10.23"
+	ideology = anti_revisionism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "BTEP"
+	desc = "POLITICS_TABBY_O CONNELL_DESC"
+	picture = "gfx/leaders/BTEP.dds"
+	expire = "1973.7.6"
+	ideology = falangism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "BTEP"
+	desc = "POLITICS_HYMAN_PAVOT_DESC"
+	picture = "gfx/leaders/BTEP.dds"
+	expire = "1976.5.7"
+	ideology = moderatism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Hudson Foss"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Jeffry Heaton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Chrisy Wooldridge"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Nester Donovan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Griswold Pearce"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+

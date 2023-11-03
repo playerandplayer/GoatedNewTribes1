@@ -1,0 +1,116 @@
+capital = 62
+
+set_research_slots = 2
+
+set_stability = 0.10
+
+set_war_support = 0.20
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 30
+	fascism = 0
+	neutrality = 70
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_LESTER_DEVENISH_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1974.5.6"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_MATTHUS_HUNTER_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1972.1.20"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_ED_JEFFRIES_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1973.4.19"
+	ideology = gen_nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_RODDY_WHELAN_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1969.2.12"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Baillie Mcgowan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Rodger Ashcroft"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Garcia Cain"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Lucius Ormond"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Shannan Easdale"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}
+

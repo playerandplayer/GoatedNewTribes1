@@ -1,0 +1,116 @@
+capital = 96
+
+set_research_slots = 2
+
+set_stability = 0.7
+
+set_war_support = 0.7
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 90
+	neutrality = 10
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Shadowmare_"
+	desc = "POLITICS_CHANDERJIT_BILL_DESC"
+	picture = "gfx/leaders/Shadowmare_.dds"
+	expire = "1965.8.13"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shadowmare_"
+	desc = "POLITICS_ORAN_ERRITY_DESC"
+	picture = "gfx/leaders/Shadowmare_.dds"
+	expire = "1967.1.7"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shadowmare_"
+	desc = "POLITICS_OSCAR_FROST_DESC"
+	picture = "gfx/leaders/Shadowmare_.dds"
+	expire = "1970.7.6"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shadowmare_"
+	desc = "POLITICS_JEFFREY_FENN_DESC"
+	picture = "gfx/leaders/Shadowmare_.dds"
+	expire = "1967.10.25"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Kaiser Jenkyns"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ken Edmonds"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Walton Astle"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Waite Raval"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Randell Roman"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 1
+}
+

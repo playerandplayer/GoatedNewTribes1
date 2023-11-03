@@ -1,0 +1,23 @@
+state={
+	id=52
+	name="STATE_52"
+	provinces={
+		566 941 1087 1192 1903 2348 2565 2583 2675 2676 2805 3021 3043 3351 3380 3489 3869 3997 5115 5645 5849 6440 6755 19591 19594 19595 19596 19612 19615 19616 19617 19619 19621 19622 19623 19626 19627 19628 19629 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1
+        state_category = town
+	history={
+		owner = ACR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			3838 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = FRA
+		add_core_of = ACR
+	}
+}

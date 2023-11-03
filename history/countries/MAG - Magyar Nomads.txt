@@ -1,0 +1,116 @@
+capital = 94
+
+set_research_slots = 2
+
+set_stability = 0.35
+
+set_war_support = 0.20
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	neutrality = 100
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Sugimoto Saichi"
+	desc = "POLITICS_FERINAND_BUTLER_DESC"
+	picture = "gfx/leaders/Sugimoto Saichi.dds"
+	expire = "1965.7.20"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sugimoto Saichi"
+	desc = "POLITICS_VASSILY_MANN_DESC"
+	picture = "gfx/leaders/Sugimoto Saichi.dds"
+	expire = "1968.6.24"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sugimoto Saichi"
+	desc = "POLITICS_WENDEL_DALE_DESC"
+	picture = "gfx/leaders/Sugimoto Saichi.dds"
+	expire = "1973.2.11"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sugimoto Saichi"
+	desc = "POLITICS_LIND_NEILSON_DESC"
+	picture = "gfx/leaders/Sugimoto Saichi.dds"
+	expire = "1971.10.2"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Desmund Connelly"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aleks Milward"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Angus Ivory"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Reg Peacock"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Rupert Keane"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
+}
+

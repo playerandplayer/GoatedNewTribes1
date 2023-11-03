@@ -1,0 +1,116 @@
+capital = 64
+
+set_research_slots = 4
+
+set_stability = 0.6
+
+set_war_support = 0.2
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 40
+	neutrality = 60
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.8"
+	election_frequency = 48
+	elections_allowed = Yes
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_ROBERTO_OLOUGHLIN_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1979.4.13"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_ALESSANDRO_TOMPKIN_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1967.2.16"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_QUENTIN_BINNINGTON_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1971.9.1"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Finnik"
+	desc = "POLITICS_BILLY_HURST_DESC"
+	picture = "gfx/leaders/finnik.dds"
+	expire = "1976.1.8"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Giovanne Jeffers"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Antonio Blackmore"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Forster Mcculloch"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Herschel Davy"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Niels Etheridge"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 5
+}
+

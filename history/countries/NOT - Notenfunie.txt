@@ -1,0 +1,116 @@
+capital = 69
+
+set_research_slots = 2
+
+set_stability = 0.4
+
+set_war_support = 0.3
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 40
+	neutrality = 60
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Cereal Senpai OwO"
+	desc = "POLITICS_KIT_GLOVER_DESC"
+	picture = "gfx/leaders/Cereal Senpai OwO.dds"
+	expire = "1977.7.5"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Cereal Senpai OwO"
+	desc = "POLITICS_REYNARD_ARAH_DESC"
+	picture = "gfx/leaders/Cereal Senpai OwO.dds"
+	expire = "1967.2.3"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Cereal Senpai OwO"
+	desc = "POLITICS_FLEMING_EPTON_DESC"
+	picture = "gfx/leaders/Cereal Senpai OwO.dds"
+	expire = "1978.8.9"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Cereal Senpai OwO"
+	desc = "POLITICS_MATTY_ROSSER_DESC"
+	picture = "gfx/leaders/Cereal Senpai OwO.dds"
+	expire = "1970.3.10"
+	ideology = moderatism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Odell Ahmed"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Chelton Reddy"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Garfinkel Lawton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gayle Ramsay"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wadsworth Lincoln"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 5
+}
+

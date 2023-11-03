@@ -1,0 +1,136 @@
+capital = 50
+
+set_research_slots = 3
+
+set_stability = 0.5
+
+set_war_support = 0.5
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 2
+	fascism = 28
+	neutrality = 70
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Yorkshire"
+	desc = "POLITICS_LEONARD_ALLUM_DESC"
+	picture = "gfx/leaders/Yorkshire.dds"
+	expire = "1971.7.26"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yorkshire"
+	desc = "POLITICS_LEOPOLD_DANIELS_DESC"
+	picture = "gfx/leaders/Yorkshire.dds"
+	expire = "1977.4.20"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "electric"
+	desc = "POLITICS_JERMAIN_ANNAN_DESC"
+	picture = "gfx/leaders/electric.dds"
+	expire = "1967.10.3"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yorkshire"
+	desc = "POLITICS_HANSON_INGLES_DESC"
+	picture = "gfx/leaders/Yorkshire.dds"
+	expire = "1975.7.25"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Shovel"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Atlant Blochov"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Barack Bin Toaster"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Bokse Robert"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Bread"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "GeniusWack0"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Juice of the Punished Jihad"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 5
+}
+

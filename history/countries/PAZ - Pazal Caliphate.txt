@@ -1,0 +1,116 @@
+capital = 30
+
+set_research_slots = 3
+
+set_stability = 0.4
+
+set_war_support = 0.2
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 1
+	communism = 12
+	fascism = 30
+	neutrality = 57
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Shiners"
+	desc = "POLITICS_RAYMUND_VINNY_DESC"
+	picture = "gfx/leaders/Shiners.dds"
+	expire = "1965.10.6"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shiners"
+	desc = "POLITICS_JERAMIE_STOUT_DESC"
+	picture = "gfx/leaders/Shiners.dds"
+	expire = "1969.9.25"
+	ideology = anarchist_communism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shiners"
+	desc = "POLITICS_WIATT_LUMLEY_DESC"
+	picture = "gfx/leaders/Shiners.dds"
+	expire = "1965.8.19"
+	ideology = rexism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shiners"
+	desc = "POLITICS_EHUD_REDFERN_DESC"
+	picture = "gfx/leaders/Shiners.dds"
+	expire = "1976.3.8"
+	ideology = moderatism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Albatros Fitzpatrick"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ulises Kinsella"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Stanford Dermody"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kristian Porter"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Jody Darbyshire"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}
+

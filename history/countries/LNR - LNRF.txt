@@ -1,0 +1,116 @@
+capital = 51
+
+set_research_slots = 3
+
+set_stability = 0.4
+
+set_war_support = 0.1
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 7
+	communism = 62
+	fascism = 18
+	neutrality = 13
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "LordLuxembourg"
+	desc = "POLITICS_HASHEEM_STRICKLAND_DESC"
+	picture = "gfx/leaders/LordLuxembourg.dds"
+	expire = "1976.3.18"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "LordLuxembourg"
+	desc = "POLITICS_RIKKI_WOODLAND_DESC"
+	picture = "gfx/leaders/LordLuxembourg.dds"
+	expire = "1973.7.1"
+	ideology = leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "LordLuxembourg"
+	desc = "POLITICS_GUSTAVO_AVERY_DESC"
+	picture = "gfx/leaders/LordLuxembourg.dds"
+	expire = "1972.9.26"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "LordLuxembourg"
+	desc = "POLITICS_JESSEY_HELLIER_DESC"
+	picture = "gfx/leaders/LordLuxembourg.dds"
+	expire = "1968.9.21"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Penny Aston"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Derk Keetley"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Goddard Millward"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yaakov Farnworth"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Vincent John"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+}
+

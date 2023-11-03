@@ -1,0 +1,116 @@
+capital = 70
+
+set_research_slots = 2
+
+set_stability = 0.8
+
+set_war_support = 0.03
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	neutrality = 100
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Normand Aikman"
+	desc = "POLITICS_NORMAND_AIKMAN_DESC"
+	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
+	expire = "1976.9.17"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tim Neave"
+	desc = "POLITICS_TIM_NEAVE_DESC"
+	picture = "gfx/leaders/Europe/Brzęczyszczkiewicz Brzęczy.dds"
+	expire = "1970.8.27"
+	ideology = leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rawley Potts"
+	desc = "POLITICS_RAWLEY_POTTS_DESC"
+	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
+	expire = "1965.10.15"
+	ideology = falangism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Lawerence Hibbert"
+	desc = "POLITICS_LAWERENCE_HIBBERT_DESC"
+	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
+	expire = "1977.9.26"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Sparky Rothwell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Judd Elvins"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Skippy Nineham"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lefty Apsley"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Bryan Meadows"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 2
+}
+

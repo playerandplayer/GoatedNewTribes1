@@ -1,0 +1,116 @@
+capital = 21
+
+set_research_slots = 2
+
+set_stability = 0.3
+
+set_war_support = 0.3
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 50
+	communism = 30
+	fascism = 10
+	neutrality = 10
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Flumenise"
+	desc = "POLITICS_HUSSEIN_ELDRIDGE_DESC"
+	picture = "gfx/leaders/Flumenise.dds"
+	expire = "1973.2.15"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Flumenise"
+	desc = "POLITICS_JORDAN_ROFF_DESC"
+	picture = "gfx/leaders/Flumenise.dds"
+	expire = "1967.5.14"
+	ideology = anarchist_communism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Flumenise"
+	desc = "POLITICS_ABDEL_FOSTER_DESC"
+	picture = "gfx/leaders/Flumenise.dds"
+	expire = "1975.4.11"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Flumenise"
+	desc = "POLITICS_NELSEN_JOHNSON_DESC"
+	picture = "gfx/leaders/Flumenise.dds"
+	expire = "1967.2.17"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Skelly Derrick"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Duffie Stone"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charlton Everdell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Bobby Thornley"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Sherlock Rick"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 1
+}
+

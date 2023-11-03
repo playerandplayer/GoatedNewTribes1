@@ -1,0 +1,116 @@
+capital = 58
+
+set_research_slots = 2
+
+set_stability = 0.20
+
+set_war_support = 0.6
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 5
+	communism = 14
+	fascism = 71
+	neutrality = 10
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Sniper"
+	desc = "POLITICS_JOSEPHUS_WALE_DESC"
+	picture = "gfx/leaders/Sniper.dds"
+	expire = "1970.3.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sniper"
+	desc = "POLITICS_NEVILLE_EGGLESTON_DESC"
+	picture = "gfx/leaders/Sniper.dds"
+	expire = "1965.5.19"
+	ideology = anti_revisionism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sniper"
+	desc = "POLITICS_SANCHO_FOXLEY_DESC"
+	picture = "gfx/leaders/Sniper.dds"
+	expire = "1976.1.20"
+	ideology = gen_nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sniper"
+	desc = "POLITICS_ELLSWORTH_WONG_DESC"
+	picture = "gfx/leaders/Sniper.dds"
+	expire = "1978.1.8"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Markos Falsh"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Odie Fenton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Darby Emberey"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Meade Phipps"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Domenico Weston"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}
+

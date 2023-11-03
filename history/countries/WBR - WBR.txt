@@ -1,0 +1,116 @@
+capital = 8
+
+set_research_slots = 2
+
+set_stability = 0.4
+
+set_war_support = 0.1
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 23
+	communism = 17
+	fascism = 10
+	neutrality = 50
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.8"
+	election_frequency = 48
+	elections_allowed = Yes
+}
+
+create_country_leader = {
+	name = "John Adams"
+	desc = "POLITICS_ANGEL_GREENALL_DESC"
+	picture = "gfx/leaders/John Adams.dds"
+	expire = "1973.7.26"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "John Adams"
+	desc = "POLITICS_LANE_FAIRHURST_DESC"
+	picture = "gfx/leaders/John Adams.dds"
+	expire = "1970.8.5"
+	ideology = leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "John Adams"
+	desc = "POLITICS_TITUS_EAST_DESC"
+	picture = "gfx/leaders/John Adams.dds"
+	expire = "1975.8.14"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "John Adams"
+	desc = "POLITICS_GERE_SALMON_DESC"
+	picture = "gfx/leaders/John Adams.dds"
+	expire = "1978.6.8"
+	ideology = anarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Chadwick Townsend"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hervey Heaton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dennie Walpole"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mischa Leeming"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Renard Linley"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 1
+}
+

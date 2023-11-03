@@ -1,0 +1,116 @@
+capital = 60
+
+set_research_slots = 4
+
+set_stability = 0.6
+
+set_war_support = 0.9
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 55
+	neutrality = 45
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Elon Musk"
+	desc = "POLITICS_CAT_GAVIN_DESC"
+	picture = "gfx/leaders/Elon Musk.dds"
+	expire = "1971.3.26"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Elon Musk"
+	desc = "POLITICS_TOWNSEND_DRINKWATER_DESC"
+	picture = "gfx/leaders/Elon Musk.dds"
+	expire = "1978.6.26"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Elon Musk"
+	desc = "POLITICS_LYLE_VASS_DESC"
+	picture = "gfx/leaders/Elon Musk.dds"
+	expire = "1970.3.14"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Elon Musk"
+	desc = "POLITICS_HEYWOOD_WREN_DESC"
+	picture = "gfx/leaders/Elon Musk.dds"
+	expire = "1974.8.13"
+	ideology = anarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Gino Wakeham"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Amory Tosh"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Tanny Callow"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nigel Saxton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Rolland Given"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+

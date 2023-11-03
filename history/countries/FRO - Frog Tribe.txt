@@ -1,0 +1,116 @@
+capital = 42
+
+set_research_slots = 2
+
+set_stability = 0.40
+
+set_war_support = 0.05
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 60
+	communism = 10
+	fascism = 0
+	neutrality = 30
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.8"
+	election_frequency = 48
+	elections_allowed = Yes
+}
+
+create_country_leader = {
+	name = "wiktox"
+	desc = "POLITICS_LLEWELLYN_GELDART_DESC"
+	picture = "gfx/leaders/wiktox.dds"
+	expire = "1967.7.21"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "wiktox"
+	desc = "POLITICS_BRET_SLATER_DESC"
+	picture = "gfx/leaders/wiktox.dds"
+	expire = "1967.3.21"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "wiktox"
+	desc = "POLITICS_WALEED_VILLIS_DESC"
+	picture = "gfx/leaders/wiktox.dds"
+	expire = "1977.7.27"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "wiktox"
+	desc = "POLITICS_FAZEEL_O SHEA_DESC"
+	picture = "gfx/leaders/wiktox.dds"
+	expire = "1973.7.20"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Alfie Depp"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Fletcher Thirlway"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Dario Fountain"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Osbert Whitehouse"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Elmore Nutella"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+

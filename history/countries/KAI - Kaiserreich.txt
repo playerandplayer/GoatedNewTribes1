@@ -1,0 +1,166 @@
+capital = 29
+
+set_research_slots = 3
+
+set_stability = 0.7
+
+set_war_support = 0.7
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 40
+	neutrality = 60
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Smoot"
+	desc = "POLITICS_ALEKSANDRS_RAEBURN_DESC"
+	picture = "gfx/leaders/Smoot.dds"
+	expire = "1979.6.13"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Smoot"
+	desc = "POLITICS_BRANT_GORDON_DESC"
+	picture = "gfx/leaders/Smoot.dds"
+	expire = "1970.7.17"
+	ideology = leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Smoot"
+	desc = "POLITICS_THAIN_PACKER_DESC"
+	picture = "gfx/leaders/Smoot.dds"
+	expire = "1969.4.11"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Smoot"
+	desc = "POLITICS_SEYMOUR_BEECH_DESC"
+	picture = "gfx/leaders/Smoot.dds"
+	expire = "1974.3.16"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Von Skelton"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Tan Gaskell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Horatio Exley"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "John Nood"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Earle Orbell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Filip Rothery"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Lou Linford"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 5
+	maneuvering_skill = 5
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Leopold Osullivan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Corky Radcliffe"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Omar Ocallaghan"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+

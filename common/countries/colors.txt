@@ -1,0 +1,112 @@
+TST = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+CAN = {
+	color = rgb { 0 128 192 }
+	color_ui  = rgb { 0 98 162 }
+}
+ACR = {
+	color = rgb { 128 0 255 }
+	color_ui  = rgb { 98 0 225 }
+}
+KAI = {
+	color = rgb { 151 0 0 }
+	color_ui  = rgb { 121 0 0 }
+}
+YOR = {
+	color = rgb { 0 255 255 }
+	color_ui  = rgb { 0 225 225 }
+}
+LNR = {
+	color = rgb { 0 187 187 }
+	color_ui  = rgb { 0 157 157 }
+}
+PAZ = {
+	color = rgb { 158 75 75 }
+	color_ui  = rgb { 128 45 45 }
+}
+ELO = {
+	color = rgb { 14 180 188 }
+	color_ui  = rgb { 0 150 158 }
+}
+REM = {
+	color = rgb { 210 210 0 }
+	color_ui  = rgb { 180 180 0 }
+}
+JUT = {
+	color = rgb { 210 210 0 }
+	color_ui  = rgb { 180 180 0 }
+}
+FRO = {
+	color = rgb { 0 255 0 }
+	color_ui  = rgb { 0 225 0 }
+}
+MAG = {
+	color = rgb { 120 135 124 }
+	color_ui  = rgb { 90 105 94 }
+}
+WBR = {
+	color = rgb { 7 182 248 }
+	color_ui  = rgb { 0 152 218 }
+}
+MTG = {
+	color = rgb { 255 128 128 }
+	color_ui  = rgb { 225 98 98 }
+}
+SPJ = {
+	color = rgb { 137 163 48 }
+	color_ui  = rgb { 107 133 18 }
+}
+SHI = {
+	color = rgb { 210 210 0 }
+	color_ui  = rgb { 180 180 0 }
+}
+GAC = {
+	color = rgb { 255 128 0 }
+	color_ui  = rgb { 225 98 0 }
+}
+AND = {
+	color = rgb { 128 0 255 }
+	color_ui  = rgb { 98 0 225 }
+}
+BTE = {
+	color = rgb { 255 0 255 }
+	color_ui  = rgb { 225 0 225 }
+}
+GOA = {
+	color = rgb { 128 64 64 }
+	color_ui  = rgb { 98 34 34 }
+}
+FRC = {
+	color = rgb { 0 0 255 }
+	color_ui  = rgb { 0 0 225 }
+}
+PIN = {
+	color = rgb { 190 124 124 }
+	color_ui  = rgb { 160 94 94 }
+}
+VES = {
+	color = rgb { 255 128 0 }
+	color_ui  = rgb { 225 98 0 }
+}
+FRE = {
+	color = rgb { 255 0 255 }
+	color_ui  = rgb { 225 0 225 }
+}
+NOT = {
+	color = rgb { 223 223 0 }
+	color_ui  = rgb { 193 193 0 }
+}
+ARO = {
+	color = rgb { 205 50 5 }
+	color_ui  = rgb { 175 20 0 }
+}
+ETA = {
+	color = rgb { 0 255 255 }
+	color_ui  = rgb { 0 225 225 }
+}
+SHA = {
+	color = rgb { 91 0 0 }
+	color_ui  = rgb { 61 0 0 }
+}

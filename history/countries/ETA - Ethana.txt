@@ -1,0 +1,116 @@
+capital = 11
+
+set_research_slots = 2
+
+set_stability = 0.4
+
+set_war_support = 0.10
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 15
+	communism = 5
+	fascism = 40
+	neutrality = 40
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = Yes
+}
+
+create_country_leader = {
+	name = "the holy nut"
+	desc = "POLITICS_BILL_LEACH_DESC"
+	picture = "gfx/leaders/The holy nut.dds"
+	expire = "1965.9.20"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "the holy nut"
+	desc = "POLITICS_FLIN_TOMKINS_DESC"
+	picture = "gfx/leaders/The holy nut.dds"
+	expire = "1972.6.18"
+	ideology = leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "the holy nut"
+	desc = "POLITICS_MORRIS_DAWES_DESC"
+	picture = "gfx/leaders/The holy nut.dds"
+	expire = "1973.4.1"
+	ideology = falangism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "the holy nut"
+	desc = "POLITICS_RUFUS_WEBB_DESC"
+	picture = "gfx/leaders/The holy nut.dds"
+	expire = "1975.2.4"
+	ideology = moderatism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Darth Vader"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Ellsworth Barnett"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Jude Neilsen"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Neron Malone"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Graham Major"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+

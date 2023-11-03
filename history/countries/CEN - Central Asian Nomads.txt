@@ -1,0 +1,166 @@
+capital = 47
+
+set_research_slots = 4
+
+set_stability = 0.4
+
+set_war_support = 0.6
+
+add_political_power = 2
+
+set_convoys = 100
+
+set_popularities = {
+	democratic = 18
+	communism = 12
+	fascism = 33
+	neutrality = 37
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "DemirhanSözüdüz"
+	desc = "POLITICS_JEROLD_MCGRORY_DESC"
+	picture = "gfx/leaders/DemirhanSözüdüz.dds"
+	expire = "1976.4.10"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "DemirhanSözüdüz"
+	desc = "POLITICS_TOWNIE_DOUGHERTY_DESC"
+	picture = "gfx/leaders/DemirhanSözüdüz.dds"
+	expire = "1972.3.19"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "DemirhanSözüdüz"
+	desc = "POLITICS_FERINAND_SPENCER_DESC"
+	picture = "gfx/leaders/DemirhanSözüdüz.dds"
+	expire = "1979.4.11"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "DemirhanSözüdüz"
+	desc = "POLITICS_LUCIANO_INNES_DESC"
+	picture = "gfx/leaders/DemirhanSözüdüz.dds"
+	expire = "1975.5.4"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Josh Halliwell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Mathias Thom"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Vasili Rapson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Partha Nineham"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Valdemar Daniells"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Lazare Mcguire"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Hoyt Keffler"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Say Tonks"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Ripley Craig"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Redford Ludlow"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 3
+}
+

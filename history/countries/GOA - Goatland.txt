@@ -1,0 +1,116 @@
+capital = 37
+
+set_research_slots = 2
+
+set_stability = 0.50
+
+set_war_support = 0.20
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 20
+	communism = 0
+	fascism = 20
+	neutrality = 60
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_ANDRZEJ_BAMFORD_DESC"
+	picture = "gfx/leaders/Alexander2.dds"
+	expire = "1969.4.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_TYE_LONGLEY_DESC"
+	picture = "gfx/leaders/Alexander2.dds"
+	expire = "1971.9.26"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_FIDEL_DENTON_DESC"
+	picture = "gfx/leaders/Alexander2.dds"
+	expire = "1976.3.18"
+	ideology = gen_nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_SIGMUND_WHITBY_DESC"
+	picture = "gfx/leaders/Alexander2.dds"
+	expire = "1965.7.14"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Jessee Hulme"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Bartolomeo Pine"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sivert Alesbury"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Fitz Bone"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ebeneser Broomfield"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+

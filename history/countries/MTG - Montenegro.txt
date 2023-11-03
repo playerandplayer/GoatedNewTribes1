@@ -1,0 +1,116 @@
+capital = 93
+
+set_research_slots = 3
+
+set_stability = 0.2
+
+set_war_support = 0.6
+
+add_political_power = 5
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 70
+	neutrality = 30
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "ihavenoidea"
+	desc = "POLITICS_RANDELL_NERO_DESC"
+	picture = "gfx/leaders/ihavenoidea.dds"
+	expire = "1965.10.19"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "ihavenoidea"
+	desc = "POLITICS_KANE_MCNAMARA_DESC"
+	picture = "gfx/leaders/ihavenoidea.dds"
+	expire = "1971.2.6"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "ihavenoidea"
+	desc = "POLITICS_NORWOOD_ALLEN_DESC"
+	picture = "gfx/leaders/ihavenoidea.dds"
+	expire = "1979.6.15"
+	ideology = gen_nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "ihavenoidea"
+	desc = "POLITICS_EGBERT_LYONS_DESC"
+	picture = "gfx/leaders/ihavenoidea.dds"
+	expire = "1970.10.19"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Tabor Hodge"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Edie Leek"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Arlo Peel"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Van Frary"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jeth Batchelor"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 4
+}
+

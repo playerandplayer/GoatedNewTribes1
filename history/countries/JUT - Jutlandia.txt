@@ -1,0 +1,116 @@
+capital = 67
+
+set_research_slots = 2
+
+set_stability = 0.4
+
+set_war_support = 0.10
+
+add_political_power = 2
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 80
+	communism = 20
+	fascism = 0
+	neutrality = 0
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = No
+}
+
+create_country_leader = {
+	name = "Koolkarl IV"
+	desc = "POLITICS_JIMBO_MCAULEY_DESC"
+	picture = "gfx/leaders/Koolkarl_iiv.dds"
+	expire = "1972.9.18"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Koolkarl IV"
+	desc = "POLITICS_ALPHONSE_HEYWOOD_DESC"
+	picture = "gfx/leaders/Koolkarl_iiv.dds"
+	expire = "1975.8.26"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Koolkarl IV"
+	desc = "POLITICS_JULIE_LOCKIE_DESC"
+	picture = "gfx/leaders/Koolkarl_iiv.dds"
+	expire = "1967.9.27"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Koolkarl IV"
+	desc = "POLITICS_GIANCARLO_INKER_DESC"
+	picture = "gfx/leaders/Koolkarl_iiv.dds"
+	expire = "1973.1.12"
+	ideology = anarchism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Geof Kram"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Sheff Turrell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Rafael Astbury"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = {}
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kalil Draper"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {}
+	attack_skill = 1
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Bryn Crow"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {}
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 1
+}
+
