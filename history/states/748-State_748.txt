@@ -7,17 +7,4 @@ state={
 	buildings_max_level_factor=1.000
         manpower=1
         state_category = town
-	history={
-		owner = ACR
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
-			3838 = {
-				naval_base = 3
-			}
-		}
-		add_core_of = FRA
-		add_core_of = ACR
-	}
 }
