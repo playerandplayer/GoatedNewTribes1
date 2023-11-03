@@ -13,11 +13,10 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
-			3838 = {
+			5115 = {
 				naval_base = 3
 			}
 		}
-		add_core_of = FRA
 		add_core_of = ACR
 	}
 }
