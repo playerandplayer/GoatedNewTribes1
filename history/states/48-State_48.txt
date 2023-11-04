@@ -1,10 +1,17 @@
 state={
 	id=48
 	name="STATE_48"
+	history = {
+		owner = ELO
+		add_core_of = ELO
+		victory_points = {
+			19222 3
+		}
+	}
 	provinces={
 		4767 19222 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=2086870
+	state_category = megalopolis
 }

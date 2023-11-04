@@ -1,10 +1,17 @@
 state={
 	id=711
 	name="STATE_711"
+	history = {
+		owner = SHI
+		add_core_of = SHI
+		victory_points = {
+			19259 10
+		}
+	}
 	provinces={
 		214 700 1497 2561 3160 3262 3831 3933 5983 7550 8107 8357 19100 19112 19134 19231 19259 19287 19312 19359 19375 19384 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=1335917
+	state_category = metropolis
 }

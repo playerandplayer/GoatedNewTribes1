@@ -1,10 +1,17 @@
 state={
 	id=646
 	name="STATE_646"
+	history = {
+		owner = SHI
+		add_core_of = SHI
+		victory_points = {
+			18350 16
+		}
+	}
 	provinces={
 		352 1053 1257 1701 2000 2605 3040 3042 3274 3549 3573 4075 4167 4278 4505 4828 5181 5373 5420 6157 6500 6689 6710 7933 18064 18114 18125 18144 18176 18206 18207 18243 18267 18315 18336 18350 18385 18411 18421 18447 18485 18486 18487 18496 18536 18537 18676 18709 18750 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=1457773
+	state_category = metropolis
 }
