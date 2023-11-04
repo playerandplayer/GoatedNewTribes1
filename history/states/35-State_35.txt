@@ -5,6 +5,16 @@ state={
 		1770 3345 8174 17444 17458 17459 17534 17546 17591 17616 17680 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=201000
         state_category = town
+		history={
+		owner = CEN
+		add_core_of = CEN
+		buildings = {
+			infrastructure = 2
+			17458 = {
+				naval_base = 1
+			}
+		}
+	}
 }

@@ -1,10 +1,17 @@
 state={
 	id=18
 	name="STATE_18"
+	history = {
+		owner = TRD
+		add_core_of = TRD
+		victory_points = {
+			14210 2
+		}
+	}
 	provinces={
 		178 216 318 877 1035 1348 1596 2579 5346 6082 6625 6737 6915 7236 8368 8372 13677 13710 13743 13794 13795 13832 13851 13852 13889 13930 13997 14011 14012 14064 14097 14098 14130 14188 14210 14254 14279 14320 14339 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=328806
+	state_category = city
 }

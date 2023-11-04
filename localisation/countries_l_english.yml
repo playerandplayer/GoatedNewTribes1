@@ -5,7 +5,7 @@
  CEN_ADJ:0 "Central Asian"
  
  ACR:0 "Acronesia"
- ACR_DEF:0 "The Acronesian Republic"
+ ACR_DEF:0 "Acronesia"
  ACR_ADJ:0 "Acronesian"
  
  KAI:0 "Kaiserreich"
@@ -45,11 +45,11 @@
  MAG_ADJ:0 "Hungarian"
  
  WBR:0 "WBR"
- WBR_DEF:0 "Worldbox Republic"
+ WBR_DEF:0 "The Worldbox Republic"
  WBR_ADJ:0 "Worldbox"
  
  MTG:0 "Montenegro"
- MTG_DEF:0 "The Imperium of Montenegro"
+ MTG_DEF:0 "Montenegro"
  MTG_ADJ:0 "Montenegrian"
  
  SPJ:0 "Spronje Tribe"
@@ -77,15 +77,15 @@
  GOA_ADJ:0 "Goated"
  
  FRC:0 "Franceistan"
- FRC_DEF:0 "The Franceistan State"
+ FRC_DEF:0 "Franceistan"
  FRC_ADJ:0 "French"
  
  PIN:0 "Pindorama"
- PIN_DEF:0 "The Pindoraman Nation"
+ PIN_DEF:0 "Pindorama"
  PIN_ADJ:0 "Pindoraman"
  
  VES:0 "Vessel"
- VES_DEF:0 "The Vessel"
+ VES_DEF:0 "Vessel"
  VES_ADJ:0 "Vesselian"
  
  FRE:0 "Free Lands"
@@ -107,3 +107,8 @@
  SHA:0 "Shadow Tribe"
  SHA_DEF:0 "The Shadow Tribe"
  SHA_ADJ:0 "Shadow"
+ 
+ TRD:0 "Trade Tribe"
+ TRD_DEF:0 "The Trade Tribe"
+ TRD_ADJ:0 "Trading"
+ 

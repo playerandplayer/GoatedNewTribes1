@@ -1,10 +1,17 @@
 state={
 	id=499
 	name="STATE_499"
+	history = {
+		owner = TRD
+		add_core_of = TRD
+		victory_points = {
+			2554 13
+		}
+	}
 	provinces={
 		68 965 2554 5544 7340 15455 15626 15691 15793 15889 15930 16049 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=334957
+	state_category = city
 }

@@ -1,10 +1,17 @@
 state={
 	id=568
 	name="STATE_568"
+	history = {
+		owner = CEN
+		add_core_of = CEN
+		victory_points = {
+			16994 4
+		}
+	}
 	provinces={
 		651 2701 4243 4835 4952 5352 6418 7723 7985 16861 16933 16967 16994 17014 17111 17112 17113 17128 17147 17162 17229 17230 17231 17232 17322 17333 17380 17456 17529 17669 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=77119
+	state_category = town
 }

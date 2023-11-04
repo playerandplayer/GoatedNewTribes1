@@ -5,6 +5,14 @@ state={
 		746 1648 2269 2351 2677 3328 5742 5907 6223 6475 6836 7607 7993 17903 17963 18032 18085 18094 18105 18124 18153 18190 18204 18251 18252 18274 18312 18324 18360 18446 18503 18518 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=90000
         state_category = town
+		history={
+		owner = CEN
+		add_core_of = CEN
+		buildings = {
+			infrastructure = 1
+		
+		}
+	}
 }

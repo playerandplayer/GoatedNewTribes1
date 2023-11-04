@@ -1,10 +1,17 @@
 state={
 	id=588
 	name="STATE_588"
+	history = {
+		owner = CEN
+		add_core_of = CEN
+		victory_points = {
+			17659 2
+		}
+	}
 	provinces={
 		1007 1318 1421 1446 1704 1775 2300 3682 4176 4759 4864 5261 5264 5450 6111 6629 6748 7476 8401 17146 17174 17259 17289 17290 17321 17346 17379 17394 17407 17464 17465 17528 17562 17563 17570 17586 17624 17625 17659 17689 17702 17716 17764 17780 17792 17854 17860 17878 17941 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=73897
+	state_category = rural
 }

@@ -110,3 +110,11 @@ SHA = {
 	color = rgb { 91 0 0 }
 	color_ui  = rgb { 61 0 0 }
 }
+TRA = {
+	color = rgb { 0 128 128 }
+	color_ui  = rgb { 0 98 98 }
+}
+TRD = {
+	color = rgb { 0 128 128 }
+	color_ui  = rgb { 0 98 98 }
+}

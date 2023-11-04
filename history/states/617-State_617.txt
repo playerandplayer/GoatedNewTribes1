@@ -1,10 +1,17 @@
 state={
 	id=617
 	name="STATE_617"
+	history = {
+		owner = CEN
+		add_core_of = CEN
+		victory_points = {
+			3488 8
+		}
+	}
 	provinces={
 		3488 5128 18083 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=929382
+	state_category = metropolis
 }
