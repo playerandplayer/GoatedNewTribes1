@@ -1,10 +1,17 @@
 state={
 	id=24
 	name="STATE_24"
+	history = {
+		owner = YOR
+		add_core_of = YOR
+		victory_points = {
+			8064 6
+		}
+	}
 	provinces={
 		710 2421 2733 4708 5099 7113 7419 8064 14440 14572 14573 14574 14603 14665 14676 14677 14694 14738 14770 14782 14810 14889 14907 14967 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=2042896
+	state_category = megalopolis
 }

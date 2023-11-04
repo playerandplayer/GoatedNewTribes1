@@ -1,10 +1,17 @@
 state={
 	id=542
 	name="STATE_542"
+	history = {
+		owner = YOR
+		add_core_of = YOR
+		victory_points = {
+			17025 18
+		}
+	}
 	provinces={
 		729 3265 4145 6177 16505 16548 16641 16777 16888 17025 17042 17152 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=2413404
+	state_category = megalopolis
 }

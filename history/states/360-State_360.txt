@@ -1,10 +1,17 @@
 state={
 	id=360
 	name="STATE_360"
+	history = {
+		owner = WBR
+		add_core_of = WBR
+		victory_points = {
+			12714 3
+		}
+	}
 	provinces={
 		110 5378 6881 12655 12713 12714 12796 12881 13096 13168 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=246166
+	state_category = town
 }

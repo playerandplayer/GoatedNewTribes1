@@ -1,10 +1,20 @@
 state={
 	id=442
 	name="STATE_442"
+	history = {
+		owner = MAG
+		add_core_of = MAG
+		victory_points = {
+			5764 8
+		}
+		victory_points = {
+			15457 33
+		}
+	}
 	provinces={
 		242 1045 1304 2608 2878 4375 5026 5764 6136 6842 7795 7927 14673 14737 14792 14839 14903 14920 14951 15008 15033 15141 15150 15202 15203 15217 15266 15301 15340 15341 15371 15389 15404 15457 15535 15555 15630 15659 15676 15677 15693 15729 15745 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=815754
+	state_category = metropolis
 }

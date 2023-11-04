@@ -1,10 +1,17 @@
 state={
 	id=715
 	name="STATE_715"
+	history = {
+		owner = ARO
+		add_core_of = ARO
+		victory_points = {
+			130 8
+		}
+	}
 	provinces={
 		130 797 1069 1539 1544 1818 3995 4544 4589 4590 4674 5684 6055 6108 6376 8120 8282 8390 19270 19320 19360 19370 19371 19394 19401 19421 19450 19485 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=485186
+	state_category = city
 }

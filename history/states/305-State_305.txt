@@ -1,10 +1,17 @@
 state={
 	id=305
 	name="STATE_305"
+	history = {
+		owner = PAZ
+		add_core_of = PAZ
+		victory_points = {
+			12514 17
+		}
+	}
 	provinces={
 		207 274 287 1055 1772 2190 3195 4260 5840 6479 7092 7358 7803 7859 8223 11817 11818 11881 11921 12017 12057 12058 12075 12076 12133 12147 12148 12149 12177 12193 12254 12255 12268 12287 12336 12398 12414 12514 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=1309583
+	state_category = metropolis
 }

@@ -1,10 +1,17 @@
 state={
 	id=6
 	name="STATE_6"
+	history = {
+		owner = PAZ
+		add_core_of = PAZ
+		victory_points = {
+			11009 2
+		}
+	}
 	provinces={
 		2788 3572 4842 6301 10992 11009 11050 11203 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=1377056
+	state_category = metropolis
 }

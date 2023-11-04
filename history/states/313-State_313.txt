@@ -1,10 +1,20 @@
 state={
 	id=313
 	name="STATE_313"
+	history = {
+		owner = WBR
+		add_core_of = WBR
+		victory_points = {
+			2997 17
+		}
+		victory_points = {
+			12179 34
+		}
+	}
 	provinces={
 		1355 2277 2307 2607 2997 3060 3373 3567 4608 5079 6093 6772 11784 11851 11852 11905 12077 12121 12134 12150 12178 12179 12211 12238 12256 12257 12288 12320 12321 12374 12375 12415 12484 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=227878
+	state_category = town
 }
