@@ -8,7 +8,7 @@ state={
         manpower=147000
         state_category = town
 		history={
-		owner = ACR
+		owner = XXX
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -16,6 +16,6 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = ACR
+		add_core_of = XXX
 	}
 }

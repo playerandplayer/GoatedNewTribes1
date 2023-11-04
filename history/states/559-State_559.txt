@@ -12,9 +12,11 @@ state={
 		add_core_of = CEN
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
 			17408 = {
 				naval_base = 3
 			}
+			
 		}
 	}
 }

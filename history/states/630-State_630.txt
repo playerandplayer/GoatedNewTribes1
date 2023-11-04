@@ -1,6 +1,10 @@
 state={
 	id=630
 	name="STATE_630"
+	resources={
+		oil=59
+		chromium = 36
+	}
 	history = {
 		owner = CEN
 		add_core_of = CEN

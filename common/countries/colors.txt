@@ -118,3 +118,7 @@ TRD = {
 	color = rgb { 0 128 128 }
 	color_ui  = rgb { 0 98 98 }
 }
+XXX = {
+	color = rgb { 192 198 155 }
+	color_ui  = rgb { 162 168 125 }
+}
