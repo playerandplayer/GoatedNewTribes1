@@ -1,10 +1,17 @@
 state={
 	id=11
 	name="STATE_11"
+	history = {
+		owner = MTG
+		add_core_of = MTG
+		victory_points = {
+			12049 2
+		}
+	}
 	provinces={
 		3074 5852 7804 7822 8021 11875 11968 12000 12049 12089 12090 12100 12189 12190 12221 12346 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=1274934
+	state_category = metropolis
 }

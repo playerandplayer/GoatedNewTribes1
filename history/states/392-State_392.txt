@@ -1,10 +1,17 @@
 state={
 	id=392
 	name="STATE_392"
+	history = {
+		owner = SPJ
+		add_core_of = SPJ
+		victory_points = {
+			14010 16
+		}
+	}
 	provinces={
 		718 1576 2013 2048 2179 4038 4651 13617 13655 13709 13727 13742 13793 13888 13975 14010 14140 14187 14245 14278 14304 14350 14428 14481 14522 14566 14614 14745 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=962633
+	state_category = metropolis
 }

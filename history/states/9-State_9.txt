@@ -1,10 +1,17 @@
 state={
 	id=9
 	name="STATE_9"
+	history = {
+		owner = ETA
+		add_core_of = ETA
+		victory_points = {
+			12172 8
+		}
+	}
 	provinces={
 		5595 6417 7410 11715 11741 11830 11927 11944 11961 12040 12099 12142 12172 12298 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=1406442
+	state_category = metropolis
 }

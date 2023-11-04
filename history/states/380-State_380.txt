@@ -1,10 +1,20 @@
 state={
 	id=380
 	name="STATE_380"
+	history = {
+		owner = GOA
+		add_core_of = GOA
+		victory_points = {
+			13869 10
+		}
+		victory_points = {
+			64 34
+		}
+	}
 	provinces={
 		64 1619 2289 6386 7349 13445 13564 13614 13653 13708 13725 13791 13869 13929 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=848739
+	state_category = metropolis
 }

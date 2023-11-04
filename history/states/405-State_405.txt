@@ -1,10 +1,17 @@
 state={
 	id=405
 	name="STATE_405"
+	history = {
+		owner = GOA
+		add_core_of = GOA
+		victory_points = {
+			5784 12
+		}
+	}
 	provinces={
 		157 756 1678 1717 2656 4850 5183 5784 5891 7689 7700 7866 8002 14158 14277 14338 14411 14425 14437 14470 14541 14554 14632 14648 14660 14661 14698 14733 14761 14762 14775 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=708649
+	state_category = large_city
 }

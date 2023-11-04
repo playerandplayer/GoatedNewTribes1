@@ -1,10 +1,20 @@
 state={
 	id=28
 	name="STATE_28"
+	history = {
+		owner = BTE
+		add_core_of = BTE
+		victory_points = {
+			6608 7
+		}
+		victory_points = {
+			3259 39
+		}
+	}
 	provinces={
 		3259 6608 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=349985
+	state_category = city
 }

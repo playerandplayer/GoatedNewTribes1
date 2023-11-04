@@ -8,11 +8,11 @@ state={
         manpower=1
         state_category = town
 history={
-		owner = JUT
+		owner = REM
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = JUT
+		add_core_of = REM
 	}
 }

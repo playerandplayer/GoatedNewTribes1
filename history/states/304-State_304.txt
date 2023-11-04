@@ -4,7 +4,11 @@ state={
 	provinces={
 		905 1094 2297 2302 2328 3096 3577 5406 6103 6637 7011 7018 8004 11600 11643 11672 11701 11731 11808 11832 11845 11846 11930 11949 11950 11964 11986 12046 12069 12085 12188 12248 
 	}
+	history = {
+		owner = MTG
+		add_core_of = MTG
+	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=1020000
         state_category = town
 }

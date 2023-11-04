@@ -1,10 +1,17 @@
 state={
 	id=415
 	name="STATE_415"
+	history = {
+		owner = FRO
+		add_core_of = FRO
+		victory_points = {
+			14649 13
+		}
+	}
 	provinces={
 		691 1267 1443 2159 2301 2338 4009 7591 7972 8068 14362 14363 14427 14452 14453 14454 14501 14521 14585 14649 14699 14744 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=201645
+	state_category = town
 }
