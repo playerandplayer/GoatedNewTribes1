@@ -1,10 +1,20 @@
 state={
 	id=41
 	name="STATE_41"
+	history = {
+		owner = NOT
+		add_core_of = NOT
+		victory_points = {
+			5428 13
+		}
+		victory_points = {
+			247 39
+		}
+	}
 	provinces={
 		7 151 247 1090 1503 1945 2043 2910 3733 4006 4106 4387 5428 5707 5973 6691 7470 8037 8082 18595 18688 18737 18751 18777 18788 18820 18821 18848 18862 18884 18920 18950 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=595586
+	state_category = large_city
 }

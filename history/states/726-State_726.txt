@@ -1,10 +1,17 @@
 state={
 	id=726
 	name="STATE_726"
+	history = {
+		owner = VES
+		add_core_of = VES
+		victory_points = {
+			680 18
+		}
+	}
 	provinces={
 		680 1031 1937 1974 2897 2946 4547 4830 6916 19305 19337 19411 19414 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=210096
+	state_category = town
 }

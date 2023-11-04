@@ -1,10 +1,17 @@
 state={
 	id=591
 	name="STATE_591"
+	history = {
+		owner = ELO
+		add_core_of = ELO
+		victory_points = {
+			18076 6
+		}
+	}
 	provinces={
 		1683 2737 3194 3327 3665 3716 4491 5233 5510 5517 6803 6942 8393 17574 17674 17743 17760 17772 17795 17831 17847 17884 17975 18076 18146 18196 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=945571
+	state_category = metropolis
 }
