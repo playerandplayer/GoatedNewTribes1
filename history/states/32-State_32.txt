@@ -10,5 +10,9 @@ state={
 		history = {
 		owner = SHI
 		add_core_of = SHI
+		buildings = {
+			infrastructure = 2
+		}
 	}
+	
 }

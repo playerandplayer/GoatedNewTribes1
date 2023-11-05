@@ -1,11 +1,22 @@
 state={
 	id=650
 	name="STATE_650"
+	resources = {
+		oil = 0
+		aluminium = 80
+		rubber = 0
+		tungsten = 0
+		steel = 150
+		chromium = 0
+	}
 	history = {
 		owner = SHI
 		add_core_of = SHI
 		victory_points = {
 			1955 10
+		}
+		buildings = {
+			infrastructure = 2
 		}
 	}
 	provinces={

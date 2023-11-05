@@ -11,7 +11,7 @@ state={
 		owner = CEN
 		add_core_of = CEN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 	}
 }

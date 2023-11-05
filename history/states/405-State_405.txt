@@ -1,11 +1,24 @@
 state={
 	id=405
 	name="STATE_405"
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 120
+	}
 	history = {
 		owner = GOA
 		add_core_of = GOA
 		victory_points = {
 			5784 12
+		}
+		buildings = {
+			infrastructure = 5
+			dockyard = 5
+			
 		}
 	}
 	provinces={

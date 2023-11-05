@@ -1,6 +1,14 @@
 state={
 	id=313
 	name="STATE_313"
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 60
+		steel = 20
+		chromium = 80
+	}
 	history = {
 		owner = WBR
 		add_core_of = WBR
@@ -9,6 +17,13 @@ state={
 		}
 		victory_points = {
 			12179 34
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			12179 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces={

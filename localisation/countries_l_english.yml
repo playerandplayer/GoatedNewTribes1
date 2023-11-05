@@ -4,6 +4,14 @@
  CEN_DEF:0 "The Central Asian Nomads"
  CEN_ADJ:0 "Central Asian"
  
+ ACR_fascism:0 "Acronesia"
+ ACR_fascism_DEF:0 "Acronesia"
+ ACR_democratic:0 "Acornesia"
+ ACR_democratic_DEF:0 "Acornesia"
+ ACR_neutrality:0 "Acornesia"
+ ACR_neutrality_DEF:0 "Acornesia"
+ ACR_communism:0 "Acor/ronesia"
+ ACR_communism_DEF:0 "Acor/ronesia"
  ACR:0 "Acronesia"
  ACR_DEF:0 "Acronesia"
  ACR_ADJ:0 "Acronesian"
@@ -17,23 +25,23 @@
  YOR_ADJ:0 "Yorkish"
  
  LNR:0 "LNRF"
- LNR_DEF:0 "The Luxembourgish National Revolutionary Front"
+ LNR_DEF:0 "the Luxembourgish National Revolutionary Front"
  LNR_ADJ:0 "Luxembourgish"
  
  PAZ:0 "Pazal Caliphate"
- PAZ_DEF:0 "The Pazal Caliphate"
+ PAZ_DEF:0 "the Pazal Caliphate"
  PAZ_ADJ:0 "Pazali"
  
  ELO:0 "Elon Musk"
- ELO_DEF:0 "The Technological Society of Elon Musk"
+ ELO_DEF:0 "Elon Musk"
  ELO_ADJ:0 "Elon"
  
  REM:0 "Remanant"
- REM_DEF:0 "The Remanant State"
+ REM_DEF:0 "the Remanant State"
  REM_ADJ:0 "Remanant"
  
  JUT:0 "Jutlandia"
- JUT_DEF:0 "The Nation of Jutlandia"
+ JUT_DEF:0 "Jutlandia"
  JUT_ADJ:0 "Jutlandian"
  
  FRO:0 "Frog Tribe"
@@ -41,11 +49,11 @@
  FRO_ADJ:0 "Froggy"
  
  MAG:0 "Magyar Nomads"
- MAG_DEF:0 "The Magyar Nomads"
+ MAG_DEF:0 "the Magyar Nomads"
  MAG_ADJ:0 "Hungarian"
  
  WBR:0 "WBR"
- WBR_DEF:0 "The Worldbox Republic"
+ WBR_DEF:0 "the Worldbox Republic"
  WBR_ADJ:0 "Worldbox"
  
  MTG:0 "Montenegro"
@@ -53,11 +61,11 @@
  MTG_ADJ:0 "Montenegrian"
  
  SPJ:0 "Spronje Tribe"
- SPJ_DEF:0 "The Spronje Tribe"
+ SPJ_DEF:0 "the Spronje Tribe"
  SPJ_ADJ:0 "Spronjic"
  
  SHI:0 "Shitpost Clan"
- SHI_DEF:0 "The Shitpost Clan"
+ SHI_DEF:0 "the Shitpost Clan"
  SHI_ADJ:0 "Shitpostian"
  
  GAC:0 "Gachidemia"
@@ -65,15 +73,15 @@
  GAC_ADJ:0 "Gachidemia"
  
  AND:0 "Andorra"
- AND_DEF:0 "The Principality of Andorra"
+ AND_DEF:0 "the Principality of Andorra"
  AND_ADJ:0 "Andorran"
  
  BTE:0 "BTEP"
- BTE_DEF:0 "The BTEP"
+ BTE_DEF:0 "BTEP"
  BTE_ADJ:0 "BTEPian"
  
  GOA:0 "Goatland"
- GOA_DEF:0 "The State of Goatland"
+ GOA_DEF:0 "the State of Goatland"
  GOA_ADJ:0 "Goated"
  
  FRC:0 "Franceistan"
@@ -115,19 +123,3 @@
  XXX:0 ""
  XXX_DEF:0 "The Unclaimed Territory"
  XXX_ADJ:0 "Unclaimed"
- 
- XXX_fascism:0 "COUNTRY_NAME"
- XXX_fascism_DEF:0 "COUNTRY_NAME"
- XXX_democratic:0 "COUNTRY_NAME"
- XXX_democratic_DEF:0 "COUNTRY_DEF"
- XXX_neutrality:0 "COUNTRY_NAME"
- XXX_neutrality_DEF:0 "COUNTRY_DEF"
- XXX_communism:0 "COUNTRY_NAME"
- XXX_communism_DEF:0 "COUNTRY_DEF"
- XXX_fascism_ADJ:0 "PEOPLES_ADJECTIVE"
- XXX_democratic_ADJ:0 "PEOPLES_ADJECTIVE"
- XXX_neutrality_ADJ:0 "PEOPLES_ADJECTIVE"
- XXX_communism_ADJ:0 "PEOPLES_ADJECTIVE"
- XXX:0 "COUNTRY_NAME"
- XXX_DEF:0 "COUNTRY_DEF"
- XXX_ADJ:0 "PEOPLES_ADJECTIVE"

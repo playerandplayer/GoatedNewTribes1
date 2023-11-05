@@ -5,7 +5,7 @@ state={
 		3007 5013 5136 5251 8370 19630 19631 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=70000
         state_category = town
 	history={
 		owner = XXX

@@ -1,6 +1,14 @@
 state={
 	id=442
 	name="STATE_442"
+	resources = {
+		oil = 0
+		aluminium = 100
+		rubber = 0
+		tungsten = 200
+		steel = 300
+		chromium = 0
+	}
 	history = {
 		owner = MAG
 		add_core_of = MAG
@@ -9,6 +17,14 @@ state={
 		}
 		victory_points = {
 			15457 33
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 3
+			7927 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces={

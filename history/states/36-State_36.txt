@@ -1,6 +1,10 @@
 state={
 	id=36
 	name="STATE_36"
+	resources = {
+		steel = 100
+		aluminium = 50
+	}
 	history = {
 		owner = JUT
 		add_core_of = JUT
@@ -9,6 +13,11 @@ state={
 		}
 		victory_points = {
 			3812 33
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			
 		}
 	}
 	provinces={

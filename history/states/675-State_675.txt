@@ -10,7 +10,7 @@ state={
 		history={
 		owner = CEN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			2767 = {
 				naval_base = 3
 			}

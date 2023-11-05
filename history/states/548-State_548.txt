@@ -1,11 +1,23 @@
 state={
 	id=548
 	name="STATE_548"
+	resources = {
+		oil = 0
+		aluminium = 180
+		rubber = 0
+		tungsten = 300
+		steel = 120
+		chromium = 200
+	}
 	history = {
 		owner = YOR
 		add_core_of = YOR
 		victory_points = {
 			4770 7
+		}
+		buildings = {
+		infrastructure = 3
+		industrial_complex = 10
 		}
 	}
 	provinces={

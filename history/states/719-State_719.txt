@@ -1,6 +1,13 @@
 state={
 	id=719
 	name="STATE_719"
+	history = {
+		owner = XXX
+		add_core_of = XXX
+		victory_points = {
+			6949 10
+		}
+	}
 	provinces={
 		176 423 2454 6949 19313 19326 
 	}

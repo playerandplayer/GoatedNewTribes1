@@ -1,11 +1,22 @@
 state={
 	id=476
 	name="STATE_476"
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 150
+	}
 	history = {
 		owner = FRO
 		add_core_of = FRO
 		victory_points = {
 			7445 10
+		}
+		buildings = {
+			infrastructure = 2
 		}
 	}
 	provinces={

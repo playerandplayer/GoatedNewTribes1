@@ -1,6 +1,14 @@
 state={
 	id=45
 	name="STATE_45"
+	resources = {
+		oil = 0
+		aluminium = 10
+		rubber = 0
+		tungsten = 0
+		steel = 20
+		chromium = 20
+	}
 	history = {
 		owner = GAC
 		add_core_of = GAC
@@ -9,6 +17,12 @@ state={
 		}
 		victory_points = {
 			7155 36
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			
 		}
 	}
 	provinces={

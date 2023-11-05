@@ -1,11 +1,22 @@
 state={
 	id=727
 	name="STATE_727"
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 40
+		steel = 0
+		chromium = 80
+	}
 	history = {
 		owner = SHI
 		add_core_of = SHI
 		victory_points = {
 			19296 5
+		}
+		buildings = {
+			infrastructure = 2
 		}
 	}
 	provinces={

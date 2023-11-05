@@ -1,10 +1,17 @@
 state={
 	id=735
 	name="STATE_735"
+	history = {
+		owner = XXX
+		add_core_of = XXX
+		victory_points = {
+			19518 18
+		}
+	}
 	provinces={
 		25 329 509 925 1244 2874 3861 3864 4567 4575 5328 5710 8106 19416 19426 19436 19454 19472 19473 19484 19491 19500 19502 19503 19512 19518 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	manpower=53
+	state_category = wasteland
 }

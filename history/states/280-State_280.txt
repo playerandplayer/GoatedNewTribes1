@@ -1,11 +1,17 @@
 state={
 	id=280
 	name="STATE_280"
+	resources = {
+		oil = 50
+	}
 	history = {
 		owner = PAZ
 		add_core_of = PAZ
 		victory_points = {
 			5626 12
+		}
+		buildings = {
+			infrastructure = 1
 		}
 	}
 	provinces={

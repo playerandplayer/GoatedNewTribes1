@@ -1,6 +1,14 @@
 state={
 	id=327
 	name="STATE_327"
+	resources = {
+		oil = 0
+		aluminium = 50
+		rubber = 100
+		tungsten = 0
+		steel = 50
+		chromium = 100
+	}
 	history = {
 		owner = KAI
 		add_core_of = KAI
@@ -9,6 +17,14 @@ state={
 		}
 		victory_points = {
 			12665 31
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 10
+			dockyard = 1
+			4826 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces={

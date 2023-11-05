@@ -8,9 +8,6 @@ set_war_support = 0.6
 
 add_political_power = 2
 
-#recruit_character = CEN_oscaremn 
-#its called forshadowing damnit
-
 set_convoys = 100
 
 set_oob = "ENG_1936"

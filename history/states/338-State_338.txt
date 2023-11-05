@@ -1,11 +1,24 @@
 state={
 	id=338
 	name="STATE_338"
+	resources = {
+		oil = 0
+		aluminium = 100
+		rubber = 0
+		tungsten = 150
+		steel = 0
+		chromium = 0
+	}
 	history = {
 		owner = MTG
 		add_core_of = MTG
 		victory_points = {
 			12347 14
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			
 		}
 	}
 	provinces={

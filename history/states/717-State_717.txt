@@ -1,11 +1,22 @@
 state={
 	id=717
 	name="STATE_717"
+	resources = {
+		oil = 0
+		aluminium = 60
+		rubber = 0
+		tungsten = 0
+		steel = 40
+		chromium = 60
+	}
 	history = {
 		owner = VES
 		add_core_of = VES
 		victory_points = {
 			19388 4
+		}
+		buildings = {
+			infrastructure = 2
 		}
 	}
 	provinces={

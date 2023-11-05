@@ -7,6 +7,9 @@ state={
 		victory_points = {
 			11009 2
 		}
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		2788 3572 4842 6301 10992 11009 11050 11203 

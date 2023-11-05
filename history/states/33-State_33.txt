@@ -9,7 +9,7 @@ state={
 	}
 	buildings_max_level_factor=1.000
         manpower=3500000
-        state_category = metropolis
+        state_category = megalopolis
 		history={
 		owner = CEN
 		victory_points = {17360 100}

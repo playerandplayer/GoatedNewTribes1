@@ -1,6 +1,14 @@
 state={
 	id=15
 	name="STATE_15"
+	resources = {
+		oil = 0
+		aluminium = 10
+		rubber = 20
+		tungsten = 0
+		steel = 10
+		chromium = 20
+	}
 	history = {
 		owner = FRC
 		add_core_of = FRC
@@ -10,11 +18,17 @@ state={
 		victory_points = {
 			4250 35
 		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 1
+			
+		}
 	}
 	provinces={
 		275 526 4250 6488 7954 12790 12864 12903 12904 12967 13022 13036 13093 13123 13142 13193 13255 
 	}
 	buildings_max_level_factor=1.000
 	manpower=459758
-	state_category = city
+	state_category = large_city
 }

@@ -1,6 +1,14 @@
 state={
 	id=289
 	name="STATE_289"
+	resources = {
+		oil = 0
+		aluminium = 60
+		rubber = 0
+		tungsten = 0
+		steel = 120
+		chromium = 60
+	}
 	history = {
 		owner = ETA
 		add_core_of = ETA
@@ -9,6 +17,11 @@ state={
 		}
 		victory_points = {
 			11928 34
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 10
+			
 		}
 	}
 	provinces={

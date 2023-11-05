@@ -1,11 +1,26 @@
 state={
 	id=370
 	name="STATE_370"
+	resources = {
+		oil = 0
+		aluminium = 70
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 150
+	}
 	history = {
 		owner = SPJ
 		add_core_of = SPJ
 		victory_points = {
 			12995 12
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 10
+			13194 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces={

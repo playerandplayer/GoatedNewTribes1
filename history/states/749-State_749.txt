@@ -1,6 +1,14 @@
 state={
 	id=749
 	name="STATE_749"
+	resources = {
+		oil = 0
+		aluminium = 10
+		rubber = 20
+		tungsten = 0
+		steel = 10
+		chromium = 20
+	}
 	provinces={
 		17714
 	}
@@ -12,6 +20,8 @@ state={
 		add_core_of = AND
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
 		}
+
 	}
 }

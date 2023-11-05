@@ -1,6 +1,14 @@
 state={
 	id=41
 	name="STATE_41"
+	resources = {
+		oil = 0
+		aluminium = 80
+		rubber = 0
+		tungsten = 80
+		steel = 60
+		chromium = 0
+	}
 	history = {
 		owner = ELO
 		add_core_of = ELO
@@ -10,11 +18,16 @@ state={
 		victory_points = {
 			247 39
 		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 10
+			
+		}
 	}
 	provinces={
 		7 151 247 1090 1503 1945 2043 2910 3733 4006 4106 4387 5428 5707 5973 6691 7470 8037 8082 18595 18688 18737 18751 18777 18788 18820 18821 18848 18862 18884 18920 18950 
 	}
 	buildings_max_level_factor=1.000
 	manpower=595586
-	state_category = large_city
+	state_category = megalopolis
 }

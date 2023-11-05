@@ -1,11 +1,17 @@
 state={
 	id=483
 	name="STATE_483"
+	resources = {
+		oil = 50
+	}
 	history = {
 		owner = YOR
 		add_core_of = YOR
 		victory_points = {
 			15523 1
+		}
+		buildings = {
+			infrastructure = 1
 		}
 	}
 	provinces={

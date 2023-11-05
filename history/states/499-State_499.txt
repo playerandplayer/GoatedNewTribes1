@@ -1,11 +1,22 @@
 state={
 	id=499
 	name="STATE_499"
+	resources = {
+		oil = 0
+		aluminium = 150
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 0
+	}
 	history = {
 		owner = TRD
 		add_core_of = TRD
 		victory_points = {
 			2554 13
+		}
+		buildings = {
+			infrastructure = 2
 		}
 	}
 	provinces={

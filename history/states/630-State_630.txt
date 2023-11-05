@@ -2,7 +2,6 @@ state={
 	id=630
 	name="STATE_630"
 	resources={
-		oil=59
 		chromium = 36
 	}
 	history = {
@@ -10,6 +9,9 @@ state={
 		add_core_of = CEN
 		victory_points = {
 			18162 16
+		}
+		buildings = {
+			infrastructure = 2
 		}
 	}
 	provinces={

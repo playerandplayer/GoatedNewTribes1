@@ -1,11 +1,24 @@
 state={
 	id=504
 	name="STATE_504"
+	resources = {
+		oil = 0
+		aluminium = 50
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 100
+	}
 	history = {
 		owner = LNR
 		add_core_of = LNR
 		victory_points = {
 			6992 17
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 10
+			
 		}
 	}
 	provinces={

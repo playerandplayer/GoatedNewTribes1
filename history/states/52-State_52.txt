@@ -9,13 +9,13 @@ state={
 	}
 	buildings_max_level_factor=1.000
         manpower=358000
-        state_category = town
+        state_category = metropolis
 	history={
 		owner = XXX
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			air_base = 1
+			dockyard = 5
 			5115 = {
 				naval_base = 3
 			}
