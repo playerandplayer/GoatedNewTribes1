@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 0
+	absolute_monarchy = 0
+	authoritarian = 0
 	fascism = 0
-	neutrality = 100
+	anarchism = 100
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = anarchism
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_NORMAND_AIKMAN_DESC"
 	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
 	expire = "1976.9.17"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_TIM_NEAVE_DESC"
 	picture = "gfx/leaders/Europe/Brzęczyszczkiewicz Brzęczy.dds"
 	expire = "1970.8.27"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_RAWLEY_POTTS_DESC"
 	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
 	expire = "1965.10.15"
-	ideology = falangism
+	ideology = anarchism
 	traits = {
 	}
 }

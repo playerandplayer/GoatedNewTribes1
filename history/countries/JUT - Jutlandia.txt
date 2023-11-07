@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 80
-	communism = 20
+	absolute_monarchy = 0
+	authoritarian = 0
 	fascism = 0
-	neutrality = 0
+	anarchism = 0
+	social_democracy = 80
+	democratic_socialism = 0
+	stalinism = 20
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_JIMBO_MCAULEY_DESC"
 	picture = "gfx/leaders/Koolkarl_iiv.dds"
 	expire = "1972.9.18"
-	ideology = liberalism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_JULIE_LOCKIE_DESC"
 	picture = "gfx/leaders/Koolkarl_iiv.dds"
 	expire = "1967.9.27"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_GIANCARLO_INKER_DESC"
 	picture = "gfx/leaders/Koolkarl_iiv.dds"
 	expire = "1973.1.12"
-	ideology = anarchism
+	ideology = despotism
 	traits = {
 	}
 }

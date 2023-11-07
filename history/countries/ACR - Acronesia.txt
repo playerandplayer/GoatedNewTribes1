@@ -13,14 +13,19 @@ set_convoys = 2000
 set_oob = "ENG_1936"
 
 set_popularities = {
-	democratic = 57
-	communism = 0
+
+	absolute_monarchy = 0
+	authoritarian = 10
 	fascism = 33
-	neutrality = 10
+	anarchism = 0
+	social_democracy = 37
+	democratic_socialism = 20
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +170,7 @@ create_country_leader = {
 	desc = "POLITICS_LON_FAWCETT_DESC"
 	picture = "gfx/leaders/ACR/Oracle372.dds"
 	expire = "1969.1.7"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +180,7 @@ create_country_leader = {
 	desc = "POLITICS_SHANE_IRESON_DESC"
 	picture = "gfx/leaders/ACR/Noaschm.dds"
 	expire = "1968.9.4"
-	ideology = marxism
+	ideology = stalinism_ideology
 	traits = {
 	}
 }
@@ -185,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_MAISON_LAWLER_DESC"
 	picture = "gfx/leaders/ACR/Clashgamer04.dds"
 	expire = "1974.8.22"
-	ideology = gen_nazism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -195,7 +200,7 @@ create_country_leader = {
 	desc = "POLITICS_STEWARD_FODEN_DESC"
 	picture = "gfx/leaders/ACR/manman.dds"
 	expire = "1972.10.19"
-	ideology = despotism
+	ideology = buddhism
 	traits = {
 	}
 }

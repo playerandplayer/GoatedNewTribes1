@@ -13,7 +13,7 @@ state={
 		owner = SHI
 		add_core_of = SHI
 		victory_points = {
-			1955 10
+			1955 5
 		}
 		buildings = {
 			infrastructure = 2

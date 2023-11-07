@@ -147,10 +147,16 @@ if = {
 }
 
 set_popularities = {
-	democratic = 5
-	communism = 14
+
+	absolute_monarchy = 0
+	authoritarian = 10
 	fascism = 71
-	neutrality = 10
+	anarchism = 0
+	social_democracy = 5
+	democratic_socialism = 0
+	stalinism = 14
+	religious = 0
+	
 }
 
 set_politics = {
@@ -165,7 +171,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPHUS_WALE_DESC"
 	picture = "gfx/leaders/Sniper.dds"
 	expire = "1970.3.1"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +181,7 @@ create_country_leader = {
 	desc = "POLITICS_NEVILLE_EGGLESTON_DESC"
 	picture = "gfx/leaders/Sniper.dds"
 	expire = "1965.5.19"
-	ideology = anti_revisionism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -195,7 +201,7 @@ create_country_leader = {
 	desc = "POLITICS_ELLSWORTH_WONG_DESC"
 	picture = "gfx/leaders/Sniper.dds"
 	expire = "1978.1.8"
-	ideology = despotism
+	ideology = stalinism
 	traits = {
 	}
 }

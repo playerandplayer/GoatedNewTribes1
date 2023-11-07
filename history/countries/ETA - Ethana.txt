@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 15
-	communism = 5
+	absolute_monarchy = 0
+	authoritarian = 40
 	fascism = 40
-	neutrality = 40
+	anarchism = 0
+	social_democracy = 15
+	democratic_socialism = 0
+	stalinism = 5
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = despotism
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_BILL_LEACH_DESC"
 	picture = "gfx/leaders/The holy nut.dds"
 	expire = "1965.9.20"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_FLIN_TOMKINS_DESC"
 	picture = "gfx/leaders/The holy nut.dds"
 	expire = "1972.6.18"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_MORRIS_DAWES_DESC"
 	picture = "gfx/leaders/The holy nut.dds"
 	expire = "1973.4.1"
-	ideology = falangism
+	ideology = fascism
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_RUFUS_WEBB_DESC"
 	picture = "gfx/leaders/The holy nut.dds"
 	expire = "1975.2.4"
-	ideology = moderatism
+	ideology = despotism
 	traits = {
 	}
 }

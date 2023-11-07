@@ -147,10 +147,14 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 0
+	absolute_monarchy = 10
+	authoritarian = 35
 	fascism = 55
-	neutrality = 45
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {

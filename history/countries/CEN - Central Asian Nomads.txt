@@ -13,14 +13,19 @@ set_convoys = 100
 set_oob = "ENG_1936"
 
 set_popularities = {
-	democratic = 18
-	communism = 12
+
+	absolute_monarchy = 7
+	authoritarian = 30
 	fascism = 33
-	neutrality = 37
+	anarchism = 0
+	social_democracy = 18
+	democratic_socialism = 0
+	stalinism = 12
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -166,7 +171,7 @@ create_country_leader = {
 	desc = "POLITICS_JEROLD_MCGRORY_DESC"
 	picture = "gfx/leaders/DemirhanSözüdüz.dds"
 	expire = "1976.4.10"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -176,7 +181,7 @@ create_country_leader = {
 	desc = "POLITICS_TOWNIE_DOUGHERTY_DESC"
 	picture = "gfx/leaders/DemirhanSözüdüz.dds"
 	expire = "1972.3.19"
-	ideology = marxism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -186,7 +191,7 @@ create_country_leader = {
 	desc = "POLITICS_FERINAND_SPENCER_DESC"
 	picture = "gfx/leaders/DemirhanSözüdüz.dds"
 	expire = "1979.4.11"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -196,7 +201,7 @@ create_country_leader = {
 	desc = "POLITICS_LUCIANO_INNES_DESC"
 	picture = "gfx/leaders/DemirhanSözüdüz.dds"
 	expire = "1975.5.4"
-	ideology = centrism
+	ideology = despotism
 	traits = {
 	}
 }

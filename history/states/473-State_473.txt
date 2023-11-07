@@ -5,7 +5,7 @@ state={
 		owner = MAG
 		add_core_of = MAG
 		victory_points = {
-			15189 7
+			15189 5
 		}
 		buildings = {
 			infrastructure = 2

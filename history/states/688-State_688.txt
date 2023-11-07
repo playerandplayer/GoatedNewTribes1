@@ -5,7 +5,7 @@ state={
 		owner = CEN
 		add_core_of = CEN
 		victory_points = {
-			5395 16
+			5395 5
 		}
 		buildings = {
 			infrastructure = 2

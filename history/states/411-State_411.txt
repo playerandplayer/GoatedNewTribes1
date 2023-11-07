@@ -13,10 +13,19 @@ state={
 		owner = PAZ
 		add_core_of = PAZ
 		victory_points = {
-			14285 18
+			8038 25
 		}
 		victory_points = {
-			14371 33
+			14018 25
+		}
+		victory_points = {
+			14081 25
+		}
+		victory_points = {
+			14371 50
+		}
+		victory_points = {
+			14229 25
 		}
 		buildings = {
 			infrastructure = 3

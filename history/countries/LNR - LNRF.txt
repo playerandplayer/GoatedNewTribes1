@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 7
-	communism = 62
+	absolute_monarchy = 0
+	authoritarian = 13
 	fascism = 18
-	neutrality = 13
+	anarchism = 0
+	social_democracy = 7
+	democratic_socialism = 20
+	stalinism = 42
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = stalinism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_HASHEEM_STRICKLAND_DESC"
 	picture = "gfx/leaders/LordLuxembourg.dds"
 	expire = "1976.3.18"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_RIKKI_WOODLAND_DESC"
 	picture = "gfx/leaders/LordLuxembourg.dds"
 	expire = "1973.7.1"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_JESSEY_HELLIER_DESC"
 	picture = "gfx/leaders/LordLuxembourg.dds"
 	expire = "1968.9.21"
-	ideology = oligarchism
+	ideology = despotism
 	traits = {
 	}
 }

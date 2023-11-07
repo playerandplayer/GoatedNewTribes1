@@ -147,14 +147,19 @@ if = {
 }
 
 set_popularities = {
-	democratic = 60
-	communism = 10
+	absolute_monarchy = 0
+	authoritarian = 0
 	fascism = 0
-	neutrality = 30
+	anarchism = 30
+	social_democracy = 60
+	democratic_socialism = 10
+	stalinism = 0
+	religious = 0
+	
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = anarchism
 	last_election = "1935.11.8"
 	election_frequency = 24
 	elections_allowed = Yes
@@ -165,7 +170,7 @@ create_country_leader = {
 	desc = "POLITICS_CHADDIE_KIRK_DESC"
 	picture = "gfx/leaders/Leslie.dds"
 	expire = "1970.9.25"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +180,7 @@ create_country_leader = {
 	desc = "POLITICS_NEVIL_JOWETT_DESC"
 	picture = "gfx/leaders/Leslie.dds"
 	expire = "1977.2.10"
-	ideology = stalinism
+	ideology = democratic_socialist
 	traits = {
 	}
 }
@@ -185,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_HAYDON_EALES_DESC"
 	picture = "gfx/leaders/Leslie.dds"
 	expire = "1969.4.1"
-	ideology = rexism
+	ideology = anarchism
 	traits = {
 	}
 }
@@ -195,7 +200,7 @@ create_country_leader = {
 	desc = "POLITICS_VENKAT_LONG_DESC"
 	picture = "gfx/leaders/Leslie.dds"
 	expire = "1972.5.13"
-	ideology = centrism
+	ideology = despotism
 	traits = {
 	}
 }

@@ -5,7 +5,7 @@ state={
 		owner = GOA
 		add_core_of = GOA
 		victory_points = {
-			13849 11
+			13849 5
 		}
 		buildings = {
 			infrastructure = 5

@@ -147,10 +147,14 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 0
+	absolute_monarchy = 0
+	authoritarian = 30
 	fascism = 70
-	neutrality = 30
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_RANDELL_NERO_DESC"
 	picture = "gfx/leaders/ihavenoidea.dds"
 	expire = "1965.10.19"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_NORWOOD_ALLEN_DESC"
 	picture = "gfx/leaders/ihavenoidea.dds"
 	expire = "1979.6.15"
-	ideology = gen_nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_EGBERT_LYONS_DESC"
 	picture = "gfx/leaders/ihavenoidea.dds"
 	expire = "1970.10.19"
-	ideology = oligarchism
+	ideology = despotism
 	traits = {
 	}
 }

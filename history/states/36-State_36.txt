@@ -9,10 +9,10 @@ state={
 		owner = JUT
 		add_core_of = JUT
 		victory_points = {
-			3067 14
+			3067 5
 		}
 		victory_points = {
-			3812 33
+			3812 5
 		}
 		buildings = {
 			infrastructure = 3

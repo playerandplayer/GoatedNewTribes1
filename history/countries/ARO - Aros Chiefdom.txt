@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 30
-	communism = 25
+	absolute_monarchy = 0
+	authoritarian = 35
 	fascism = 5
-	neutrality = 40
+	anarchism = 5
+	social_democracy = 30
+	democratic_socialism = 20
+	stalinism = 5
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_DRAKE_HOPES_DESC"
 	picture = "gfx/leaders/Bjex.dds"
 	expire = "1968.4.20"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_GIANCARLO_TAYLER_DESC"
 	picture = "gfx/leaders/Bjex.dds"
 	expire = "1969.1.9"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_ASH_DOUGHERTY_DESC"
 	picture = "gfx/leaders/Bjex.dds"
 	expire = "1978.5.6"
-	ideology = oligarchism
+	ideology = despotism
 	traits = {
 	}
 }

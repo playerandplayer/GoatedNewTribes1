@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 23
-	communism = 17
+	absolute_monarchy = 50
+	authoritarian = 0
 	fascism = 10
-	neutrality = 50
+	anarchism = 0
+	social_democracy = 33
+	democratic_socialism = 0
+	stalinism = 17
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = absolute_monarchy
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_ANGEL_GREENALL_DESC"
 	picture = "gfx/leaders/John Adams.dds"
 	expire = "1973.7.26"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_LANE_FAIRHURST_DESC"
 	picture = "gfx/leaders/John Adams.dds"
 	expire = "1970.8.5"
-	ideology = leninism
+	ideology = absolutism
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_TITUS_EAST_DESC"
 	picture = "gfx/leaders/John Adams.dds"
 	expire = "1975.8.14"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_GERE_SALMON_DESC"
 	picture = "gfx/leaders/John Adams.dds"
 	expire = "1978.6.8"
-	ideology = anarchism
+	ideology = despotism
 	traits = {
 	}
 }

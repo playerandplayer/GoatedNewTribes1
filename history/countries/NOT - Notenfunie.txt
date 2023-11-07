@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 0
+	absolute_monarchy = 0
+	authoritarian = 60
 	fascism = 40
-	neutrality = 60
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_KIT_GLOVER_DESC"
 	picture = "gfx/leaders/Cereal Senpai OwO.dds"
 	expire = "1977.7.5"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_FLEMING_EPTON_DESC"
 	picture = "gfx/leaders/Cereal Senpai OwO.dds"
 	expire = "1978.8.9"
-	ideology = rexism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_MATTY_ROSSER_DESC"
 	picture = "gfx/leaders/Cereal Senpai OwO.dds"
 	expire = "1970.3.10"
-	ideology = moderatism
+	ideology = despotism
 	traits = {
 	}
 }

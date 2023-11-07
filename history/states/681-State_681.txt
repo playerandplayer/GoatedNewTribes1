@@ -5,7 +5,7 @@ state={
 		owner = ELO
 		add_core_of = ELO
 		victory_points = {
-			1786 16
+			1786 5
 		}
 		buildings = {
 			infrastructure = 2

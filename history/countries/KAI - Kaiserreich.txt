@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 40
-	neutrality = 60
+	absolute_monarchy = 60
+	authoritarian = 20
+	fascism = 20
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = absolute_monarchy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_ALEKSANDRS_RAEBURN_DESC"
 	picture = "gfx/leaders/Smoot.dds"
 	expire = "1979.6.13"
-	ideology = conservatism
+	ideology = absolutism
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_BRANT_GORDON_DESC"
 	picture = "gfx/leaders/Smoot.dds"
 	expire = "1970.7.17"
-	ideology = leninism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_THAIN_PACKER_DESC"
 	picture = "gfx/leaders/Smoot.dds"
 	expire = "1969.4.11"
-	ideology = nazism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_SEYMOUR_BEECH_DESC"
 	picture = "gfx/leaders/Smoot.dds"
 	expire = "1974.3.16"
-	ideology = despotism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

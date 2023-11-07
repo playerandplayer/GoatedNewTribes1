@@ -147,14 +147,19 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 2
-	fascism = 28
-	neutrality = 70
+	absolute_monarchy = 50
+	authoritarian = 30
+	fascism = 20
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
+	
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = absolute_monarchy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,37 +170,7 @@ create_country_leader = {
 	desc = "POLITICS_LEONARD_ALLUM_DESC"
 	picture = "gfx/leaders/Yorkshire.dds"
 	expire = "1971.7.26"
-	ideology = socialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Yorkshire"
-	desc = "POLITICS_LEOPOLD_DANIELS_DESC"
-	picture = "gfx/leaders/Yorkshire.dds"
-	expire = "1977.4.20"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "electric"
-	desc = "POLITICS_JERMAIN_ANNAN_DESC"
-	picture = "gfx/leaders/electric.dds"
-	expire = "1967.10.3"
-	ideology = rexism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Yorkshire"
-	desc = "POLITICS_HANSON_INGLES_DESC"
-	picture = "gfx/leaders/Yorkshire.dds"
-	expire = "1975.7.25"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
 	}
 }

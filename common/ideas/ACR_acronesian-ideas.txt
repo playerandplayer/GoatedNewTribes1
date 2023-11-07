@@ -1,0 +1,202 @@
+ideas = {
+	country = {
+
+		ACR_develope_the_island = {
+			picture = ACR_develope_the_island-122647
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		ACR_industrial_developement = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.3
+				production_speed_naval_base_factor = 0.3
+
+			}
+		}
+
+		ACR_resource_extraction = {
+			picture = ACR_resource_extraction-1452
+			modifier = {
+				state_resources_factor = 0.2
+			}
+		}
+		
+		ACR_focus_on_civs = {
+			picture = ACR_resource_extraction-1452
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		
+		ACR_focus_on_mills = {
+			picture = ACR_resource_extraction-1452
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		ACR_a_naval_industry = {
+			picture = ACR_a_mega_industry-1060
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.2
+				production_speed_naval_base_factor = 0.2
+
+			}
+		}
+
+		ACR_infrastructure_improvements_i = {
+			picture = ACR_infrastructure_improvements_i-1428
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_railways_factor = 0.2
+				production_speed_supply_node_factor = 1
+
+
+			}
+		}
+
+		ACR_infrastructure_improvements_ii = {
+			picture = ACR_infrastructure_improvements_ii-1428
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_railways_factor = 1
+				production_speed_supply_node_factor = 5
+			}
+		}
+
+		ACR_oil_refineries = {
+			picture = ACR_oil_refineries-1532
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+		}
+		
+		ACR_better_infantry_production = {
+			picture = ACR_develope_the_island-122647
+				equipment_bonus = {
+					infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			
+		}
+		
+		ACR_better_artillery_production = {
+			picture = ACR_develope_the_island-122647
+			equipment_bonus = {
+					artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ACR_better_tank_production = {
+			picture = ACR_develope_the_island-122647
+			equipment_bonus = {
+					light_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			equipment_bonus = {
+					medium_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			equipment_bonus = {
+					heavy_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			equipment_bonus = {
+					modern_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ACR_better_fighter_production = {
+			picture = ACR_develope_the_island-122647
+				equipment_bonus = {
+					fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				
+			}
+		}
+		
+		ACR_better_cas_production = {
+			picture = ACR_develope_the_island-122647
+				equipment_bonus = {
+					cas_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				
+			}
+		}
+		
+		ACR_better_bomber_production = {
+			picture = ACR_develope_the_island-122647
+				equipment_bonus = {
+					tac_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+				equipment_bonus = {
+					strat_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+			}
+		}
+		
+		ACR_better_submarine_production = {
+			picture = ACR_develope_the_island-122647
+			equipment_bonus = {
+					ship_hull_submarine = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ACR_better_destroyer_production = {
+			picture = ACR_develope_the_island-122647
+			equipment_bonus = {
+					ship_hull_light = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ACR_better_battleship_production = {
+			picture = ACR_develope_the_island-122647
+			equipment_bonus = {
+					battleship = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		
+	}
+}

@@ -13,7 +13,10 @@ state={
 		owner = FRO
 		add_core_of = FRO
 		victory_points = {
-			14649 13
+			14649 5
+		}
+		victory_points = {
+			1267 50
 		}
 		buildings = {
 			infrastructure = 3

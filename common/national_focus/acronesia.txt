@@ -1,0 +1,1378 @@
+focus_tree = {
+	id = acronesia
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ACR
+		}
+	}
+	#The Acronesian Industrial Plan
+	focus = {
+		id = ACR_the_acronesian_industrial_plan
+		icon = GFX_focus_generic_industry_3
+		x = 10
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			add_timed_idea = { idea = ACR_industrial_developement  days = 730 }
+		}
+	}
+
+	#Get Resources From The Ocean
+	focus = {
+		id = ACR_get_resources_from_the_ocean
+		icon = GFX_focus_generic_rubber
+		x = 7
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_the_acronesian_industrial_plan  }
+		completion_reward = {
+			add_ideas = ACR_resource_extraction
+		}
+	}
+
+	#Develope The Island
+	focus = {
+		id = ACR_develope_the_island
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 13
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available = {
+			owns_state = 52
+		}
+		prerequisite = { focus = ACR_the_acronesian_industrial_plan  }
+		completion_reward = {
+			add_ideas = ACR_develope_the_island
+		}
+	}
+
+	#Fortify Our Islands
+	focus = {
+		id = ACR_fortify_our_islands
+		icon = GFX_goal_generic_fortify_city
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		available = {
+			owns_state = 52
+		}
+		prerequisite = { focus = ACR_get_resources_from_the_ocean  }
+	}
+
+	#Oil Refineries
+	focus = {
+		id = ACR_oil_refineries
+		icon = GFX_goal_generic_oil_refinery
+		x = 8
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_get_resources_from_the_ocean  }
+		completion_reward = {
+			add_ideas = ACR_oil_refineries
+		}
+	}
+
+	#Fortify The Mainland
+	focus = {
+		id = ACR_fortify_the_mainland
+		icon = GFX_goal_generic_fortify_city
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_fortify_our_islands  }
+	}
+
+	#Fortify Our Home
+	focus = {
+		id = ACR_fortify_our_home
+		icon = GFX_goal_generic_fortify_city
+		x = 6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_fortify_the_mainland  }
+	}
+
+	#Resource Improvements
+	focus = {
+		id = ACR_resource_improvements
+		icon = GFX_focus_generic_rubber
+		x = 8
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_oil_refineries  }
+		completion_reward = {
+			add_ideas = ACR_resource_extraction
+		}
+	}
+
+	#Improve Our Production
+	focus = {
+		id = ACR_improve_our_production
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_resource_improvements  }
+	}
+
+	#The Acronesian Naval Industry
+	focus = {
+		id = ACR_the_acronesian_naval_industry
+		icon = GFX_goal_generic_production2
+		x = 7
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_improve_our_production  } prerequisite = { focus = ACR_fortify_our_home  }
+		completion_reward = {
+			add_ideas = ACR_a_naval_industry
+		}
+	}
+
+	#Clashgamer's Industrial Plan
+	focus = {
+		id = ACR_clashgamersindustrialplan
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_develope_the_island  }
+		mutually_exclusive = { focus = ACR_oraclesindustrialplan  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		
+		completion_reward = {
+			add_timed_idea = { idea = ACR_focus_on_mills days = 365 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Oracle's Industrial Plan
+	focus = {
+		id = ACR_oraclesindustrialplan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_develope_the_island  }
+		mutually_exclusive = { focus = ACR_clashgamersindustrialplan  }
+		
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		completion_reward = {
+		add_timed_idea = { idea = ACR_focus_on_civs days = 365 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+	}
+
+	#Further Industrial Developement
+	focus = {
+		id = ACR_further_industrial_developement
+		icon = GFX_goal_generic_construct_civilian
+		x = 13
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_clashgamersindustrialplan  focus = ACR_oraclesindustrialplan  }
+	}
+
+	#Military Industry I
+	focus = {
+		id = ACR_military_industry_i
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 11
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_further_industrial_developement  }
+	}
+
+	#Military Industry II
+	focus = {
+		id = ACR_military_industry_ii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 11
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_military_industry_i  }
+		mutually_exclusive = { focus = ACR_civilian_industry_ii  }
+	}
+
+	#Civilian Industry I
+	focus = {
+		id = ACR_civilian_industry_i
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_further_industrial_developement  }
+	}
+
+	#Civilian Industry II
+	focus = {
+		id = ACR_civilian_industry_ii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_civilian_industry_i  }
+		mutually_exclusive = { focus = ACR_military_industry_ii  }
+	}
+
+	#Infrastructure Improvements I
+	focus = {
+		id = ACR_infrastructure_improvements_i
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_further_industrial_developement  }
+	}
+
+	#Infrastructure Improvements II
+	focus = {
+		id = ACR_infrastructure_improvements_ii
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 15
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_infrastructure_improvements_i  }
+	}
+
+	#Improve Our Mainland Industry
+	focus = {
+		id = ACR_improve_our_mainland_industry
+		icon = GFX_goal_generic_construct_civilian
+		x = 13
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_civilian_industry_ii  } prerequisite = { focus = ACR_infrastructure_improvements_ii  focus = ACR_military_industry_ii  } prerequisite = { focus = ACR_infrastructure_improvements_ii  }
+	}
+
+	#Modernize Our Nation
+	focus = {
+		id = ACR_modernize_our_nation
+		icon = GFX_focus_chi_army_reform
+		x = 28
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+		}
+	}
+
+	#To The Army
+	focus = {
+		id = ACR_to_the_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 22
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_modernize_our_nation  }
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#To The Airforce
+	focus = {
+		id = ACR_to_the_airforce
+		icon = GFX_goal_generic_air_doctrine
+		x = 28
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_modernize_our_nation  }
+		completion_reward = {
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				category = air_doctrine
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#To The Navy
+	focus = {
+		id = ACR_to_the_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 34
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_modernize_our_nation  }
+		completion_reward = {
+			navy_experience = 50
+			add_doctrine_cost_reduction = {
+				category = naval_doctrine
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#Infantry Research
+	focus = {
+		id = ACR_infantry_research
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 20
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_army  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = infantry_weapons
+			}
+		}
+	}
+
+	#Better Infantry Production
+	focus = {
+		id = ACR_better_infantry_production
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 20
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_infantry_research  }
+		mutually_exclusive = { focus = ACR_better_artillery_production  } mutually_exclusive = { focus = ACR_better_tank_production  }
+		completion_reward = {
+			add_ideas = ACR_better_infantry_production
+		}
+	}
+
+	#Artillery Research
+	focus = {
+		id = ACR_artillery_research
+		icon = GFX_goal_generic_army_artillery2
+		x = 22
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_army  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+
+	#Better Artillery Production
+	focus = {
+		id = ACR_better_artillery_production
+		icon = GFX_goal_generic_army_artillery2
+		x = 22
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_artillery_research  }
+		mutually_exclusive = { focus = ACR_better_infantry_production  } mutually_exclusive = { focus = ACR_better_tank_production  }
+		completion_reward = {
+			add_ideas = ACR_better_artillery_production
+		}
+	}
+
+	#Tank Research
+	focus = {
+		id = ACR_tank_research
+		icon = GFX_goal_generic_army_tanks
+		x = 24
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_army  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = armor
+			}
+		}
+	}
+
+	#Better Tank Production
+	focus = {
+		id = ACR_better_tank_production
+		icon = GFX_goal_generic_army_tanks
+		x = 24
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_tank_research  }
+		mutually_exclusive = { focus = ACR_better_infantry_production  } mutually_exclusive = { focus = ACR_better_artillery_production  }
+		completion_reward = {
+			add_ideas = ACR_better_tank_production
+		}
+	}
+
+	#Fighter Research
+	focus = {
+		id = ACR_fighter_research
+		icon = GFX_goal_generic_air_fighter2
+		x = 26
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_airforce  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = light_air
+				category = plane_modules_tech
+			}
+		}
+	}
+
+	#Better Fighter Production
+	focus = {
+		id = ACR_better_fighter_production
+		icon = GFX_goal_generic_air_fighter2
+		x = 26
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_fighter_research  }
+		mutually_exclusive = { focus = ACR_better_cas_production  } mutually_exclusive = { focus = ACR_better_bomber_production  }
+		completion_reward = {
+			add_ideas = ACR_better_fighter_production
+		}
+	}
+
+	#CAS Research
+	focus = {
+		id = ACR_cas_research
+		icon = GFX_goal_generic_air_fighter
+		x = 28
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_airforce  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = medium_air
+				category = plane_modules_tech
+			}
+		}
+	}
+
+	#Better CAS Production
+	focus = {
+		id = ACR_better_cas_production
+		icon = GFX_goal_generic_air_fighter
+		x = 28
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_cas_research  }
+		mutually_exclusive = { focus = ACR_better_fighter_production  } mutually_exclusive = { focus = ACR_better_bomber_production  }
+		completion_reward = {
+			add_ideas = ACR_better_cas_production
+		}
+		
+	}
+
+	#Bomber Research
+	focus = {
+		id = ACR_bomber_research
+		icon = GFX_goal_generic_air_bomber
+		x = 30
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_airforce  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = heavy_air
+				category = plane_modules_tech
+			}
+		}
+	}
+
+	#Better Bomber Production
+	focus = {
+		id = ACR_better_bomber_production
+		icon = GFX_goal_generic_air_bomber
+		x = 30
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_bomber_research  }
+		mutually_exclusive = { focus = ACR_better_fighter_production  } mutually_exclusive = { focus = ACR_better_cas_production  }
+		completion_reward = {
+			add_ideas = ACR_better_bomber_production
+		}
+	}
+
+	#Submarine Research
+	focus = {
+		id = ACR_submarine_research
+		icon = GFX_goal_generic_navy_submarine
+		x = 32
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_navy  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
+	#Better Submarines
+	focus = {
+		id = ACR_better_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 32
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_submarine_research  }
+		mutually_exclusive = { focus = ACR_better_destroyers  } mutually_exclusive = { focus = ACR_better_battleships  }
+		completion_reward = {
+			add_ideas = ACR_better_submarine_production
+
+		}
+	}
+
+	#Destroyer Research
+	focus = {
+		id = ACR_destroyer_research
+		icon = GFX_focus_generic_destroyer
+		x = 34
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_navy  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+
+	#Better Destroyers
+	focus = {
+		id = ACR_better_destroyers
+		icon = GFX_focus_generic_destroyer
+		x = 34
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_destroyer_research  }
+		mutually_exclusive = { focus = ACR_better_submarines  } mutually_exclusive = { focus = ACR_better_battleships  }
+		completion_reward = {
+			add_ideas = ACR_better_destroyer_production
+		}
+	}
+
+	#Battleship Research
+	focus = {
+		id = ACR_battleship_research
+		icon = GFX_ACR_battleship_research-404
+		x = 36
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_to_the_navy  }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+
+	#Better Battleships
+	focus = {
+		id = ACR_better_battleships
+		icon = GFX_ACR_better_battleships-404
+		x = 36
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_battleship_research  }
+		mutually_exclusive = { focus = ACR_better_submarines  } mutually_exclusive = { focus = ACR_better_destroyers  }
+		completion_reward = {
+			add_ideas = ACR_better_battleship_production
+		}
+	}
+
+	#Army Doctrine
+	focus = {
+		id = ACR_army_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 22
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_better_infantry_production  focus = ACR_better_artillery_production  focus = ACR_better_tank_production  }
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#Air Doctrine
+	focus = {
+		id = ACR_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		x = 28
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_better_fighter_production  focus = ACR_better_cas_production  focus = ACR_better_bomber_production  }
+		completion_reward = {
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				category = air_doctrine
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#Naval Doctrine
+	focus = {
+		id = ACR_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 34
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_better_submarines  focus = ACR_better_destroyers  focus = ACR_better_battleships  }
+		completion_reward = {
+			navy_experience = 50
+			add_doctrine_cost_reduction = {
+				category = naval_doctrine
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#Infantry Air Support
+	focus = {
+		id = ACR_infantry_air_support
+		icon = GFX_goal_generic_CAS
+		x = 25
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_army_doctrine  } prerequisite = { focus = ACR_air_doctrine  }
+		completion_reward = {
+			army_experience = 50
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				category = cat_battlefield_support
+				uses = 2
+				cost_reduction = 0.5
+			}
+		}
+	}
+
+	#Naval Aviation
+	focus = {
+		id = ACR_naval_aviation
+		icon = GFX_goal_generic_air_fighter2
+		x = 31
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_air_doctrine  } prerequisite = { focus = ACR_naval_doctrine  }
+		completion_reward = {
+			air_experience = 50
+			navy_experience = 50
+			add_doctrine_cost_reduction = {
+				category = cat_base_strike
+				uses = 2
+				cost_reduction = 0.5
+			}
+		
+		}
+	}
+
+	#Our Allies To The West
+	focus = {
+		id = ACR_our_allies_to_the_west
+		icon = GFX_goal_generic_major_alliance
+		x = 48
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_condemn_can  } mutually_exclusive = { focus = ACR_play_both_sides  }
+	}
+
+	#Sign The Non-Aggression-Pact
+	focus = {
+		id = ACR_sign_the_nonaggressionpact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 49
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_our_allies_to_the_west  focus = ACR_play_both_sides  }
+	}
+
+	#An Alliance With The Nomads
+	focus = {
+		id = ACR_an_alliance_with_the_nomads
+		icon = GFX_goal_generic_alliance
+		x = 48
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_closer_ties_to_can  } prerequisite = { focus = ACR_sign_the_nonaggressionpact  }
+	}
+
+	#Closer Ties to CAN
+	focus = {
+		id = ACR_closer_ties_to_can
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 47
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_our_allies_to_the_west  }
+	}
+
+	#The Prospect Of A Union
+	focus = {
+		id = ACR_the_prospect_of_a_union
+		icon = GFX_focus_AST_rats_tobruk
+		x = 47
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_an_alliance_with_the_nomads  }
+	}
+
+	#Economic Cooperation
+	focus = {
+		id = ACR_economic_cooperation
+		icon = GFX_focus_generic_industry_1
+		x = 49
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_an_alliance_with_the_nomads  }
+	}
+
+	#Enact Diplomacy Through CAN
+	focus = {
+		id = ACR_enact_diplomacy_through_can
+		icon = GFX_ACR_enact_diplomacy_through_can-59
+		x = 47
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_the_prospect_of_a_union  } prerequisite = { focus = ACR_economic_cooperation  }
+	}
+
+	#Economic Integration
+	focus = {
+		id = ACR_economic_integration
+		icon = GFX_focus_generic_industry_2
+		x = 49
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_economic_cooperation  }
+	}
+
+	#Extra Research Slot
+	focus = {
+		id = ACR_extra_research_slot
+		icon = GFX_focus_research
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_improve_our_production  }
+	}
+
+	#Become A Part Of The Central Asian Nomads
+	focus = {
+		id = ACR_become_a_part_of_the_central_asian_nomads
+		icon = GFX_goal_anschluss
+		x = 48
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_enact_diplomacy_through_can  } prerequisite = { focus = ACR_economic_integration  }
+	}
+
+	#Elon Musk!
+	focus = {
+		id = ACR_elonmusk
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 55
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_condemn_can  }
+		mutually_exclusive = { focus = ACR_yorkshire  }
+	}
+
+	#Condemn CAN
+	focus = {
+		id = ACR_condemn_can
+		icon = GFX_goal_generic_political_pressure
+		x = 57
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_our_allies_to_the_west  } mutually_exclusive = { focus = ACR_play_both_sides  }
+	}
+
+	#The Secret Agreement
+	focus = {
+		id = ACR_the_secret_agreement
+		icon = GFX_goal_generic_forceful_treaty
+		x = 53
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_play_both_sides  }
+	}
+
+	#Play Both Sides
+	focus = {
+		id = ACR_play_both_sides
+		icon = GFX_goal_generic_neutrality_focus
+		x = 51
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_our_allies_to_the_west  } mutually_exclusive = { focus = ACR_condemn_can  }
+	}
+
+	#Yorkshire!
+	focus = {
+		id = ACR_yorkshire
+		icon = GFX_focus_generic_befriend_turkey
+		x = 59
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_condemn_can  }
+		mutually_exclusive = { focus = ACR_elonmusk  }
+	}
+
+	#Join The FUP
+	focus = {
+		id = ACR_join_the_fup
+		icon = GFX_goal_generic_alliance
+		x = 54
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_elonmusk  focus = ACR_the_secret_agreement  }
+	}
+
+	#Invest In The Volcano
+	focus = {
+		id = ACR_invest_in_the_volcano
+		icon = GFX_goal_generic_production
+		x = 56
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_elonmusk  }
+	}
+
+	#Fortify The Border With CAN
+	focus = {
+		id = ACR_fortify_the_border_with_can
+		icon = GFX_goal_generic_fortify_city
+		x = 56
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ACR_invest_in_the_volcano  }
+	}
+
+	#An Empire For Ourselves
+	focus = {
+		id = ACR_an_empire_for_ourselves
+		icon = GFX_goal_generic_demand_territory
+		x = 55
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_elonmusk  } prerequisite = { focus = ACR_join_the_fup  }
+	}
+
+	#The FUP Emergency Meeting
+	focus = {
+		id = ACR_the_fup_emergency_meeting
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 52
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			always = no
+			
+			
+		}
+	}
+
+	#Profits From Both Sides
+	focus = {
+		id = ACR_profits_from_both_sides
+		icon = GFX_focus_generic_self_management
+		x = 53
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_the_secret_agreement  } prerequisite = { focus = ACR_join_the_fup  }
+	}
+
+	#Peace Secured!
+	focus = {
+		id = ACR_peacesecured
+		icon = GFX_goal_tripartite_pact
+		x = 51
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_the_fup_emergency_meeting  }
+		available = {
+			always = no
+			
+			
+		}
+	}
+
+	#There Will Be No Peace!
+	focus = {
+		id = ACR_therewillbenopeace
+		icon = GFX_goal_generic_major_war
+		x = 53
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_the_fup_emergency_meeting  }
+		available = {
+			always = no
+			
+			
+		}
+	}
+
+	#Destroy The Nomads
+	focus = {
+		id = ACR_destroy_the_nomads
+		icon = GFX_goal_demand_sudetenland
+		x = 55
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_an_empire_for_ourselves  } prerequisite = { focus = ACR_therewillbenopeace  }
+	}
+
+	#The Question Of Gachidemia
+	focus = {
+		id = ACR_the_question_of_gachidemia
+		icon = GFX_focus_AST_war_japan
+		x = 55
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_destroy_the_nomads  }
+	}
+
+	#Believe In Allah
+	focus = {
+		id = ACR_believe_in_allah
+		icon = GFX_focus_generic_concessions
+		x = 58
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_yorkshire  }
+	}
+
+	#The World Is Our Enemy
+	focus = {
+		id = ACR_the_world_is_our_enemy
+		icon = GFX_goal_generic_major_war
+		x = 60
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_yorkshire  }
+	}
+
+	#Denounce Oracle
+	focus = {
+		id = ACR_denounce_oracle
+		icon = GFX_goal_generic_propaganda
+		x = 58
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_believe_in_allah  } prerequisite = { focus = ACR_the_world_is_our_enemy  }
+	}
+
+	#Prepare For The Coup
+	focus = {
+		id = ACR_prepare_for_the_coup
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 60
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_believe_in_allah  } prerequisite = { focus = ACR_the_world_is_our_enemy  }
+	}
+
+	#OUR MOST IMPORTANT HOUR
+	focus = {
+		id = ACR_our_most_important_hour
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 59
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_denounce_oracle  } prerequisite = { focus = ACR_prepare_for_the_coup  }
+	}
+
+	#Friendship Missions To Yorkshire
+	focus = {
+		id = ACR_friendship_missions_to_yorkshire
+		icon = GFX_goal_generic_improve_relations
+		x = 62
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_yorkshire  }
+	}
+
+	#Investments From Yorkshire
+	focus = {
+		id = ACR_investments_from_yorkshire
+		icon = GFX_goal_generic_production
+		x = 62
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_friendship_missions_to_yorkshire  }
+	}
+
+	#Research Cooperation With Yorkshire
+	focus = {
+		id = ACR_research_cooperation_with_yorkshire
+		icon = GFX_focus_research2
+		x = 62
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_investments_from_yorkshire  }
+	}
+
+	#Formulate An Alliance
+	focus = {
+		id = ACR_formulate_an_alliance
+		icon = GFX_goal_generic_alliance
+		x = 59
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_our_most_important_hour  } prerequisite = { focus = ACR_research_cooperation_with_yorkshire  }
+	}
+
+}

@@ -1,0 +1,45 @@
+spriteTypes = { 
+	##Icon For: Develope The Island
+	SpriteType = { 
+		name = "GFX_idea_ACR_develope_the_island-122647"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_develope_the_island-122647.dds"
+	}
+
+	##Icon For: Industrial Developement
+	SpriteType = { 
+		name = "GFX_idea_ACR_industrial_developement-122465"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_industrial_developement-122465.dds"
+	}
+
+	##Icon For: Resource Extraction
+	SpriteType = { 
+		name = "GFX_idea_ACR_resource_extraction-1452"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_resource_extraction-1452.dds"
+	}
+
+	##Icon For: A Mega Industry
+	SpriteType = { 
+		name = "GFX_idea_ACR_a_mega_industry-1060"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_a_mega_industry-1060.dds"
+	}
+
+	##Icon For: Infrastructure Improvements I
+	SpriteType = { 
+		name = "GFX_idea_ACR_infrastructure_improvements_i-1428"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_infrastructure_improvements_i-1428.dds"
+	}
+
+	##Icon For: Infrastructure Improvements II
+	SpriteType = { 
+		name = "GFX_idea_ACR_infrastructure_improvements_ii-1428"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_infrastructure_improvements_ii-1428.dds"
+	}
+
+	##Icon For: Oil Refineries
+	SpriteType = { 
+		name = "GFX_idea_ACR_oil_refineries-1532"
+		texturefile = "gfx/interface/ideas/acronesian-ideas-ideas/ACR_oil_refineries-1532.dds"
+	}
+
+ 
+ }

@@ -5,7 +5,10 @@ state={
 		owner = VES
 		add_core_of = VES
 		victory_points = {
-			19497 15
+			19497 5
+		}
+		victory_points = {
+			4291 25
 		}
 		buildings = {
 			infrastructure = 2

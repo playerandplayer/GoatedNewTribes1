@@ -13,10 +13,10 @@ state={
 		owner = KAI
 		add_core_of = KAI
 		victory_points = {
-			1238 8
+			1238 5
 		}
 		victory_points = {
-			12665 31
+			12665 5
 		}
 		buildings = {
 			infrastructure = 4

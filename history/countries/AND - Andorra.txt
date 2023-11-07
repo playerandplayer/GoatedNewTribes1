@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 90
-	communism = 10
+	absolute_monarchy = 0
+	authoritarian = 10
 	fascism = 0
-	neutrality = 0
+	anarchism = 0
+	social_democracy = 70
+	democratic_socialism = 10
+	stalinism = 10
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1935.11.8"
 	election_frequency = 12
 	elections_allowed = Yes
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_BENJI_CHRISTIE_DESC"
 	picture = "gfx/leaders/stupidengineer.dds"
 	expire = "1967.2.6"
-	ideology = socialism
+	ideology = democratic_socialist
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_DMITRI_GATES_DESC"
 	picture = "gfx/leaders/stupidengineer.dds"
 	expire = "1966.7.1"
-	ideology = anarchist_communism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_MATEO_RAFFERTY_DESC"
 	picture = "gfx/leaders/stupidengineer.dds"
 	expire = "1972.3.8"
-	ideology = gen_nazism
+	ideology = social_democrat
 	traits = {
 	}
 }

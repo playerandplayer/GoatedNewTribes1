@@ -13,10 +13,10 @@ state={
 		owner = WBR
 		add_core_of = WBR
 		victory_points = {
-			2997 17
+			2997 5
 		}
 		victory_points = {
-			12179 34
+			12179 5
 		}
 		buildings = {
 			infrastructure = 3

@@ -5,7 +5,7 @@ state={
 		owner = MTG
 		add_core_of = MTG
 		victory_points = {
-			14456 7
+			14456 5
 		}
 		buildings = {
 			infrastructure = 2

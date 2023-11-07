@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 60
-	communism = 10
+	absolute_monarchy = 0
+	authoritarian = 30
 	fascism = 0
-	neutrality = 30
+	anarchism = 0
+	social_democracy = 60
+	democratic_socialism = 0
+	stalinism = 10
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_LLEWELLYN_GELDART_DESC"
 	picture = "gfx/leaders/wiktox.dds"
 	expire = "1967.7.21"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -185,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_WALEED_VILLIS_DESC"
 	picture = "gfx/leaders/wiktox.dds"
 	expire = "1977.7.27"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

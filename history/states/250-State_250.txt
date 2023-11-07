@@ -4,9 +4,6 @@ state={
 	history = {
 		owner = XXX
 		add_core_of = XXX
-		victory_points = {
-			11236 18
-		}
 	}
 	provinces={
 		1932 4418 7050 7168 7255 7354 10780 10809 10991 11089 11217 11236 11345 11346 11433 11466 

@@ -148,14 +148,19 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 0
+
+	absolute_monarchy = 0
+	authoritarian = 60
 	fascism = 40
-	neutrality = 60
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 0
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -166,7 +171,7 @@ create_country_leader = {
 	desc = "POLITICS_ROBERTO_OLOUGHLIN_DESC"
 	picture = "gfx/leaders/finnik.dds"
 	expire = "1979.4.13"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -176,7 +181,7 @@ create_country_leader = {
 	desc = "POLITICS_ALESSANDRO_TOMPKIN_DESC"
 	picture = "gfx/leaders/finnik.dds"
 	expire = "1967.2.16"
-	ideology = marxism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -186,7 +191,7 @@ create_country_leader = {
 	desc = "POLITICS_QUENTIN_BINNINGTON_DESC"
 	picture = "gfx/leaders/finnik.dds"
 	expire = "1971.9.1"
-	ideology = nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -196,7 +201,7 @@ create_country_leader = {
 	desc = "POLITICS_BILLY_HURST_DESC"
 	picture = "gfx/leaders/finnik.dds"
 	expire = "1976.1.8"
-	ideology = centrism
+	ideology = despotism
 	traits = {
 	}
 }

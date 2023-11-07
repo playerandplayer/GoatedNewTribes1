@@ -7,6 +7,9 @@ state={
 	resources={
 		aluminium=70
 	}
+	victory_points = {
+		2676 25
+	}
 	buildings_max_level_factor=1.000
         manpower=358000
         state_category = metropolis

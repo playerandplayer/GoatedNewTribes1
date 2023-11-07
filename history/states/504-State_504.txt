@@ -13,7 +13,7 @@ state={
 		owner = LNR
 		add_core_of = LNR
 		victory_points = {
-			6992 17
+			6992 5
 		}
 		buildings = {
 			infrastructure = 3

@@ -5,10 +5,7 @@ state={
 		owner = ARO
 		add_core_of = ARO
 		victory_points = {
-			19255 8
-		}
-		victory_points = {
-			19255 33
+			19255 25
 		}
 		buildings = {
 			infrastructure = 3

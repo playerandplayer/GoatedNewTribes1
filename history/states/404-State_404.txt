@@ -5,7 +5,7 @@ state={
 		owner = PIN
 		add_core_of = PIN
 		victory_points = {
-			13146 12
+			13146 5
 		}
 		buildings = {
 			infrastructure = 3

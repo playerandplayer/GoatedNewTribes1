@@ -147,14 +147,19 @@ if = {
 }
 
 set_popularities = {
-	democratic = 1
-	communism = 12
+	absolute_monarchy = 0
+	authoritarian = 57
 	fascism = 30
-	neutrality = 57
+	anarchism = 0
+	social_democracy = 1
+	democratic_socialism = 0
+	stalinism = 12
+	religious = 0
+
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
@@ -165,7 +170,7 @@ create_country_leader = {
 	desc = "POLITICS_RAYMUND_VINNY_DESC"
 	picture = "gfx/leaders/Shiners.dds"
 	expire = "1965.10.6"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +180,7 @@ create_country_leader = {
 	desc = "POLITICS_JERAMIE_STOUT_DESC"
 	picture = "gfx/leaders/Shiners.dds"
 	expire = "1969.9.25"
-	ideology = anarchist_communism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -185,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_WIATT_LUMLEY_DESC"
 	picture = "gfx/leaders/Shiners.dds"
 	expire = "1965.8.19"
-	ideology = rexism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -195,7 +200,7 @@ create_country_leader = {
 	desc = "POLITICS_EHUD_REDFERN_DESC"
 	picture = "gfx/leaders/Shiners.dds"
 	expire = "1976.3.8"
-	ideology = moderatism
+	ideology = stalinism
 	traits = {
 	}
 }

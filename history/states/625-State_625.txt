@@ -5,10 +5,16 @@ state={
 		owner = CEN
 		add_core_of = CEN
 		victory_points = {
-			1018 2
+			1018 5
+		}
+		victory_points = {
+			18082 25
 		}
 		buildings = {
 			infrastructure = 2
+			18082 = {
+				naval_base = 1
+			}
 		}
 	}
 	provinces={

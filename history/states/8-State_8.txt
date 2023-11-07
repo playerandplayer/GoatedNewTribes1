@@ -5,7 +5,7 @@ state={
 		owner = ETA
 		add_core_of = ETA
 		victory_points = {
-			11742 2
+			11742 5
 		}
 		buildings = {
 			infrastructure = 2

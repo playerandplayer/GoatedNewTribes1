@@ -147,14 +147,19 @@ if = {
 }
 
 set_popularities = {
-	democratic = 60
-	communism = 30
+
+	absolute_monarchy = 0
+	authoritarian = 5
 	fascism = 5
-	neutrality = 5
+	anarchism = 0
+	social_democracy = 60
+	democratic_socialism = 0
+	stalinism = 30
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +170,7 @@ create_country_leader = {
 	desc = "POLITICS_ROURKE_DRIVER_DESC"
 	picture = "gfx/leaders/SirBuy.dds"
 	expire = "1972.6.6"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -185,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_STILLMANN_SINCLAIR_DESC"
 	picture = "gfx/leaders/SirBuy.dds"
 	expire = "1967.8.5"
-	ideology = falangism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -195,7 +200,7 @@ create_country_leader = {
 	desc = "POLITICS_BART_BRELSFORD_DESC"
 	picture = "gfx/leaders/SirBuy.dds"
 	expire = "1970.8.23"
-	ideology = oligarchism
+	ideology = fascism
 	traits = {
 	}
 }

@@ -4,6 +4,9 @@ state={
 	provinces={
 		309 2664 2942 3081 3416 4557 4723 5790 6519 6906 7790 17670 17679 17718 17739 17749 17767 17781 17816 17828 17879 17880 18031 18037 18060 18241 
 	}
+	victory_points = {
+		17739 25
+	}
 	buildings_max_level_factor=1.000
         manpower=160000
         state_category = town

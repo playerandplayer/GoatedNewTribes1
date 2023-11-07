@@ -147,14 +147,18 @@ if = {
 }
 
 set_popularities = {
-	democratic = 35
-	communism = 30
+	absolute_monarchy = 0
+	authoritarian = 25
 	fascism = 10
-	neutrality = 25
+	anarchism = 0
+	social_democracy = 35
+	democratic_socialism = 0
+	stalinism = 30
+	religious = 0
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_OSWALD_LAYCOCK_DESC"
 	picture = "gfx/leaders/Krosis$.dds"
 	expire = "1979.7.4"
-	ideology = conservatism
+	ideology = social_democracy
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_SANFORD_GARBER_DESC"
 	picture = "gfx/leaders/Krosis$.dds"
 	expire = "1974.5.9"
-	ideology = marxism
+	ideology = stalinism
 	traits = {
 	}
 }

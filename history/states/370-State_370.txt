@@ -13,8 +13,13 @@ state={
 		owner = SPJ
 		add_core_of = SPJ
 		victory_points = {
-			12995 12
+			12995 5
 		}
+		victory_points = {
+			13194 25
+		}
+		
+		
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 10

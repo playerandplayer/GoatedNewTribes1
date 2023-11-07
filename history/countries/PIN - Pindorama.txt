@@ -147,10 +147,14 @@ if = {
 }
 
 set_popularities = {
-	democratic = 50
-	communism = 30
+	absolute_monarchy = 0
+	authoritarian = 10
 	fascism = 10
-	neutrality = 10
+	anarchism = 0
+	social_democracy = 50
+	democratic_socialism = 0
+	stalinism = 30
+	religious = 0
 }
 
 set_politics = {
@@ -165,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_HUSSEIN_ELDRIDGE_DESC"
 	picture = "gfx/leaders/Flumenise.dds"
 	expire = "1973.2.15"
-	ideology = conservatism
+	ideology = social_democrat
 	traits = {
 	}
 }
@@ -175,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_JORDAN_ROFF_DESC"
 	picture = "gfx/leaders/Flumenise.dds"
 	expire = "1967.5.14"
-	ideology = anarchist_communism
+	ideology = stalinism
 	traits = {
 	}
 }
@@ -195,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_NELSEN_JOHNSON_DESC"
 	picture = "gfx/leaders/Flumenise.dds"
 	expire = "1967.2.17"
-	ideology = centrism
+	ideology = despotism
 	traits = {
 	}
 }
