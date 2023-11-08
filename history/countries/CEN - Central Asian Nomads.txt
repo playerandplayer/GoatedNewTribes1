@@ -6,6 +6,10 @@ set_stability = 0.4
 
 set_war_support = 0.6
 
+add_ideas = CEN_nomad_society
+add_ideas = CEN_the_great_outback
+add_ideas = CEN_the_noble_court
+
 add_political_power = 2
 
 set_convoys = 100
