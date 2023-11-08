@@ -2,8 +2,8 @@ state={
 	id=404
 	name="STATE_404"
 	history = {
-		owner = PIN
-		add_core_of = PIN
+		owner = MTG
+		add_core_of = MTG
 		victory_points = {
 			13146 5
 		}

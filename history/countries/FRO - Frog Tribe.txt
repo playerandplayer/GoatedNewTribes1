@@ -6,6 +6,8 @@ set_stability = 0.40
 
 set_war_support = 0.05
 
+add_ideas = TRIBE_tribal_society
+
 add_political_power = 2
 
 set_convoys = 0

@@ -59,6 +59,11 @@
  
  
  #Political Parties
+ 
+ CEN_authoritarian_party:0 "Noble Party"
+ CEN_authoritarian_party_long:0 "The Nobles Peoples Party"
+ CEN_fascism_party:0 "TKMLP"
+ CEN_fascism_party_long:0 "The Khans Most Loyal Party"
 
  GER_social_liberal_party:0 "Liberal"
  GER_social_liberal_party_long:0 "Liberal Gegenüberstellung"
