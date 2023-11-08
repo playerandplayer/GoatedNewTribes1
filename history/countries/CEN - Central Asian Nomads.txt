@@ -17,10 +17,10 @@ set_popularities = {
 	absolute_monarchy = 7
 	authoritarian = 30
 	fascism = 33
-	anarchism = 0
-	social_democracy = 18
+	anarchism = 30
+	social_democracy = 0
 	democratic_socialism = 0
-	stalinism = 12
+	stalinism = 0
 	religious = 0
 }
 

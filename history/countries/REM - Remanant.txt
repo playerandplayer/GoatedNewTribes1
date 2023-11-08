@@ -1,4 +1,4 @@
-capital = 58
+capital = 34
 
 set_research_slots = 1
 
@@ -191,7 +191,7 @@ create_country_leader = {
 	desc = "POLITICS_SANCHO_FOXLEY_DESC"
 	picture = "gfx/leaders/Sniper.dds"
 	expire = "1976.1.20"
-	ideology = gen_nazism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

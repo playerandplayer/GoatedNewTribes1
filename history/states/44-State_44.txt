@@ -4,22 +4,23 @@ state={
 	provinces={
 		1537 1568 2036 4161 4296 5271 6220 18782 18795 18853 18854 
 	}
-	victory_points = {
-		18853 25
-	}
+	
 	buildings_max_level_factor=1.000
-        manpower=250000
-        state_category = metropolis
-		history={
-		owner = ACR
-		add_core_of = ACR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 5
-			dockyard = 5
-			18853 = {
-				naval_base = 3
-			}
+	manpower=250000
+	state_category = metropolis
+	history={
+	victory_points = {
+		18795 25
+	}
+	owner = ACR
+	add_core_of = ACR
+	buildings = {
+		infrastructure = 3
+		industrial_complex = 5
+		dockyard = 5
+		18853 = {
+			naval_base = 3
 		}
+	}
 	}
 }

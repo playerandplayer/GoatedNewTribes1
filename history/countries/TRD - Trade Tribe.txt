@@ -2,9 +2,9 @@ capital = 471
 
 set_research_slots = 1
 
-set_stability = 0,3
+set_stability = 0.3
 
-set_war_support = 0,1
+set_war_support = 0.1
 
 add_political_power = 5
 
@@ -147,14 +147,20 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
-	communism = 30
+	absolute_monarchy = 0
+	authoritarian = 45
 	fascism = 25
-	neutrality = 45
+	anarchism = 0
+	social_democracy = 0
+	democratic_socialism = 0
+	stalinism = 30
+	religious = 0
+	
+
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No

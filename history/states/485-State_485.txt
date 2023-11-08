@@ -5,7 +5,7 @@ state={
 		owner = TRD
 		add_core_of = TRD
 		victory_points = {
-			16068 18
+			16068 5
 		}
 		buildings = {
 			infrastructure = 2

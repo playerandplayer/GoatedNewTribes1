@@ -12,13 +12,14 @@ state={
 	provinces={
 		2153 2444 4071 18973 18978 18986 19001 19089 
 	}
-	victory_points = {
-		18978 5
-	}
+	
 	buildings_max_level_factor=1.000
         manpower=400000
         state_category = town
 	history={
+	victory_points = {
+		18978 5
+	}
 		owner = FRE
 		buildings = {
 			infrastructure = 2

@@ -1,4 +1,4 @@
-capital = 79
+capital = 45
 
 set_research_slots = 5
 
@@ -162,7 +162,7 @@ set_politics = {
 	ruling_party = anarchism
 	last_election = "1935.11.8"
 	election_frequency = 24
-	elections_allowed = Yes
+	elections_allowed = No
 }
 
 create_country_leader = {
@@ -190,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_HAYDON_EALES_DESC"
 	picture = "gfx/leaders/Leslie.dds"
 	expire = "1969.4.1"
-	ideology = anarchism
+	ideology = anarchist
 	traits = {
 	}
 }

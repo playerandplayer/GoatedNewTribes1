@@ -15,8 +15,8 @@ KAI = {
 	color_ui  = rgb { 121 0 0 }
 }
 YOR = {
-	color = rgb { 0 255 255 }
-	color_ui  = rgb { 0 225 225 }
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
 }
 LNR = {
 	color = rgb { 0 187 187 }

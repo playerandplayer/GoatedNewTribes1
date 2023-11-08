@@ -4,13 +4,14 @@ state={
 	provinces={
 		3728 5147 7433 17532 17691 17827 17862 17929 18024 
 	}
-	victory_points = {
-		7433 25
-	}
+	
 	buildings_max_level_factor=1.000
         manpower=40000
         state_category = town
 		history={
+		victory_points = {
+		7433 25
+	}
 		owner = CEN
 		add_core_of = CEN
 		buildings = {

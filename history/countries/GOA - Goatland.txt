@@ -1,4 +1,4 @@
-capital = 37
+capital = 380
 
 set_research_slots = 2
 
@@ -180,7 +180,7 @@ create_country_leader = {
 	desc = "POLITICS_TYE_LONGLEY_DESC"
 	picture = "gfx/leaders/Alexander2.dds"
 	expire = "1971.9.26"
-	ideology = stalinism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -200,7 +200,7 @@ create_country_leader = {
 	desc = "POLITICS_SIGMUND_WHITBY_DESC"
 	picture = "gfx/leaders/Alexander2.dds"
 	expire = "1965.7.14"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
 	}
 }

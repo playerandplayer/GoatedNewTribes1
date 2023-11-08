@@ -1,4 +1,4 @@
-capital = 8
+capital = 313
 
 set_research_slots = 2
 
@@ -151,7 +151,7 @@ set_popularities = {
 	authoritarian = 0
 	fascism = 10
 	anarchism = 0
-	social_democracy = 33
+	social_democracy = 23
 	democratic_socialism = 0
 	stalinism = 17
 	religious = 0

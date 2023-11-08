@@ -8,6 +8,40 @@ focus_tree = {
 			tag = ACR
 		}
 	}
+	#Take the islands
+	focus = {
+		id = ACR_take_the_islands
+		icon = GFX_goal_generic_demand_territory
+		x = 40
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available = {
+			has_navy_size = {
+				size > 9
+				type = destroyer
+				archetype = ship_hull_light
+			}
+		}
+		completion_reward = {
+			transfer_state = 52
+			transfer_state = 51
+			transfer_state = 748
+			transfer_state = 53
+			transfer_state = 746
+			transfer_state = 747
+			transfer_state = 744
+			51 = { add_core_of = FROM }
+			52 = { add_core_of = FROM }
+			748 = { add_core_of = FROM }
+			53 = { add_core_of = FROM }
+			746 = { add_core_of = FROM }
+			747 = { add_core_of = FROM }
+			744 = { add_core_of = FROM }
+		}
+	}
 	#The Acronesian Industrial Plan
 	focus = {
 		id = ACR_the_acronesian_industrial_plan

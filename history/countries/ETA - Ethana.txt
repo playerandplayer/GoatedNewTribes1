@@ -1,4 +1,4 @@
-capital = 11
+capital = 289
 
 set_research_slots = 2
 
@@ -158,7 +158,7 @@ set_popularities = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = authoritarian
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -179,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_FLIN_TOMKINS_DESC"
 	picture = "gfx/leaders/The holy nut.dds"
 	expire = "1972.6.18"
-	ideology = stalinism
+	ideology = stalinist
 	traits = {
 	}
 }
@@ -189,7 +189,7 @@ create_country_leader = {
 	desc = "POLITICS_MORRIS_DAWES_DESC"
 	picture = "gfx/leaders/The holy nut.dds"
 	expire = "1973.4.1"
-	ideology = fascism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

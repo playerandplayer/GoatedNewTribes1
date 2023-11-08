@@ -1,4 +1,4 @@
-capital = 70
+capital = 46
 
 set_research_slots = 1
 
@@ -169,7 +169,7 @@ create_country_leader = {
 	desc = "POLITICS_NORMAND_AIKMAN_DESC"
 	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
 	expire = "1976.9.17"
-	ideology = social_democrat
+	ideology = anarchist
 	traits = {
 	}
 }
@@ -179,17 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_TIM_NEAVE_DESC"
 	picture = "gfx/leaders/Europe/Brzęczyszczkiewicz Brzęczy.dds"
 	expire = "1970.8.27"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Rawley Potts"
-	desc = "POLITICS_RAWLEY_POTTS_DESC"
-	picture = "gfx/leaders/Brzęczyszczkiewicz Brzęczy.dds"
-	expire = "1965.10.15"
-	ideology = anarchism
+	ideology = stalinist
 	traits = {
 	}
 }

@@ -1,4 +1,4 @@
-capital = 30
+capital = 411
 
 set_research_slots = 3
 

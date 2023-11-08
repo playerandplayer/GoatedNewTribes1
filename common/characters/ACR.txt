@@ -1,0 +1,1590 @@
+characters={
+	ACR_fascist_leader={
+		name=ACR_fascist_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_fascist_leader
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ACR_democratic_leader={
+		name=ACR_democratic_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_democratic_leader
+			}
+		}
+		country_leader={
+			ideology=social_democrat
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ACR_communist_leader={
+		name=ACR_communist_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_communist_leader
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ACR_authoritarian_leader={
+		name=ACR_authoritarian_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_authoritarian_leader
+			}
+		}
+		country_leader={
+			ideology=authoritarian
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ACR_anarchism_leader={
+		name=ACR_anarchism_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_anarchism_leader
+			}
+		}
+		country_leader={
+			ideology=anarchist
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ACR_socialism_leader={
+		name=ACR_socialist_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_socialism_leader
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	ACR_monarchism_leader={
+		name=ACR_monarchism_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_monarchism_leader
+			}
+		}
+		country_leader={
+			ideology=absolutism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	ACR_religious_leader={
+		name=ACR_religious_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_ACR_religious_leader
+			}
+		}
+		country_leader={
+			ideology=religious
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	}
+
+	ACR_army_high_command_1={
+		name=ACR_army_high_command_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_gerd_von_rundstedt
+				small="GFX_idea_gerd_von_rundstedt"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_regrouping_expert
+			ledger = army
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard urban_assault_specialist defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1
+		}
+	}
+
+	ACR_general_1={
+		name=ACR_general_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_gunther_von_kluge
+				small=GFX_portrait_ACR_gunther_von_kluge_small
+			}
+		}
+		field_marshal={
+			traits={ armor_officer offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=2
+		}
+	}
+
+	ACR_general_2={
+		name=ACR_general_2
+		portraits={
+			army={
+				large=GFX_portrait_ACR_friedrich_paulus
+				small=GFX_portrait_ACR_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=3
+		}
+	}
+
+	ACR_army_high_command_2={
+		name=ACR_army_high_command_2
+		portraits={
+			army={
+				large=GFX_portrait_ACR_erwin_rommel
+				small="GFX_idea_erwin_rommel"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_2
+			ledger = army
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless media_personality armor_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=4
+		}
+	}
+
+	ACR_army_theorist_1={
+		name=ACR_army_theorist_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_erich_von_manstein
+				small="GFX_idea_manstein"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ACR_army_theorist_1
+			ledger = army
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+		
+		corps_commander={
+			traits={ brilliant_strategist armor_officer trickster trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=5
+		}
+	}
+
+	ACR_general_3={
+		name=ACR_general_3
+		portraits={
+			army={
+				large=GFX_portrait_ACR_wilhelm_list
+				small=GFX_portrait_ACR_wilhelm_list_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=7
+		}
+	}
+
+	ACR_general_4={
+		name=ACR_general_4
+		portraits={
+			army={
+				large=GFX_portrait_ACR_ewald_von_kleist
+				small=GFX_portrait_ACR_ewald_von_kleist_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=8
+		}
+	}
+
+	ACR_general_5={
+		name=ACR_general_5
+		portraits={
+			army={
+				large=GFX_portrait_ACR_fedor_von_bock
+				small=GFX_portrait_ACR_fedor_von_bock_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious harsh_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=9
+		}
+	}
+
+	ACR_general_6={
+		name=ACR_general_6
+		portraits={
+			army={
+				large=GFX_portrait_ACR_walter_model
+				small=GFX_portrait_ACR_walter_model_small
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=10
+		}
+	}
+
+	ACR_general_7= {
+		name=ACR_general_7
+		portraits={
+			army={
+				large=GFX_portrait_ACR_maximilian_von_weichs
+				small=GFX_portrait_ACR_maximilian_von_weichs_small
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=11
+		}
+	}
+
+	ACR_general_8={
+		name=ACR_general_8
+		portraits={
+			army={
+				large=GFX_portrait_ACR_georghans_reinhardt
+				small=GFX_portrait_ACR_georghans_reinhardt_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=14
+		}
+	}
+
+	ACR_general_9={
+		name=ACR_general_9
+		portraits={
+			army={
+				large=GFX_portrait_ACR_walter_kruger
+				small=GFX_portrait_ACR_walter_kruger_small
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=15
+		}
+	}
+
+	ACR_air_high_command_3 ={
+		name=ACR_air_high_command_3
+		portraits={
+			army={
+				large=GFX_portrait_ACR_kurt_student
+				small="GFX_idea_kurt_student"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_air_high_command_3
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				air_airborne_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless commando }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=16
+		}
+	}
+
+	ACR_general_10={
+		name=ACR_general_10
+		portraits={
+			army={
+				large=GFX_portrait_ACR_erwin_von_witzleben
+				small=GFX_portrait_ACR_erwin_von_witzleben_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=17
+		}
+	}
+
+
+	ACR_air_chief_1 ={
+		name=ACR_air_chief_1
+		portraits={
+			army={
+				small="GFX_idea_albert_kesselring"
+			}
+			army={
+				large=GFX_portrait_ACR_albert_kesselring
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ACR_air_chief_1
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ brilliant_strategist trait_cautious war_hero }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=32
+		}
+	}
+
+	
+	ACR_navy_chief_1 ={
+		name=ACR_navy_chief_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_karl_donitz
+				small=GFX_portrait_ACR_karl_donitz_small
+			}
+			army={
+				small="GFX_idea_donitz"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ACR_navy_chief_1
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=26
+		}
+	}
+
+	ACR_navy_chief_2={
+		name=ACR_navy_chief_2
+		portraits={
+			army={
+				large=GFX_portrait_ACR_erich_raeder
+				small=GFX_portrait_ACR_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ACR_navy_chief_2
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent naval_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
+	ACR_navy_theorist_1={
+		name=ACR_navy_theorist_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_alfred_saalwachter
+				small=GFX_portrait_ACR_alfred_saalwachter_small
+			}
+			army={
+				small="GFX_idea_alfred_saalwachter"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ACR_navy_theorist_1
+			ledger = navy
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				submarine_specialist
+			}
+		}
+		
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=28
+		}
+	}
+
+	ACR_admiral_1 ={
+		name=ACR_admiral_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_hermann_boehm
+				small=GFX_portrait_ACR_hermann_boehm_small
+			}
+		}
+		navy_leader={
+			traits={ craven superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=29
+		}
+	}
+
+	ACR_admiral_2={
+		name=ACR_admiral_2
+		portraits={
+			army={
+				large=GFX_portrait_ACR_wilhelm_marschall
+				small=GFX_portrait_ACR_wilhelm_marschall_small
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=30
+		}
+	}
+
+	ACR_navy_high_command_1 ={
+		name=ACR_navy_high_command_1
+		portraits={
+			army={
+				large=GFX_portrait_ACR_gunther_lutjens
+				small=GFX_portrait_ACR_gunther_lutjens_small
+			}
+			army={
+				small="GFX_idea_gunther_lutjens"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_navy_high_command_1
+			ledger = navy
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader={
+			traits={ gentlemanly navy_career_officer superior_tactician }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=4
+			legacy_id=31
+		}
+	}
+
+
+
+	### THEORISTS ###
+
+	# Von Manstein up there
+
+	# Guderian up there
+
+	# Saalwachter up there
+
+	ACR_air_theorist_2 ={
+		name=ACR_air_theorist_2
+		portraits={
+			army={
+				small="GFX_idea_von_braun"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ACR_air_theorist_2
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+
+	ACR_army_theorist_2={
+		name=ACR_army_theorist_2
+		portraits={
+			army={
+				small="GFX_idea_heisenberg"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ACR_army_theorist_2
+			ledger = army
+			allowed = {
+				original_tag = ACR
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	ACR_air_theorist_3={
+		name=ACR_air_theorist_3
+		portraits={
+			army={
+				small="GFX_idea_wolfram_von_richthofen"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ACR_air_theorist_3
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				close_air_support_proponent
+			}
+		}
+	}
+
+	ACR_air_theorist_4={
+		name=ACR_air_theorist_4
+		portraits={
+			army={
+				small="GFX_idea_walther_wever"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ACR_air_theorist_4
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	ACR_air_theorist_5={
+		name=ACR_air_theorist_5
+		portraits={
+			army={
+				small="GFX_idea_ernst_udet"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ACR_air_theorist_5
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				dive_bomber
+			}
+		}
+	}
+
+	ACR_navy_theorist_3={
+		name=ACR_navy_theorist_3
+		portraits={
+			army={
+				small="GFX_idea_otto_ciliax"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = ACR_navy_theorist_3
+			ledger = navy
+			allowed = {
+				original_tag = ACR
+			}
+			traits = { naval_theorist }
+		}
+	}
+
+	### ARMY CHIEFS ###
+
+	ACR_army_chief_1={
+		name=ACR_army_chief_1
+		portraits={
+			army={
+				small="GFX_idea_ludwig_beck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ACR_army_chief_1
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ACR_army_chief_2={
+		name=ACR_army_chief_2
+		portraits={
+			army={
+				small="GFX_idea_wilhelm_keitel"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ACR_army_chief_2
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	ACR_army_chief_3={
+		name=ACR_army_chief_3
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ACR_army_chief_3
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ACR_army_chief_4={
+		name=ACR_army_chief_4
+		portraits={
+			army={
+				small="GFX_idea_walther_von_brauchitsch"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = ACR_army_chief_4
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	# Dönitz up there
+
+	# Raeder up there
+
+
+	### AIR CHIEFS ###
+
+	# Kesselring up there
+
+	ACR_air_chief_2={
+		name=ACR_air_chief_2
+		portraits={
+			army={
+				small="GFX_idea_goering"
+			}
+			civilian={
+				large=GFX_portrait_ACR_hermann_goring
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ACR_air_chief_2
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	ACR_air_chief_3={
+		name=ACR_air_chief_3
+		portraits={
+			army={
+				small="GFX_idea_ritter_von_greim"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ACR_air_chief_3
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Von Rundstedt up there
+
+	# Rommel up there
+
+	# Student up there
+
+	# Lütjens up there
+
+	ACR_army_high_command_3={
+		name=ACR_army_high_command_3
+		portraits={
+			army={
+				small="GFX_idea_ferdinand_schorner"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_3
+			ledger = army
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	ACR_army_high_command_4={
+		name=ACR_army_high_command_4
+		portraits={
+			army={
+				small="GFX_idea_werner_von_fritsch"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_4
+			ledger = army
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+
+	ACR_army_high_command_5={
+		name=ACR_army_high_command_5
+		portraits={
+			army={
+				small="GFX_idea_hugo_sperrle"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_5
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ACR_army_high_command_6={
+		name=ACR_army_high_command_6
+		portraits={
+			army={
+				small="GFX_idea_erhard_milch"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_6
+			ledger = air
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ACR_army_high_command_7={
+		name=ACR_army_high_command_7
+		portraits={
+			army={
+				small="GFX_idea_erich_bey"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_7
+			ledger = navy
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ACR_army_high_command_8={
+		name=ACR_army_high_command_8
+		portraits={
+			army={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ACR_army_high_command_8
+			ledger = navy
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	ACR_army_high_command_9 = { # USED IN FINLAND
+		name = ACR_army_high_command_9
+		portraits = {
+			army = {
+				small = GFX_portrait_ACR_nikolaus_von_falkenhorst_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ACR_army_high_command_9
+			ledger = army
+			traits = {
+				army_german_ground_commander
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+
+	### POLITICAL ADVISORS ###
+
+	ACR_political_advisor_1={
+		name=ACR_political_advisor_1
+		portraits={
+			army={
+				small="GFX_idea_todt"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_1
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				fortification_engineer 
+			}
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+
+	ACR_political_advisor_2={ 
+		name=ACR_political_advisor_2
+		portraits={
+			army={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_2
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				armaments_organizer 
+			}
+		}		
+	}
+
+	ACR_political_advisor_3={
+		name=ACR_political_advisor_3
+		portraits={
+			army={
+				small="GFX_idea_hjalmar_schacht"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_3
+			cost = 75.000
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+
+	ACR_political_advisor_4={
+		name=ACR_political_advisor_4
+		portraits={
+			army={
+				small="GFX_idea_walther_funk"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_4
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	ACR_political_advisor_5={
+		name=ACR_political_advisor_5
+		portraits={
+			army={
+				small="GFX_idea_ernst_thalmann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_5
+			allowed = {
+				original_tag = ACR
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					not = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				not = {
+					has_government = stalinism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	ACR_political_advisor_6={
+		name=ACR_political_advisor_6
+		portraits={
+			army={
+				small="GFX_idea_kurt_schumacher"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_6
+			allowed = {
+				original_tag = ACR
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = social_democracy 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	ACR_political_advisor_7={
+		name=ACR_political_advisor_7
+		portraits={
+			army={
+				small="GFX_idea_joseph_goebbels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_7
+			allowed = {
+				original_tag = ACR
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				fascist_demagogue propaganda_expert 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 24.000
+			}
+		}
+	}
+
+	ACR_political_advisor_8={
+		name=ACR_political_advisor_8
+		portraits={
+			army={
+				small="GFX_idea_rudolf_hess"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_8
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				amateur_aviator_hess
+			}
+		}
+	}
+
+	ACR_political_advisor_9={
+		name=ACR_political_advisor_9
+		portraits={
+			army={
+				small="GFX_idea_heinrich_himmler"
+				large=GFX_portrait_ACR_heinrich_himmler
+			}
+			civilian = {
+				large=GFX_portrait_ACR_heinrich_himmler
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_9
+			allowed = {
+				original_tag = ACR
+			}
+			on_add = {
+				custom_effect_tooltip = ACR_SS_himmler_recruit
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+
+	ACR_political_advisor_10={
+		name=ACR_political_advisor_10
+		portraits={
+			army={
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_10
+			allowed = {
+				original_tag = ACR
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+
+	ACR_political_advisor_11={
+		name=ACR_political_advisor_11
+		portraits={
+			army={
+				small="GFX_idea_joachim_von_ribbentrop"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_11
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	ACR_political_advisor_12={
+		name=ACR_political_advisor_12
+		portraits={
+			army={
+				small="GFX_idea_konstantin_von_neurath"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_12
+			allowed = {
+				original_tag = ACR
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+
+	ACR_political_advisor_13={
+		name=ACR_political_advisor_13
+		portraits={
+			army={
+				small="GFX_idea_ACR_hans_oster"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_13
+			allowed = {
+				original_tag = ACR
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				anti_fascist_agent 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	ACR_political_advisor_14={
+		name=ACR_political_advisor_14
+		portraits={
+			army={
+				small="GFX_idea_ACR_alfred_hugenberg"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_14
+			allowed = {
+				original_tag = ACR
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				monarchist_media_mogul 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	
+	ACR_political_advisor_15={
+		name=ACR_political_advisor_15
+		portraits={
+			army={
+				small="GFX_idea_ACR_carl_friedrich_goerdeler"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_15
+			allowed = {
+				original_tag = ACR
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				economist 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	
+	ACR_political_advisor_16={
+		name=ACR_political_advisor_16
+		portraits={
+			army={
+				small="GFX_idea_ACR_julius_leber"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_16
+			allowed = {
+				original_tag = ACR
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				connected_citizen 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	
+	ACR_political_advisor_17={
+		name=ACR_political_advisor_17
+		portraits={
+			army={
+				small="GFX_idea_ACR_theodor_heuss"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_17
+			allowed = {
+				original_tag = ACR
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				liberal_journalist 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	ACR_political_advisor_18={
+		name=ACR_political_advisor_18
+		portraits={
+			army={
+				small="GFX_idea_ger_wilhelm_canaris"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ACR_political_advisor_18
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = ACR
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}		
+	}
+}
