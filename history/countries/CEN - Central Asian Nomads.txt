@@ -19,12 +19,12 @@ set_oob = "ENG_1936"
 set_popularities = {
 
 	absolute_monarchy = 7
-	authoritarian = 30
-	fascism = 33
+	authoritarian = 50
+	fascism = 20
 	anarchism = 0
-	social_democracy = 18
+	social_democracy = 10
 	democratic_socialism = 0
-	stalinism = 12
+	stalinism = 13
 	religious = 0
 }
 
