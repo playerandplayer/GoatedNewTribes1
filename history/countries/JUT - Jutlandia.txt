@@ -157,100 +157,72 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = JUT_political_advisor_1
+recruit_character = JUT_political_advisor_2
+recruit_character = JUT_political_advisor_3
+recruit_character = JUT_political_advisor_4
+recruit_character = JUT_political_advisor_5
+recruit_character = JUT_political_advisor_6
+recruit_character = JUT_political_advisor_7
+recruit_character = JUT_political_advisor_8
+recruit_character = JUT_political_advisor_9
+recruit_character = JUT_political_advisor_10
+recruit_character = JUT_political_advisor_11
+recruit_character = JUT_political_advisor_12
+recruit_character = JUT_political_advisor_13
+recruit_character = JUT_army_high_command_1
+recruit_character = JUT_army_high_command_2
+recruit_character = JUT_army_high_command_3
+recruit_character = JUT_army_high_command_4
+recruit_character = JUT_army_high_command_5
+recruit_character = JUT_army_high_command_6
+recruit_character = JUT_army_high_command_7
+recruit_character = JUT_army_high_command_8
+recruit_character = JUT_army_high_command_9
+recruit_character = JUT_air_chief_1
+recruit_character = JUT_air_chief_2
+recruit_character = JUT_air_chief_3
+recruit_character = JUT_navy_chief_1
+recruit_character = JUT_navy_chief_2
+recruit_character = JUT_army_chief_1
+recruit_character = JUT_army_chief_2
+recruit_character = JUT_army_chief_3
+recruit_character = JUT_army_chief_4
+recruit_character = JUT_navy_theorist_1
+recruit_character = JUT_navy_theorist_2
+recruit_character = JUT_navy_theorist_3
+recruit_character = JUT_air_theorist_1
+recruit_character = JUT_air_theorist_2
+recruit_character = JUT_air_theorist_3
+recruit_character = JUT_air_theorist_4
+recruit_character = JUT_air_theorist_5
+recruit_character = JUT_army_theorist_1
+recruit_character = JUT_army_theorist_2
+recruit_character = JUT_navy_high_command_1
+recruit_character = JUT_admiral_1
+recruit_character = JUT_admiral_2
+recruit_character = JUT_navy_chief_1
+recruit_character = JUT_navy_chief_2
+recruit_character = JUT_general_1
+recruit_character = JUT_general_2
+recruit_character = JUT_general_3
+recruit_character = JUT_general_4
+recruit_character = JUT_general_5
+recruit_character = JUT_air_high_command_1
+recruit_character = JUT_air_high_command_2
+recruit_character = JUT_air_high_command_3
+recruit_character = JUT_fascist_leader
+recruit_character = JUT_democratic_leader
+recruit_character = JUT_communist_leader
+recruit_character = JUT_authoritarian_leader
+recruit_character = JUT_anarchism_leader
+recruit_character = JUT_socialism_leader
+recruit_character = JUT_monarchism_leader
+recruit_character = JUT_religious_leader
+
 set_politics = {
 	ruling_party = social_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
 }
-
-create_country_leader = {
-	name = "Koolkarl IV"
-	desc = "POLITICS_JIMBO_MCAULEY_DESC"
-	picture = "gfx/leaders/Koolkarl_iiv.dds"
-	expire = "1972.9.18"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Koolkarl IV"
-	desc = "POLITICS_ALPHONSE_HEYWOOD_DESC"
-	picture = "gfx/leaders/Koolkarl_iiv.dds"
-	expire = "1975.8.26"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Koolkarl IV"
-	desc = "POLITICS_JULIE_LOCKIE_DESC"
-	picture = "gfx/leaders/Koolkarl_iiv.dds"
-	expire = "1967.9.27"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Koolkarl IV"
-	desc = "POLITICS_GIANCARLO_INKER_DESC"
-	picture = "gfx/leaders/Koolkarl_iiv.dds"
-	expire = "1973.1.12"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Geof Kram"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Sheff Turrell"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 5
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Rafael Astbury"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Kalil Draper"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Bryn Crow"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 1
-}
-

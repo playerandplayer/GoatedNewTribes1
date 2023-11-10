@@ -159,100 +159,72 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = MAG_political_advisor_1
+recruit_character = MAG_political_advisor_2
+recruit_character = MAG_political_advisor_3
+recruit_character = MAG_political_advisor_4
+recruit_character = MAG_political_advisor_5
+recruit_character = MAG_political_advisor_6
+recruit_character = MAG_political_advisor_7
+recruit_character = MAG_political_advisor_8
+recruit_character = MAG_political_advisor_9
+recruit_character = MAG_political_advisor_10
+recruit_character = MAG_political_advisor_11
+recruit_character = MAG_political_advisor_12
+recruit_character = MAG_political_advisor_13
+recruit_character = MAG_army_high_command_1
+recruit_character = MAG_army_high_command_2
+recruit_character = MAG_army_high_command_3
+recruit_character = MAG_army_high_command_4
+recruit_character = MAG_army_high_command_5
+recruit_character = MAG_army_high_command_6
+recruit_character = MAG_army_high_command_7
+recruit_character = MAG_army_high_command_8
+recruit_character = MAG_army_high_command_9
+recruit_character = MAG_air_chief_1
+recruit_character = MAG_air_chief_2
+recruit_character = MAG_air_chief_3
+recruit_character = MAG_navy_chief_1
+recruit_character = MAG_navy_chief_2
+recruit_character = MAG_army_chief_1
+recruit_character = MAG_army_chief_2
+recruit_character = MAG_army_chief_3
+recruit_character = MAG_army_chief_4
+recruit_character = MAG_navy_theorist_1
+recruit_character = MAG_navy_theorist_2
+recruit_character = MAG_navy_theorist_3
+recruit_character = MAG_air_theorist_1
+recruit_character = MAG_air_theorist_2
+recruit_character = MAG_air_theorist_3
+recruit_character = MAG_air_theorist_4
+recruit_character = MAG_air_theorist_5
+recruit_character = MAG_army_theorist_1
+recruit_character = MAG_army_theorist_2
+recruit_character = MAG_navy_high_command_1
+recruit_character = MAG_admiral_1
+recruit_character = MAG_admiral_2
+recruit_character = MAG_navy_chief_1
+recruit_character = MAG_navy_chief_2
+recruit_character = MAG_general_1
+recruit_character = MAG_general_2
+recruit_character = MAG_general_3
+recruit_character = MAG_general_4
+recruit_character = MAG_general_5
+recruit_character = MAG_air_high_command_1
+recruit_character = MAG_air_high_command_2
+recruit_character = MAG_air_high_command_3
+recruit_character = MAG_fascist_leader
+recruit_character = MAG_democratic_leader
+recruit_character = MAG_communist_leader
+recruit_character = MAG_authoritarian_leader
+recruit_character = MAG_anarchism_leader
+recruit_character = MAG_socialism_leader
+recruit_character = MAG_monarchism_leader
+recruit_character = MAG_religious_leader
+
 set_politics = {
 	ruling_party = authoritarian
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = No
 }
-
-create_country_leader = {
-	name = "Sugimoto Saichi"
-	desc = "POLITICS_FERINAND_BUTLER_DESC"
-	picture = "gfx/leaders/Sugimoto Saichi.dds"
-	expire = "1965.7.20"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sugimoto Saichi"
-	desc = "POLITICS_VASSILY_MANN_DESC"
-	picture = "gfx/leaders/Sugimoto Saichi.dds"
-	expire = "1968.6.24"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sugimoto Saichi"
-	desc = "POLITICS_WENDEL_DALE_DESC"
-	picture = "gfx/leaders/Sugimoto Saichi.dds"
-	expire = "1973.2.11"
-	ideology = rexism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sugimoto Saichi"
-	desc = "POLITICS_LIND_NEILSON_DESC"
-	picture = "gfx/leaders/Sugimoto Saichi.dds"
-	expire = "1971.10.2"
-	ideology = oligarchism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Desmund Connelly"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 5
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aleks Milward"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 5
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Angus Ivory"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Reg Peacock"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Rupert Keane"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 5
-}
-

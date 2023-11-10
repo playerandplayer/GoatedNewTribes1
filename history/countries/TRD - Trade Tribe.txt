@@ -161,6 +161,69 @@ set_popularities = {
 
 }
 
+recruit_character = TRD_political_advisor_1
+recruit_character = TRD_political_advisor_2
+recruit_character = TRD_political_advisor_3
+recruit_character = TRD_political_advisor_4
+recruit_character = TRD_political_advisor_5
+recruit_character = TRD_political_advisor_6
+recruit_character = TRD_political_advisor_7
+recruit_character = TRD_political_advisor_8
+recruit_character = TRD_political_advisor_9
+recruit_character = TRD_political_advisor_10
+recruit_character = TRD_political_advisor_11
+recruit_character = TRD_political_advisor_12
+recruit_character = TRD_political_advisor_13
+recruit_character = TRD_army_high_command_1
+recruit_character = TRD_army_high_command_2
+recruit_character = TRD_army_high_command_3
+recruit_character = TRD_army_high_command_4
+recruit_character = TRD_army_high_command_5
+recruit_character = TRD_army_high_command_6
+recruit_character = TRD_army_high_command_7
+recruit_character = TRD_army_high_command_8
+recruit_character = TRD_army_high_command_9
+recruit_character = TRD_air_chief_1
+recruit_character = TRD_air_chief_2
+recruit_character = TRD_air_chief_3
+recruit_character = TRD_navy_chief_1
+recruit_character = TRD_navy_chief_2
+recruit_character = TRD_army_chief_1
+recruit_character = TRD_army_chief_2
+recruit_character = TRD_army_chief_3
+recruit_character = TRD_army_chief_4
+recruit_character = TRD_navy_theorist_1
+recruit_character = TRD_navy_theorist_2
+recruit_character = TRD_navy_theorist_3
+recruit_character = TRD_air_theorist_1
+recruit_character = TRD_air_theorist_2
+recruit_character = TRD_air_theorist_3
+recruit_character = TRD_air_theorist_4
+recruit_character = TRD_air_theorist_5
+recruit_character = TRD_army_theorist_1
+recruit_character = TRD_army_theorist_2
+recruit_character = TRD_navy_high_command_1
+recruit_character = TRD_admiral_1
+recruit_character = TRD_admiral_2
+recruit_character = TRD_navy_chief_1
+recruit_character = TRD_navy_chief_2
+recruit_character = TRD_general_1
+recruit_character = TRD_general_2
+recruit_character = TRD_general_3
+recruit_character = TRD_general_4
+recruit_character = TRD_general_5
+recruit_character = TRD_air_high_command_1
+recruit_character = TRD_air_high_command_2
+recruit_character = TRD_air_high_command_3
+recruit_character = TRD_fascist_leader
+recruit_character = TRD_democratic_leader
+recruit_character = TRD_communist_leader
+recruit_character = TRD_authoritarian_leader
+recruit_character = TRD_anarchism_leader
+recruit_character = TRD_socialism_leader
+recruit_character = TRD_monarchism_leader
+recruit_character = TRD_religious_leader
+
 set_politics = {
 	ruling_party = authoritarian
 	last_election = "1932.11.8"
@@ -168,43 +231,4 @@ set_politics = {
 	elections_allowed = No
 }
 
-create_country_leader = {
-	name = "Rodrigo O connell"
-	desc = "POLITICS_RODRIGO_O CONNELL_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-	expire = "1975.10.6"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Aziz Mcauley"
-	desc = "POLITICS_AZIZ_MCAULEY_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
-	expire = "1970.5.8"
-	ideology = anti_revisionism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sol Kyle"
-	desc = "POLITICS_SOL_KYLE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-	expire = "1973.3.9"
-	ideology = rexism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Mario Nolan"
-	desc = "POLITICS_MARIO_NOLAN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-	expire = "1971.2.16"
-	ideology = moderatism
-	traits = {
-	}
-}
 

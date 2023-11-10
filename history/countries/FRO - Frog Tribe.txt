@@ -159,6 +159,70 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = FRO_political_advisor_1
+recruit_character = FRO_political_advisor_2
+recruit_character = FRO_political_advisor_3
+recruit_character = FRO_political_advisor_4
+recruit_character = FRO_political_advisor_5
+recruit_character = FRO_political_advisor_6
+recruit_character = FRO_political_advisor_7
+recruit_character = FRO_political_advisor_8
+recruit_character = FRO_political_advisor_9
+recruit_character = FRO_political_advisor_10
+recruit_character = FRO_political_advisor_11
+recruit_character = FRO_political_advisor_12
+recruit_character = FRO_political_advisor_13
+recruit_character = FRO_army_high_command_1
+recruit_character = FRO_army_high_command_2
+recruit_character = FRO_army_high_command_3
+recruit_character = FRO_army_high_command_4
+recruit_character = FRO_army_high_command_5
+recruit_character = FRO_army_high_command_6
+recruit_character = FRO_army_high_command_7
+recruit_character = FRO_army_high_command_8
+recruit_character = FRO_army_high_command_9
+recruit_character = FRO_air_chief_1
+recruit_character = FRO_air_chief_2
+recruit_character = FRO_air_chief_3
+recruit_character = FRO_navy_chief_1
+recruit_character = FRO_navy_chief_2
+recruit_character = FRO_army_chief_1
+recruit_character = FRO_army_chief_2
+recruit_character = FRO_army_chief_3
+recruit_character = FRO_army_chief_4
+recruit_character = FRO_navy_theorist_1
+recruit_character = FRO_navy_theorist_2
+recruit_character = FRO_navy_theorist_3
+recruit_character = FRO_air_theorist_1
+recruit_character = FRO_air_theorist_2
+recruit_character = FRO_air_theorist_3
+recruit_character = FRO_air_theorist_4
+recruit_character = FRO_air_theorist_5
+recruit_character = FRO_army_theorist_1
+recruit_character = FRO_army_theorist_2
+recruit_character = FRO_navy_high_command_1
+recruit_character = FRO_admiral_1
+recruit_character = FRO_admiral_2
+recruit_character = FRO_navy_chief_1
+recruit_character = FRO_navy_chief_2
+recruit_character = FRO_general_1
+recruit_character = FRO_general_2
+recruit_character = FRO_general_3
+recruit_character = FRO_general_4
+recruit_character = FRO_general_5
+recruit_character = FRO_air_high_command_1
+recruit_character = FRO_air_high_command_2
+recruit_character = FRO_air_high_command_3
+recruit_character = FRO_fascist_leader
+recruit_character = FRO_democratic_leader
+recruit_character = FRO_communist_leader
+recruit_character = FRO_authoritarian_leader
+recruit_character = FRO_anarchism_leader
+recruit_character = FRO_socialism_leader
+recruit_character = FRO_monarchism_leader
+recruit_character = FRO_religious_leader
+
+
 set_politics = {
 	ruling_party = social_democracy
 	last_election = "1935.11.8"
@@ -166,93 +230,4 @@ set_politics = {
 	elections_allowed = Yes
 }
 
-create_country_leader = {
-	name = "wiktox"
-	desc = "POLITICS_LLEWELLYN_GELDART_DESC"
-	picture = "gfx/leaders/wiktox.dds"
-	expire = "1967.7.21"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "wiktox"
-	desc = "POLITICS_BRET_SLATER_DESC"
-	picture = "gfx/leaders/wiktox.dds"
-	expire = "1967.3.21"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "wiktox"
-	desc = "POLITICS_WALEED_VILLIS_DESC"
-	picture = "gfx/leaders/wiktox.dds"
-	expire = "1977.7.27"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "wiktox"
-	desc = "POLITICS_FAZEEL_O SHEA_DESC"
-	picture = "gfx/leaders/wiktox.dds"
-	expire = "1973.7.20"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Alfie Depp"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Fletcher Thirlway"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Dario Fountain"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Osbert Whitehouse"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elmore Nutella"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
 

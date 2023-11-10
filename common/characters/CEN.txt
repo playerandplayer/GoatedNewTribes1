@@ -1,427 +1,1315 @@
 characters={
-	CEN_ar={
-		advisor={
-			slot = high_command
-			idea_token = CEN_ar
-			ledger  = army 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+	CEN_fascist_leader={
+		name="Max Mustermann"
 		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
+			civilian={
+				large=GFX_portrait_CEN_fascist_leader
 			}
 		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
-	CEN_acr={
+
+	CEN_democratic_leader={
+		name="Max Mustermann"
+		portraits={
+			civilian={
+				large=GFX_portrait_CEN_democratic_leader
+			}
+		}
+		country_leader={
+			ideology=social_democrat
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	CEN_communist_leader={
+		name="Max Mustermann"
+		portraits={
+			civilian={
+				large=GFX_portrait_CEN_communist_leader
+			}
+		}
+		country_leader={
+			ideology=stalinist
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	CEN_authoritarian_leader={
+		name="DemirhanSözüdüz"
+		portraits={
+			civilian={
+				large="gfx/leaders/DemirhanSözüdüz.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	CEN_anarchism_leader={
+		name="Max Mustermann"
+		portraits={
+			civilian={
+				large=GFX_portrait_CEN_anarchism_leader
+			}
+		}
+		country_leader={
+			ideology=anarchism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	CEN_socialism_leader={
+		name="Max Mustermann"
+		portraits={
+			civilian={
+				large=GFX_portrait_CEN_socialism_leader
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	CEN_monarchism_leader={
+		name="Max Mustermann"
+		portraits={
+			civilian={
+				large=GFX_portrait_CEN_monarchism_leader
+			}
+		}
+		country_leader={
+			ideology=absolutism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+		
+	CEN_religious_leader={
+		name="Max Mustermann"
+		portraits={
+			civilian={
+				large=GFX_portrait_CEN_religious_leader
+			}
+		}
+		country_leader={
+			ideology=buddhism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	
+	}
+
+	CEN_army_high_command_1={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_gerd_von_rundstedt
+				small="GFX_idea_gerd_von_rundstedt"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CEN_regrouping_expert
+			ledger = army
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard urban_assault_specialist defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1
+		}
+	}
+
+	CEN_general_1={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_gunther_von_kluge
+				small=GFX_portrait_CEN_gunther_von_kluge_small
+			}
+		}
+		field_marshal={
+			traits={ armor_officer offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=2
+		}
+	}
+
+	CEN_general_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_friedrich_paulus
+				small=GFX_portrait_CEN_friedrich_paulus_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=3
+		}
+	}
+
+	CEN_army_high_command_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_erwin_rommel
+				small="GFX_idea_erwin_rommel"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CEN_army_high_command_2
+			ledger = army
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless media_personality armor_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=4
+		}
+	}
+
+	CEN_army_theorist_1={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_erich_von_manstein
+				small="GFX_idea_manstein"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CEN_army_theorist_1
+			ledger = army
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		
+		corps_commander={
+			traits={ brilliant_strategist armor_officer trickster trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=5
+		}
+	}
+
+	CEN_general_3={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_wilhelm_list
+				small=GFX_portrait_CEN_wilhelm_list_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=7
+		}
+	}
+
+	CEN_general_4={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_ewald_von_kleist
+				small=GFX_portrait_CEN_ewald_von_kleist_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=8
+		}
+	}
+
+
+	CEN_air_high_command_3 ={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_kurt_student
+				small="GFX_idea_kurt_student"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CEN_air_high_command_3
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				air_airborne_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless commando }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=16
+		}
+	}
+
+
+	CEN_air_chief_1 ={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_albert_kesselring"
+			}
+			army={
+				large=GFX_portrait_CEN_albert_kesselring
+			}
+		}
 		advisor={
 			slot = air_chief
-			idea_token = CEN_acr
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					air_chief_reform_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_3"
+			idea_token = CEN_air_chief_1
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
+		
+		corps_commander={
+			traits={ brilliant_strategist trait_cautious war_hero }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=32
+		}
 	}
-	CEN_mt={
+
+	
+	CEN_navy_chief_1 ={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_karl_donitz
+				small=GFX_portrait_CEN_karl_donitz_small
+			}
+			army={
+				small="GFX_idea_donitz"
+			}
+		}
 		advisor={
+			slot = navy_chief
+			idea_token = CEN_navy_chief_1
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=26
+		}
+	}
+
+	CEN_navy_chief_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_erich_raeder
+				small=GFX_portrait_CEN_erich_raeder_small
+			}
+			army={
+				small="GFX_idea_raeder"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = CEN_navy_chief_2
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent naval_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=27
+		}
+	}
+
+	CEN_navy_theorist_1={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_alfred_saalwachter
+				small=GFX_portrait_CEN_alfred_saalwachter_small
+			}
+			army={
+				small="GFX_idea_alfred_saalwachter"
+			}
+		}
+		advisor={
+			cost = 150
 			slot = theorist
-			idea_token = CEN_mt
-			ledger  = army 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					military_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
+			idea_token = CEN_navy_theorist_1
+			ledger = navy
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				submarine_specialist
 			}
 		}
-	}
-	CEN_stc={
-		advisor={
-			slot = political_advisor
-			idea_token = CEN_stc
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
+		
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=28
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+	}
+
+	CEN_admiral_1 ={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
+				large=GFX_portrait_CEN_hermann_boehm
+				small=GFX_portrait_CEN_hermann_boehm_small
 			}
 		}
+		navy_leader={
+			traits={ craven superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=29
+		}
 	}
-	CEN_aa2={
+
+	CEN_admiral_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_wilhelm_marschall
+				small=GFX_portrait_CEN_wilhelm_marschall_small
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=30
+		}
+	}
+
+	CEN_navy_high_command_1 ={
+		name="Max Mustermann"
+		portraits={
+			army={
+				large=GFX_portrait_CEN_gunther_lutjens
+				small=GFX_portrait_CEN_gunther_lutjens_small
+			}
+			army={
+				small="GFX_idea_gunther_lutjens"
+			}
+		}
 		advisor={
 			slot = high_command
-			idea_token = CEN_aa2
-			ledger  = army 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			idea_token = CEN_navy_high_command_1
+			ledger = navy
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		
+		navy_leader={
+			traits={ gentlemanly navy_career_officer superior_tactician }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=4
+			legacy_id=31
+		}
+	}
+
+
+
+	### THEORISTS ###
+
+	# Von Manstein up there
+
+	# Guderian up there
+
+	# Saalwachter up there
+
+	CEN_air_theorist_2 ={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_2"
+				small="GFX_idea_von_braun"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CEN_air_theorist_2
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
 			}
 		}
 	}
-	CEN_acgs={
+
+	CEN_army_theorist_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_heisenberg"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CEN_army_theorist_2
+			ledger = army
+			allowed = {
+				original_tag = CEN
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+
+	CEN_air_theorist_3={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_wolfram_von_richthofen"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = CEN_air_theorist_3
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				close_air_support_proponent
+			}
+		}
+	}
+
+	CEN_air_theorist_4={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_walther_wever"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CEN_air_theorist_4
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	CEN_air_theorist_5={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_ernst_udet"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CEN_air_theorist_5
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				dive_bomber
+			}
+		}
+	}
+
+	CEN_navy_theorist_3={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_otto_ciliax"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = CEN_navy_theorist_3
+			ledger = navy
+			allowed = {
+				original_tag = CEN
+			}
+			traits = { naval_theorist }
+		}
+	}
+
+	### ARMY CHIEFS ###
+
+	CEN_army_chief_1={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_ludwig_beck"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CEN_army_chief_1
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CEN_army_chief_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_wilhelm_keitel"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CEN_army_chief_2
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	CEN_army_chief_3={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_franz_halder"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CEN_army_chief_3
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CEN_army_chief_4={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_walther_von_brauchitsch"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CEN_army_chief_4
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	# Dönitz up there
+
+	# Raeder up there
+
+
+	### AIR CHIEFS ###
+
+	# Kesselring up there
+
+	CEN_air_chief_2={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_goering"
+			}
+			civilian={
+				large=GFX_portrait_CEN_hermann_goring
+			}
+		}
 		advisor={
 			slot = air_chief
-			idea_token = CEN_acgs
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					air_chief_ground_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_3"
+			idea_token = CEN_air_chief_2
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
 			}
 		}
 	}
-	CEN_ncm={
+
+	CEN_air_chief_3={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_ritter_von_greim"
+			}
+		}
 		advisor={
-			slot = navy_chief
-			idea_token = CEN_ncm
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					navy_chief_maneuver_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_3"
+			slot = air_chief
+			idea_token = CEN_air_chief_3
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.500
 			}
 		}
 	}
-	CEN_nccr={
-		advisor={
-			slot = navy_chief
-			idea_token = CEN_nccr
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					navy_chief_commerce_raiding_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Von Rundstedt up there
+
+	# Rommel up there
+
+	# Student up there
+
+	# Lütjens up there
+
+	CEN_army_high_command_3={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small="GFX_idea_ferdinand_schorner"
 			}
 		}
-	}
-	CEN_coi={
-		advisor={
-			slot = political_advisor
-			idea_token = CEN_coi
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
-			}
-		}
-	}
-	CEN_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = CEN_democratic_guy
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					democratic_reformer 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
-			}
-		}
-	}
-	CEN_acd2={
-		advisor={
-			slot = army_chief
-			idea_token = CEN_acd2
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					army_chief_defensive_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
-			}
-		}
-	}
-	CEN_acas={
 		advisor={
 			slot = high_command
-			idea_token = CEN_acas
-			ledger  = air 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					air_close_air_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_2"
+			idea_token = CEN_army_high_command_3
+			ledger = army
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
 			}
 		}
 	}
-	CEN_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = CEN_communist_guy
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					communist_revolutionary 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+
+	CEN_army_high_command_4={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
+				small="GFX_idea_werner_von_fritsch"
 			}
 		}
-	}
-	CEN_ncs={
 		advisor={
 			slot = high_command
-			idea_token = CEN_ncs
-			ledger  = navy 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					navy_capital_ship_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_2"
+			idea_token = CEN_army_high_command_4
+			ledger = army
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
 			}
 		}
 	}
-	CEN_awt={
-		advisor={
-			slot = theorist
-			idea_token = CEN_awt
-			ledger  = air 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					air_warfare_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+
+	CEN_army_high_command_5={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_2"
+				small="GFX_idea_hugo_sperrle"
 			}
 		}
-	}
-	CEN_pot={
-		advisor={
-			slot = political_advisor
-			idea_token = CEN_pot
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	CEN_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = CEN_fascist_guy
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					fascist_demagogue 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	CEN_ai2={
 		advisor={
 			slot = high_command
-			idea_token = CEN_ai2
-			ledger  = army 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_3"
+			idea_token = CEN_army_high_command_5
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
-	CEN_nt={
-		advisor={
-			slot = theorist
-			idea_token = CEN_nt
-			ledger  = navy 
-				allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					naval_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+
+	CEN_army_high_command_6={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_3"
+				small="GFX_idea_erhard_milch"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CEN_army_high_command_6
+			ledger = air
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
-	CEN_aco2={
-		advisor={
-			slot = army_chief
-			idea_token = CEN_aco2
-			allowed  = {
-					original_tag  = CEN
-				}
-				traits  = {
-					army_chief_organizational_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+
+	CEN_army_high_command_7={
+		name="Max Mustermann"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_2"
+				small="GFX_idea_erich_bey"
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = CEN_army_high_command_7
+			ledger = navy
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CEN_army_high_command_8={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_viktor_schutze"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CEN_army_high_command_8
+			ledger = navy
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+
+	### POLITICAL ADVISORS ###
+
+	CEN_political_advisor_1={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_todt"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_1
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				fortification_engineer 
+			}
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+
+	CEN_political_advisor_2={ 
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_2
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				armaments_organizer 
+			}
+		}		
+	}
+
+	CEN_political_advisor_3={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_hjalmar_schacht"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_3
+			cost = 75.000
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+
+	CEN_political_advisor_4={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_walther_funk"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_4
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	CEN_political_advisor_5={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_joseph_goebbels"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_7
+			allowed = {
+				original_tag = CEN
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				propaganda_expert 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 24.000
+			}
+		}
+	}
+
+	CEN_political_advisor_6={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_rudolf_hess"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_8
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				amateur_aviator_hess
+			}
+		}
+	}
+
+	CEN_political_advisor_7={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_heinrich_himmler"
+				large=GFX_portrait_CEN_heinrich_himmler
+			}
+			civilian = {
+				large=GFX_portrait_CEN_heinrich_himmler
+			}
+		}
+		allowed_civil_war = {
+			has_government = fascism
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_9
+			allowed = {
+				original_tag = CEN
+			}
+			on_add = {
+				custom_effect_tooltip = CEN_SS_himmler_recruit
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+
+	CEN_political_advisor_8={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_10
+			allowed = {
+				original_tag = CEN
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+
+	CEN_political_advisor_9={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_joachim_von_ribbentrop"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_11
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	CEN_political_advisor_10={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_konstantin_von_neurath"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_12
+			allowed = {
+				original_tag = CEN
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+
+	
+	CEN_political_advisor_11={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_hjalmar_schacht"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_15
+			allowed = {
+				original_tag = CEN
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				economist 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+	
+	CEN_political_advisor_12={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_todt"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_16
+			allowed = {
+				original_tag = CEN
+				has_dlc = "Waking the Tiger"
+			}
+			traits = {
+				connected_citizen 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+
+	CEN_political_advisor_13={
+		name="Max Mustermann"
+		portraits={
+			army={
+				small="GFX_idea_ger_wilhelm_canaris"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CEN_political_advisor_18
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = CEN
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}		
 	}
 }

@@ -37,11 +37,6 @@ recruit_character = ACR_political_advisor_10
 recruit_character = ACR_political_advisor_11
 recruit_character = ACR_political_advisor_12
 recruit_character = ACR_political_advisor_13
-recruit_character = ACR_political_advisor_14
-recruit_character = ACR_political_advisor_15
-recruit_character = ACR_political_advisor_16
-recruit_character = ACR_political_advisor_17
-recruit_character = ACR_political_advisor_18
 recruit_character = ACR_army_high_command_1
 recruit_character = ACR_army_high_command_2
 recruit_character = ACR_army_high_command_3
@@ -80,11 +75,6 @@ recruit_character = ACR_general_2
 recruit_character = ACR_general_3
 recruit_character = ACR_general_4
 recruit_character = ACR_general_5
-recruit_character = ACR_general_6
-recruit_character = ACR_general_7
-recruit_character = ACR_general_8
-recruit_character = ACR_general_9
-recruit_character = ACR_general_10
 recruit_character = ACR_air_high_command_1
 recruit_character = ACR_air_high_command_2
 recruit_character = ACR_air_high_command_3
@@ -241,143 +231,5 @@ if = {
 	}
 }
 
-create_country_leader = {
-	name = "Oracle372"
-	desc = "POLITICS_LON_FAWCETT_DESC"
-	picture = "gfx/leaders/ACR/Oracle372.dds"
-	expire = "1969.1.7"
-	ideology = social_democrat
-	traits = {
-	}
-}
 
-create_country_leader = {
-	name = "Noaschm"
-	desc = "POLITICS_SHANE_IRESON_DESC"
-	picture = "gfx/leaders/ACR/Noaschm.dds"
-	expire = "1968.9.4"
-	ideology = stalinism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Clashgamer04"
-	desc = "POLITICS_MAISON_LAWLER_DESC"
-	picture = "gfx/leaders/ACR/Clashgamer04.dds"
-	expire = "1974.8.22"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "manman"
-	desc = "POLITICS_STEWARD_FODEN_DESC"
-	picture = "gfx/leaders/ACR/manman.dds"
-	expire = "1972.10.19"
-	ideology = buddhism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "A very RAD dude"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Clovered Firearm"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Vestivity"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "wave"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "BigM"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "Canton"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "Stoic"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 1
-}
-
-create_navy_leader = {
-	name = "Basil Al-Ris"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "Infinateboom"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 5
-	maneuvering_skill = 5
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Serokryl"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 1
-}
 

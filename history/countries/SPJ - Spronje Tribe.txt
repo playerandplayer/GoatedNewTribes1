@@ -159,100 +159,72 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = SPJ_political_advisor_1
+recruit_character = SPJ_political_advisor_2
+recruit_character = SPJ_political_advisor_3
+recruit_character = SPJ_political_advisor_4
+recruit_character = SPJ_political_advisor_5
+recruit_character = SPJ_political_advisor_6
+recruit_character = SPJ_political_advisor_7
+recruit_character = SPJ_political_advisor_8
+recruit_character = SPJ_political_advisor_9
+recruit_character = SPJ_political_advisor_10
+recruit_character = SPJ_political_advisor_11
+recruit_character = SPJ_political_advisor_12
+recruit_character = SPJ_political_advisor_13
+recruit_character = SPJ_army_high_command_1
+recruit_character = SPJ_army_high_command_2
+recruit_character = SPJ_army_high_command_3
+recruit_character = SPJ_army_high_command_4
+recruit_character = SPJ_army_high_command_5
+recruit_character = SPJ_army_high_command_6
+recruit_character = SPJ_army_high_command_7
+recruit_character = SPJ_army_high_command_8
+recruit_character = SPJ_army_high_command_9
+recruit_character = SPJ_air_chief_1
+recruit_character = SPJ_air_chief_2
+recruit_character = SPJ_air_chief_3
+recruit_character = SPJ_navy_chief_1
+recruit_character = SPJ_navy_chief_2
+recruit_character = SPJ_army_chief_1
+recruit_character = SPJ_army_chief_2
+recruit_character = SPJ_army_chief_3
+recruit_character = SPJ_army_chief_4
+recruit_character = SPJ_navy_theorist_1
+recruit_character = SPJ_navy_theorist_2
+recruit_character = SPJ_navy_theorist_3
+recruit_character = SPJ_air_theorist_1
+recruit_character = SPJ_air_theorist_2
+recruit_character = SPJ_air_theorist_3
+recruit_character = SPJ_air_theorist_4
+recruit_character = SPJ_air_theorist_5
+recruit_character = SPJ_army_theorist_1
+recruit_character = SPJ_army_theorist_2
+recruit_character = SPJ_navy_high_command_1
+recruit_character = SPJ_admiral_1
+recruit_character = SPJ_admiral_2
+recruit_character = SPJ_navy_chief_1
+recruit_character = SPJ_navy_chief_2
+recruit_character = SPJ_general_1
+recruit_character = SPJ_general_2
+recruit_character = SPJ_general_3
+recruit_character = SPJ_general_4
+recruit_character = SPJ_general_5
+recruit_character = SPJ_air_high_command_1
+recruit_character = SPJ_air_high_command_2
+recruit_character = SPJ_air_high_command_3
+recruit_character = SPJ_fascist_leader
+recruit_character = SPJ_democratic_leader
+recruit_character = SPJ_communist_leader
+recruit_character = SPJ_authoritarian_leader
+recruit_character = SPJ_anarchism_leader
+recruit_character = SPJ_socialism_leader
+recruit_character = SPJ_monarchism_leader
+recruit_character = SPJ_religious_leader
+
 set_politics = {
 	ruling_party = authoritarian
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
 }
-
-create_country_leader = {
-	name = "Krosis$"
-	desc = "POLITICS_OSWALD_LAYCOCK_DESC"
-	picture = "gfx/leaders/Krosis$.dds"
-	expire = "1979.7.4"
-	ideology = social_democracy
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Krosis$"
-	desc = "POLITICS_SANFORD_GARBER_DESC"
-	picture = "gfx/leaders/Krosis$.dds"
-	expire = "1974.5.9"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Krosis$"
-	desc = "POLITICS_NEEL_PEEBLES_DESC"
-	picture = "gfx/leaders/Krosis$.dds"
-	expire = "1976.4.26"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Krosis$"
-	desc = "POLITICS_TAN_JEFFS_DESC"
-	picture = "gfx/leaders/Krosis$.dds"
-	expire = "1973.4.22"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Jud Ealy"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Augustin Humphrey"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Luke Rigg"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 5
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Jens Funnell"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Sid Bourne"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 4
-}
-

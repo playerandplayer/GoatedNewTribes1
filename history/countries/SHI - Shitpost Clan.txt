@@ -159,100 +159,72 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = SHI_political_advisor_1
+recruit_character = SHI_political_advisor_2
+recruit_character = SHI_political_advisor_3
+recruit_character = SHI_political_advisor_4
+recruit_character = SHI_political_advisor_5
+recruit_character = SHI_political_advisor_6
+recruit_character = SHI_political_advisor_7
+recruit_character = SHI_political_advisor_8
+recruit_character = SHI_political_advisor_9
+recruit_character = SHI_political_advisor_10
+recruit_character = SHI_political_advisor_11
+recruit_character = SHI_political_advisor_12
+recruit_character = SHI_political_advisor_13
+recruit_character = SHI_army_high_command_1
+recruit_character = SHI_army_high_command_2
+recruit_character = SHI_army_high_command_3
+recruit_character = SHI_army_high_command_4
+recruit_character = SHI_army_high_command_5
+recruit_character = SHI_army_high_command_6
+recruit_character = SHI_army_high_command_7
+recruit_character = SHI_army_high_command_8
+recruit_character = SHI_army_high_command_9
+recruit_character = SHI_air_chief_1
+recruit_character = SHI_air_chief_2
+recruit_character = SHI_air_chief_3
+recruit_character = SHI_navy_chief_1
+recruit_character = SHI_navy_chief_2
+recruit_character = SHI_army_chief_1
+recruit_character = SHI_army_chief_2
+recruit_character = SHI_army_chief_3
+recruit_character = SHI_army_chief_4
+recruit_character = SHI_navy_theorist_1
+recruit_character = SHI_navy_theorist_2
+recruit_character = SHI_navy_theorist_3
+recruit_character = SHI_air_theorist_1
+recruit_character = SHI_air_theorist_2
+recruit_character = SHI_air_theorist_3
+recruit_character = SHI_air_theorist_4
+recruit_character = SHI_air_theorist_5
+recruit_character = SHI_army_theorist_1
+recruit_character = SHI_army_theorist_2
+recruit_character = SHI_navy_high_command_1
+recruit_character = SHI_admiral_1
+recruit_character = SHI_admiral_2
+recruit_character = SHI_navy_chief_1
+recruit_character = SHI_navy_chief_2
+recruit_character = SHI_general_1
+recruit_character = SHI_general_2
+recruit_character = SHI_general_3
+recruit_character = SHI_general_4
+recruit_character = SHI_general_5
+recruit_character = SHI_air_high_command_1
+recruit_character = SHI_air_high_command_2
+recruit_character = SHI_air_high_command_3
+recruit_character = SHI_fascist_leader
+recruit_character = SHI_democratic_leader
+recruit_character = SHI_communist_leader
+recruit_character = SHI_authoritarian_leader
+recruit_character = SHI_anarchism_leader
+recruit_character = SHI_socialism_leader
+recruit_character = SHI_monarchism_leader
+recruit_character = SHI_religious_leader
+
 set_politics = {
 	ruling_party = authoritarian
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
 }
-
-create_country_leader = {
-	name = "Finnik"
-	desc = "POLITICS_ROBERTO_OLOUGHLIN_DESC"
-	picture = "gfx/leaders/finnik.dds"
-	expire = "1979.4.13"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Finnik"
-	desc = "POLITICS_ALESSANDRO_TOMPKIN_DESC"
-	picture = "gfx/leaders/finnik.dds"
-	expire = "1967.2.16"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Finnik"
-	desc = "POLITICS_QUENTIN_BINNINGTON_DESC"
-	picture = "gfx/leaders/finnik.dds"
-	expire = "1971.9.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Finnik"
-	desc = "POLITICS_BILLY_HURST_DESC"
-	picture = "gfx/leaders/finnik.dds"
-	expire = "1976.1.8"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Giovanne Jeffers"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Antonio Blackmore"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Forster Mcculloch"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Herschel Davy"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Niels Etheridge"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 5
-}
-

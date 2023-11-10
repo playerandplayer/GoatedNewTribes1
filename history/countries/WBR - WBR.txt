@@ -157,100 +157,72 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = WBR_political_advisor_1
+recruit_character = WBR_political_advisor_2
+recruit_character = WBR_political_advisor_3
+recruit_character = WBR_political_advisor_4
+recruit_character = WBR_political_advisor_5
+recruit_character = WBR_political_advisor_6
+recruit_character = WBR_political_advisor_7
+recruit_character = WBR_political_advisor_8
+recruit_character = WBR_political_advisor_9
+recruit_character = WBR_political_advisor_10
+recruit_character = WBR_political_advisor_11
+recruit_character = WBR_political_advisor_12
+recruit_character = WBR_political_advisor_13
+recruit_character = WBR_army_high_command_1
+recruit_character = WBR_army_high_command_2
+recruit_character = WBR_army_high_command_3
+recruit_character = WBR_army_high_command_4
+recruit_character = WBR_army_high_command_5
+recruit_character = WBR_army_high_command_6
+recruit_character = WBR_army_high_command_7
+recruit_character = WBR_army_high_command_8
+recruit_character = WBR_army_high_command_9
+recruit_character = WBR_air_chief_1
+recruit_character = WBR_air_chief_2
+recruit_character = WBR_air_chief_3
+recruit_character = WBR_navy_chief_1
+recruit_character = WBR_navy_chief_2
+recruit_character = WBR_army_chief_1
+recruit_character = WBR_army_chief_2
+recruit_character = WBR_army_chief_3
+recruit_character = WBR_army_chief_4
+recruit_character = WBR_navy_theorist_1
+recruit_character = WBR_navy_theorist_2
+recruit_character = WBR_navy_theorist_3
+recruit_character = WBR_air_theorist_1
+recruit_character = WBR_air_theorist_2
+recruit_character = WBR_air_theorist_3
+recruit_character = WBR_air_theorist_4
+recruit_character = WBR_air_theorist_5
+recruit_character = WBR_army_theorist_1
+recruit_character = WBR_army_theorist_2
+recruit_character = WBR_navy_high_command_1
+recruit_character = WBR_admiral_1
+recruit_character = WBR_admiral_2
+recruit_character = WBR_navy_chief_1
+recruit_character = WBR_navy_chief_2
+recruit_character = WBR_general_1
+recruit_character = WBR_general_2
+recruit_character = WBR_general_3
+recruit_character = WBR_general_4
+recruit_character = WBR_general_5
+recruit_character = WBR_air_high_command_1
+recruit_character = WBR_air_high_command_2
+recruit_character = WBR_air_high_command_3
+recruit_character = WBR_fascist_leader
+recruit_character = WBR_democratic_leader
+recruit_character = WBR_communist_leader
+recruit_character = WBR_authoritarian_leader
+recruit_character = WBR_anarchism_leader
+recruit_character = WBR_socialism_leader
+recruit_character = WBR_monarchism_leader
+recruit_character = WBR_religious_leader
+
 set_politics = {
 	ruling_party = absolute_monarchy
 	last_election = "1935.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
 }
-
-create_country_leader = {
-	name = "John Adams"
-	desc = "POLITICS_ANGEL_GREENALL_DESC"
-	picture = "gfx/leaders/John Adams.dds"
-	expire = "1973.7.26"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "John Adams"
-	desc = "POLITICS_LANE_FAIRHURST_DESC"
-	picture = "gfx/leaders/John Adams.dds"
-	expire = "1970.8.5"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "John Adams"
-	desc = "POLITICS_TITUS_EAST_DESC"
-	picture = "gfx/leaders/John Adams.dds"
-	expire = "1975.8.14"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "John Adams"
-	desc = "POLITICS_GERE_SALMON_DESC"
-	picture = "gfx/leaders/John Adams.dds"
-	expire = "1978.6.8"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Chadwick Townsend"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Hervey Heaton"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Dennie Walpole"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Mischa Leeming"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Renard Linley"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 1
-}
-

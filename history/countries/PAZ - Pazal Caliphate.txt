@@ -158,100 +158,72 @@ set_popularities = {
 
 }
 
+recruit_character = PAZ_political_advisor_1
+recruit_character = PAZ_political_advisor_2
+recruit_character = PAZ_political_advisor_3
+recruit_character = PAZ_political_advisor_4
+recruit_character = PAZ_political_advisor_5
+recruit_character = PAZ_political_advisor_6
+recruit_character = PAZ_political_advisor_7
+recruit_character = PAZ_political_advisor_8
+recruit_character = PAZ_political_advisor_9
+recruit_character = PAZ_political_advisor_10
+recruit_character = PAZ_political_advisor_11
+recruit_character = PAZ_political_advisor_12
+recruit_character = PAZ_political_advisor_13
+recruit_character = PAZ_army_high_command_1
+recruit_character = PAZ_army_high_command_2
+recruit_character = PAZ_army_high_command_3
+recruit_character = PAZ_army_high_command_4
+recruit_character = PAZ_army_high_command_5
+recruit_character = PAZ_army_high_command_6
+recruit_character = PAZ_army_high_command_7
+recruit_character = PAZ_army_high_command_8
+recruit_character = PAZ_army_high_command_9
+recruit_character = PAZ_air_chief_1
+recruit_character = PAZ_air_chief_2
+recruit_character = PAZ_air_chief_3
+recruit_character = PAZ_navy_chief_1
+recruit_character = PAZ_navy_chief_2
+recruit_character = PAZ_army_chief_1
+recruit_character = PAZ_army_chief_2
+recruit_character = PAZ_army_chief_3
+recruit_character = PAZ_army_chief_4
+recruit_character = PAZ_navy_theorist_1
+recruit_character = PAZ_navy_theorist_2
+recruit_character = PAZ_navy_theorist_3
+recruit_character = PAZ_air_theorist_1
+recruit_character = PAZ_air_theorist_2
+recruit_character = PAZ_air_theorist_3
+recruit_character = PAZ_air_theorist_4
+recruit_character = PAZ_air_theorist_5
+recruit_character = PAZ_army_theorist_1
+recruit_character = PAZ_army_theorist_2
+recruit_character = PAZ_navy_high_command_1
+recruit_character = PAZ_admiral_1
+recruit_character = PAZ_admiral_2
+recruit_character = PAZ_navy_chief_1
+recruit_character = PAZ_navy_chief_2
+recruit_character = PAZ_general_1
+recruit_character = PAZ_general_2
+recruit_character = PAZ_general_3
+recruit_character = PAZ_general_4
+recruit_character = PAZ_general_5
+recruit_character = PAZ_air_high_command_1
+recruit_character = PAZ_air_high_command_2
+recruit_character = PAZ_air_high_command_3
+recruit_character = PAZ_fascist_leader
+recruit_character = PAZ_democratic_leader
+recruit_character = PAZ_communist_leader
+recruit_character = PAZ_authoritarian_leader
+recruit_character = PAZ_anarchism_leader
+recruit_character = PAZ_socialism_leader
+recruit_character = PAZ_monarchism_leader
+recruit_character = PAZ_religious_leader
+
 set_politics = {
 	ruling_party = authoritarian
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
 }
-
-create_country_leader = {
-	name = "Shiners"
-	desc = "POLITICS_RAYMUND_VINNY_DESC"
-	picture = "gfx/leaders/Shiners.dds"
-	expire = "1965.10.6"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Shiners"
-	desc = "POLITICS_JERAMIE_STOUT_DESC"
-	picture = "gfx/leaders/Shiners.dds"
-	expire = "1969.9.25"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Shiners"
-	desc = "POLITICS_WIATT_LUMLEY_DESC"
-	picture = "gfx/leaders/Shiners.dds"
-	expire = "1965.8.19"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Shiners"
-	desc = "POLITICS_EHUD_REDFERN_DESC"
-	picture = "gfx/leaders/Shiners.dds"
-	expire = "1976.3.8"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Albatros Fitzpatrick"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Ulises Kinsella"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Stanford Dermody"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Kristian Porter"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 5
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Jody Darbyshire"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 5
-}
-

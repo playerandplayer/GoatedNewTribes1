@@ -160,90 +160,73 @@ set_popularities = {
 	
 }
 
+recruit_character = YOR_political_advisor_1
+recruit_character = YOR_political_advisor_2
+recruit_character = YOR_political_advisor_3
+recruit_character = YOR_political_advisor_4
+recruit_character = YOR_political_advisor_5
+recruit_character = YOR_political_advisor_6
+recruit_character = YOR_political_advisor_7
+recruit_character = YOR_political_advisor_8
+recruit_character = YOR_political_advisor_9
+recruit_character = YOR_political_advisor_10
+recruit_character = YOR_political_advisor_11
+recruit_character = YOR_political_advisor_12
+recruit_character = YOR_political_advisor_13
+recruit_character = YOR_army_high_command_1
+recruit_character = YOR_army_high_command_2
+recruit_character = YOR_army_high_command_3
+recruit_character = YOR_army_high_command_4
+recruit_character = YOR_army_high_command_5
+recruit_character = YOR_army_high_command_6
+recruit_character = YOR_army_high_command_7
+recruit_character = YOR_army_high_command_8
+recruit_character = YOR_army_high_command_9
+recruit_character = YOR_air_chief_1
+recruit_character = YOR_air_chief_2
+recruit_character = YOR_air_chief_3
+recruit_character = YOR_navy_chief_1
+recruit_character = YOR_navy_chief_2
+recruit_character = YOR_army_chief_1
+recruit_character = YOR_army_chief_2
+recruit_character = YOR_army_chief_3
+recruit_character = YOR_army_chief_4
+recruit_character = YOR_navy_theorist_1
+recruit_character = YOR_navy_theorist_2
+recruit_character = YOR_navy_theorist_3
+recruit_character = YOR_air_theorist_1
+recruit_character = YOR_air_theorist_2
+recruit_character = YOR_air_theorist_3
+recruit_character = YOR_air_theorist_4
+recruit_character = YOR_air_theorist_5
+recruit_character = YOR_army_theorist_1
+recruit_character = YOR_army_theorist_2
+recruit_character = YOR_navy_high_command_1
+recruit_character = YOR_admiral_1
+recruit_character = YOR_admiral_2
+recruit_character = YOR_navy_chief_1
+recruit_character = YOR_navy_chief_2
+recruit_character = YOR_general_1
+recruit_character = YOR_general_2
+recruit_character = YOR_general_3
+recruit_character = YOR_general_4
+recruit_character = YOR_general_5
+recruit_character = YOR_air_high_command_1
+recruit_character = YOR_air_high_command_2
+recruit_character = YOR_air_high_command_3
+recruit_character = YOR_fascist_leader
+recruit_character = YOR_democratic_leader
+recruit_character = YOR_communist_leader
+recruit_character = YOR_authoritarian_leader
+recruit_character = YOR_anarchism_leader
+recruit_character = YOR_socialism_leader
+recruit_character = YOR_monarchism_leader
+recruit_character = YOR_religious_leader
+
+
 set_politics = {
 	ruling_party = absolute_monarchy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = No
 }
-
-create_country_leader = {
-	name = "Yorkshire"
-	desc = "POLITICS_LEONARD_ALLUM_DESC"
-	picture = "gfx/leaders/Yorkshire.dds"
-	expire = "1971.7.26"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Shovel"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Atlant Blochov"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Barack Bin Toaster"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Bokse Robert"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Bread"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "GeniusWack0"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 4
-	maneuvering_skill = 4
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "Juice of the Punished Jihad"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 3
-	maneuvering_skill = 1
-	coordination_skill = 5
-}
-

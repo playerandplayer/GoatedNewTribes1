@@ -1,9 +1,9 @@
 characters={
-	ACR_fascist_leader={
-		name="Kwazy"
+	ARO_fascist_leader={
+		name="Max Mustermann"
 		portraits={
 			civilian={
-				large=GFX_portrait_ACR_fascist_leader
+				large=GFX_portrait_ARO_fascist_leader
 			}
 		}
 		country_leader={
@@ -14,11 +14,11 @@ characters={
 		}
 	}
 
-	ACR_democratic_leader={
-		name="Oracle"
+	ARO_democratic_leader={
+		name="bjex"
 		portraits={
 			civilian={
-				large="gfx/leaders/ACR/Oracle372.dds"
+				large="gfx/leaders/Bjex.dds"
 			}
 		}
 		country_leader={
@@ -28,26 +28,26 @@ characters={
 		}
 	}
 
-	ACR_communist_leader={
-		name="Noaschm"
+	ARO_communist_leader={
+		name="Max Mustermann"
 		portraits={
 			civilian={
-				large="gfx/leaders/ACR/Noaschm.dds"
+				large=GFX_portrait_ARO_communist_leader
 			}
 		}
 		country_leader={
-			ideology=stalinist
+			ideology=stalinism_ideology
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
 	
-	ACR_authoritarian_leader={
-		name="Clashgamer04"
+	ARO_authoritarian_leader={
+		name="Max Mustermann"
 		portraits={
 			civilian={
-				large="gfx/leaders/ACR/Clashgamer04.dds"
+				large=GFX_portrait_ARO_authoritarian_leader
 			}
 		}
 		country_leader={
@@ -58,11 +58,11 @@ characters={
 		}
 	}
 	
-	ACR_anarchism_leader={
+	ARO_anarchism_leader={
 		name="Max Mustermann"
 		portraits={
 			civilian={
-				large=GFX_portrait_ACR_anarchism_leader
+				large=GFX_portrait_ARO_anarchism_leader
 			}
 		}
 		country_leader={
@@ -73,11 +73,11 @@ characters={
 		}
 	}
 	
-	ACR_socialism_leader={
-		name="OscarEMN"
+	ARO_socialism_leader={
+		name="Max Mustermann"
 		portraits={
 			civilian={
-				large=GFX_portrait_ACR_socialism_leader
+				large=GFX_portrait_ARO_socialism_leader
 			}
 		}
 		country_leader={
@@ -88,11 +88,11 @@ characters={
 		}
 	}
 	
-	ACR_monarchism_leader={
-		name="Oracle"
+	ARO_monarchism_leader={
+		name="Max Mustermann"
 		portraits={
 			civilian={
-				large="gfx/leaders/ACR/Oracle372.dds"
+				large=GFX_portrait_ARO_monarchism_leader
 			}
 		}
 		country_leader={
@@ -103,11 +103,11 @@ characters={
 		}
 	}
 		
-	ACR_religious_leader={
-		name="manman"
+	ARO_religious_leader={
+		name="Max Mustermann"
 		portraits={
 			civilian={
-				large="gfx/leaders/ACR/manman.dds"
+				large=GFX_portrait_ARO_religious_leader
 			}
 		}
 		country_leader={
@@ -119,20 +119,20 @@ characters={
 	
 	}
 
-	ACR_army_high_command_1={
+	ARO_army_high_command_1={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_gerd_von_rundstedt
+				large=GFX_portrait_ARO_gerd_von_rundstedt
 				small="GFX_idea_gerd_von_rundstedt"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_regrouping_expert
+			idea_token = ARO_regrouping_expert
 			ledger = army
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_regrouping_2
@@ -154,12 +154,12 @@ characters={
 		}
 	}
 
-	ACR_general_1={
+	ARO_general_1={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_gunther_von_kluge
-				small=GFX_portrait_ACR_gunther_von_kluge_small
+				large=GFX_portrait_ARO_gunther_von_kluge
+				small=GFX_portrait_ARO_gunther_von_kluge_small
 			}
 		}
 		field_marshal={
@@ -173,12 +173,12 @@ characters={
 		}
 	}
 
-	ACR_general_2={
+	ARO_general_2={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_friedrich_paulus
-				small=GFX_portrait_ACR_friedrich_paulus_small
+				large=GFX_portrait_ARO_friedrich_paulus
+				small=GFX_portrait_ARO_friedrich_paulus_small
 			}
 		}
 		corps_commander={
@@ -192,20 +192,20 @@ characters={
 		}
 	}
 
-	ACR_army_high_command_2={
+	ARO_army_high_command_2={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_erwin_rommel
+				large=GFX_portrait_ARO_erwin_rommel
 				small="GFX_idea_erwin_rommel"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_2
+			idea_token = ARO_army_high_command_2
 			ledger = army
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_armored_3
@@ -227,21 +227,21 @@ characters={
 		}
 	}
 
-	ACR_army_theorist_1={
+	ARO_army_theorist_1={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_erich_von_manstein
+				large=GFX_portrait_ARO_erich_von_manstein
 				small="GFX_idea_manstein"
 			}
 		}
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = ACR_army_theorist_1
+			idea_token = ARO_army_theorist_1
 			ledger = army
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				military_theorist
@@ -259,12 +259,12 @@ characters={
 		}
 	}
 
-	ACR_general_3={
+	ARO_general_3={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_wilhelm_list
-				small=GFX_portrait_ACR_wilhelm_list_small
+				large=GFX_portrait_ARO_wilhelm_list
+				small=GFX_portrait_ARO_wilhelm_list_small
 			}
 		}
 		corps_commander={
@@ -278,12 +278,12 @@ characters={
 		}
 	}
 
-	ACR_general_4={
+	ARO_general_4={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_ewald_von_kleist
-				small=GFX_portrait_ACR_ewald_von_kleist_small
+				large=GFX_portrait_ARO_ewald_von_kleist
+				small=GFX_portrait_ARO_ewald_von_kleist_small
 			}
 		}
 		corps_commander={
@@ -298,20 +298,20 @@ characters={
 	}
 
 
-	ACR_air_high_command_3 ={
+	ARO_air_high_command_3 ={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_kurt_student
+				large=GFX_portrait_ARO_kurt_student
 				small="GFX_idea_kurt_student"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_air_high_command_3
+			idea_token = ARO_air_high_command_3
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				air_airborne_2
@@ -334,21 +334,21 @@ characters={
 	}
 
 
-	ACR_air_chief_1 ={
+	ARO_air_chief_1 ={
 		name="Max Mustermann"
 		portraits={
 			army={
 				small="GFX_idea_albert_kesselring"
 			}
 			army={
-				large=GFX_portrait_ACR_albert_kesselring
+				large=GFX_portrait_ARO_albert_kesselring
 			}
 		}
 		advisor={
 			slot = air_chief
-			idea_token = ACR_air_chief_1
+			idea_token = ARO_air_chief_1
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				air_chief_reform_2
@@ -371,12 +371,12 @@ characters={
 	}
 
 	
-	ACR_navy_chief_1 ={
+	ARO_navy_chief_1 ={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_karl_donitz
-				small=GFX_portrait_ACR_karl_donitz_small
+				large=GFX_portrait_ARO_karl_donitz
+				small=GFX_portrait_ARO_karl_donitz_small
 			}
 			army={
 				small="GFX_idea_donitz"
@@ -384,9 +384,9 @@ characters={
 		}
 		advisor={
 			slot = navy_chief
-			idea_token = ACR_navy_chief_1
+			idea_token = ARO_navy_chief_1
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				navy_chief_commerce_raiding_3
@@ -408,12 +408,12 @@ characters={
 		}
 	}
 
-	ACR_navy_chief_2={
+	ARO_navy_chief_2={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_erich_raeder
-				small=GFX_portrait_ACR_erich_raeder_small
+				large=GFX_portrait_ARO_erich_raeder
+				small=GFX_portrait_ARO_erich_raeder_small
 			}
 			army={
 				small="GFX_idea_raeder"
@@ -421,9 +421,9 @@ characters={
 		}
 		advisor={
 			slot = navy_chief
-			idea_token = ACR_navy_chief_2
+			idea_token = ARO_navy_chief_2
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				navy_chief_decisive_battle_2
@@ -445,12 +445,12 @@ characters={
 		}
 	}
 
-	ACR_navy_theorist_1={
+	ARO_navy_theorist_1={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_alfred_saalwachter
-				small=GFX_portrait_ACR_alfred_saalwachter_small
+				large=GFX_portrait_ARO_alfred_saalwachter
+				small=GFX_portrait_ARO_alfred_saalwachter_small
 			}
 			army={
 				small="GFX_idea_alfred_saalwachter"
@@ -459,10 +459,10 @@ characters={
 		advisor={
 			cost = 150
 			slot = theorist
-			idea_token = ACR_navy_theorist_1
+			idea_token = ARO_navy_theorist_1
 			ledger = navy
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				submarine_specialist
@@ -480,12 +480,12 @@ characters={
 		}
 	}
 
-	ACR_admiral_1 ={
+	ARO_admiral_1 ={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_hermann_boehm
-				small=GFX_portrait_ACR_hermann_boehm_small
+				large=GFX_portrait_ARO_hermann_boehm
+				small=GFX_portrait_ARO_hermann_boehm_small
 			}
 		}
 		navy_leader={
@@ -499,12 +499,12 @@ characters={
 		}
 	}
 
-	ACR_admiral_2={
+	ARO_admiral_2={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_wilhelm_marschall
-				small=GFX_portrait_ACR_wilhelm_marschall_small
+				large=GFX_portrait_ARO_wilhelm_marschall
+				small=GFX_portrait_ARO_wilhelm_marschall_small
 			}
 		}
 		navy_leader={
@@ -518,12 +518,12 @@ characters={
 		}
 	}
 
-	ACR_navy_high_command_1 ={
+	ARO_navy_high_command_1 ={
 		name="Max Mustermann"
 		portraits={
 			army={
-				large=GFX_portrait_ACR_gunther_lutjens
-				small=GFX_portrait_ACR_gunther_lutjens_small
+				large=GFX_portrait_ARO_gunther_lutjens
+				small=GFX_portrait_ARO_gunther_lutjens_small
 			}
 			army={
 				small="GFX_idea_gunther_lutjens"
@@ -531,10 +531,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_navy_high_command_1
+			idea_token = ARO_navy_high_command_1
 			ledger = navy
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				navy_fleet_logistics_2
@@ -566,7 +566,7 @@ characters={
 
 	# Saalwachter up there
 
-	ACR_air_theorist_2 ={
+	ARO_air_theorist_2 ={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -576,10 +576,10 @@ characters={
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = ACR_air_theorist_2
+			idea_token = ARO_air_theorist_2
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			research_bonus = {
 				rocketry = 0.150
@@ -590,7 +590,7 @@ characters={
 		}
 	}
 
-	ACR_army_theorist_2={
+	ARO_army_theorist_2={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -600,10 +600,10 @@ characters={
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = ACR_army_theorist_2
+			idea_token = ARO_army_theorist_2
 			ledger = army
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			research_bonus = {
 				nuclear = 0.150
@@ -614,7 +614,7 @@ characters={
 		}
 	}
 
-	ACR_air_theorist_3={
+	ARO_air_theorist_3={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -624,10 +624,10 @@ characters={
 		advisor={
 			cost = 150
 			slot = theorist
-			idea_token = ACR_air_theorist_3
+			idea_token = ARO_air_theorist_3
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				close_air_support_proponent
@@ -635,7 +635,7 @@ characters={
 		}
 	}
 
-	ACR_air_theorist_4={
+	ARO_air_theorist_4={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -645,16 +645,16 @@ characters={
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = ACR_air_theorist_4
+			idea_token = ARO_air_theorist_4
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = { air_warfare_theorist }
 		}
 	}
 
-	ACR_air_theorist_5={
+	ARO_air_theorist_5={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -664,10 +664,10 @@ characters={
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = ACR_air_theorist_5
+			idea_token = ARO_air_theorist_5
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				dive_bomber
@@ -675,7 +675,7 @@ characters={
 		}
 	}
 
-	ACR_navy_theorist_3={
+	ARO_navy_theorist_3={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -685,10 +685,10 @@ characters={
 		advisor={
 			cost = 100
 			slot = theorist
-			idea_token = ACR_navy_theorist_3
+			idea_token = ARO_navy_theorist_3
 			ledger = navy
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = { naval_theorist }
 		}
@@ -696,7 +696,7 @@ characters={
 
 	### ARMY CHIEFS ###
 
-	ACR_army_chief_1={
+	ARO_army_chief_1={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -705,9 +705,9 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = ACR_army_chief_1
+			idea_token = ARO_army_chief_1
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_chief_organizational_2
@@ -719,7 +719,7 @@ characters={
 		}
 	}
 
-	ACR_army_chief_2={
+	ARO_army_chief_2={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -728,9 +728,9 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = ACR_army_chief_2
+			idea_token = ARO_army_chief_2
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_chief_drill_2
@@ -742,7 +742,7 @@ characters={
 		}		
 	}
 
-	ACR_army_chief_3={
+	ARO_army_chief_3={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -751,9 +751,9 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = ACR_army_chief_3
+			idea_token = ARO_army_chief_3
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_chief_offensive_2
@@ -765,7 +765,7 @@ characters={
 		}
 	}
 
-	ACR_army_chief_4={
+	ARO_army_chief_4={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -774,9 +774,9 @@ characters={
 		}
 		advisor={	
 			slot = army_chief
-			idea_token = ACR_army_chief_4
+			idea_token = ARO_army_chief_4
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_chief_maneuver_2
@@ -800,21 +800,21 @@ characters={
 
 	# Kesselring up there
 
-	ACR_air_chief_2={
+	ARO_air_chief_2={
 		name="Max Mustermann"
 		portraits={
 			army={
 				small="GFX_idea_goering"
 			}
 			civilian={
-				large=GFX_portrait_ACR_hermann_goring
+				large=GFX_portrait_ARO_hermann_goring
 			}
 		}
 		advisor={
 			slot = air_chief
-			idea_token = ACR_air_chief_2
+			idea_token = ARO_air_chief_2
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				air_chief_ground_support_2
@@ -826,7 +826,7 @@ characters={
 		}
 	}
 
-	ACR_air_chief_3={
+	ARO_air_chief_3={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -835,9 +835,9 @@ characters={
 		}
 		advisor={
 			slot = air_chief
-			idea_token = ACR_air_chief_3
+			idea_token = ARO_air_chief_3
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				air_chief_all_weather_2
@@ -850,7 +850,7 @@ characters={
 	}
 
 
-	### MILITARY HIGH COMMAND ###
+	### MILITARY HIGH COMMARO ###
 
 	# Von Rundstedt up there
 
@@ -860,7 +860,7 @@ characters={
 
 	# Lütjens up there
 
-	ACR_army_high_command_3={
+	ARO_army_high_command_3={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -869,10 +869,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_3
+			idea_token = ARO_army_high_command_3
 			ledger = army
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_infantry_2
@@ -884,7 +884,7 @@ characters={
 		}
 	}
 
-	ACR_army_high_command_4={
+	ARO_army_high_command_4={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -893,10 +893,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_4
+			idea_token = ARO_army_high_command_4
 			ledger = army
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				army_logistics_2
@@ -908,7 +908,7 @@ characters={
 		}
 	}
 
-	ACR_army_high_command_5={
+	ARO_army_high_command_5={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -917,10 +917,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_5
+			idea_token = ARO_army_high_command_5
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				air_close_air_support_2
@@ -932,7 +932,7 @@ characters={
 		}
 	}
 
-	ACR_army_high_command_6={
+	ARO_army_high_command_6={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -941,10 +941,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_6
+			idea_token = ARO_army_high_command_6
 			ledger = air
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				air_bomber_interception_2
@@ -956,7 +956,7 @@ characters={
 		}
 	}
 
-	ACR_army_high_command_7={
+	ARO_army_high_command_7={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -965,10 +965,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_7
+			idea_token = ARO_army_high_command_7
 			ledger = navy
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				navy_naval_air_defense_2
@@ -980,7 +980,7 @@ characters={
 		}
 	}
 	
-	ACR_army_high_command_8={
+	ARO_army_high_command_8={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -989,10 +989,10 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = ACR_army_high_command_8
+			idea_token = ARO_army_high_command_8
 			ledger = navy
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				navy_anti_submarine_1
@@ -1007,7 +1007,7 @@ characters={
 
 	### POLITICAL ADVISORS ###
 
-	ACR_political_advisor_1={
+	ARO_political_advisor_1={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1017,9 +1017,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_1
+			idea_token = ARO_political_advisor_1
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				fortification_engineer 
@@ -1030,7 +1030,7 @@ characters={
 		}
 	}
 
-	ACR_political_advisor_2={ 
+	ARO_political_advisor_2={ 
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1039,9 +1039,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_2
+			idea_token = ARO_political_advisor_2
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				armaments_organizer 
@@ -1049,7 +1049,7 @@ characters={
 		}		
 	}
 
-	ACR_political_advisor_3={
+	ARO_political_advisor_3={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1058,10 +1058,10 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_3
+			idea_token = ARO_political_advisor_3
 			cost = 75.000
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				captain_of_industry 
@@ -1072,7 +1072,7 @@ characters={
 		}		
 	}
 
-	ACR_political_advisor_4={
+	ARO_political_advisor_4={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1081,9 +1081,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_4
+			idea_token = ARO_political_advisor_4
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				war_industrialist 
@@ -1094,7 +1094,7 @@ characters={
 		}		
 	}
 
-	ACR_political_advisor_5={
+	ARO_political_advisor_5={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1103,9 +1103,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_7
+			idea_token = ARO_political_advisor_7
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			available = {
 				if = {
@@ -1131,7 +1131,7 @@ characters={
 		}
 	}
 
-	ACR_political_advisor_6={
+	ARO_political_advisor_6={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1140,9 +1140,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_8
+			idea_token = ARO_political_advisor_8
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				amateur_aviator_hess
@@ -1150,15 +1150,15 @@ characters={
 		}
 	}
 
-	ACR_political_advisor_7={
+	ARO_political_advisor_7={
 		name="Max Mustermann"
 		portraits={
 			army={
 				small="GFX_idea_heinrich_himmler"
-				large=GFX_portrait_ACR_heinrich_himmler
+				large=GFX_portrait_ARO_heinrich_himmler
 			}
 			civilian = {
-				large=GFX_portrait_ACR_heinrich_himmler
+				large=GFX_portrait_ARO_heinrich_himmler
 			}
 		}
 		allowed_civil_war = {
@@ -1166,12 +1166,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_9
+			idea_token = ARO_political_advisor_9
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			on_add = {
-				custom_effect_tooltip = ACR_SS_himmler_recruit
+				custom_effect_tooltip = ARO_SS_himmler_recruit
 			}
 			traits = {
 				prince_of_terror 
@@ -1179,7 +1179,7 @@ characters={
 		}
 	}
 
-	ACR_political_advisor_8={
+	ARO_political_advisor_8={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1188,9 +1188,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_10
+			idea_token = ARO_political_advisor_10
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			ai_will_do = {
 				factor = 30.000
@@ -1201,7 +1201,7 @@ characters={
 		}		
 	}
 
-	ACR_political_advisor_9={
+	ARO_political_advisor_9={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1210,9 +1210,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_11
+			idea_token = ARO_political_advisor_11
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				backroom_backstabber 
@@ -1223,7 +1223,7 @@ characters={
 		}
 	}
 
-	ACR_political_advisor_10={
+	ARO_political_advisor_10={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1232,9 +1232,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_12
+			idea_token = ARO_political_advisor_12
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 			}
 			traits = {
 				smooth_talking_charmer 
@@ -1243,7 +1243,7 @@ characters={
 	}
 
 	
-	ACR_political_advisor_11={
+	ARO_political_advisor_11={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1252,9 +1252,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_15
+			idea_token = ARO_political_advisor_15
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 				has_dlc = "Waking the Tiger"
 			}
 			traits = {
@@ -1266,7 +1266,7 @@ characters={
 		}		
 	}
 	
-	ACR_political_advisor_12={
+	ARO_political_advisor_12={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1275,9 +1275,9 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_16
+			idea_token = ARO_political_advisor_16
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 				has_dlc = "Waking the Tiger"
 			}
 			traits = {
@@ -1290,7 +1290,7 @@ characters={
 	}
 
 
-	ACR_political_advisor_13={
+	ARO_political_advisor_13={
 		name="Max Mustermann"
 		portraits={
 			army={
@@ -1299,12 +1299,12 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ACR_political_advisor_18
+			idea_token = ARO_political_advisor_18
 			available = {
 				has_intelligence_agency = yes 
 			}
 			allowed = {
-				original_tag = ACR
+				original_tag = ARO
 				has_dlc = "La Resistance"
 			}
 			traits = {

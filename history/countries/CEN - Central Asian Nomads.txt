@@ -16,6 +16,69 @@ set_convoys = 100
 
 set_oob = "ENG_1936"
 
+recruit_character = CEN_political_advisor_1
+recruit_character = CEN_political_advisor_2
+recruit_character = CEN_political_advisor_3
+recruit_character = CEN_political_advisor_4
+recruit_character = CEN_political_advisor_5
+recruit_character = CEN_political_advisor_6
+recruit_character = CEN_political_advisor_7
+recruit_character = CEN_political_advisor_8
+recruit_character = CEN_political_advisor_9
+recruit_character = CEN_political_advisor_10
+recruit_character = CEN_political_advisor_11
+recruit_character = CEN_political_advisor_12
+recruit_character = CEN_political_advisor_13
+recruit_character = CEN_army_high_command_1
+recruit_character = CEN_army_high_command_2
+recruit_character = CEN_army_high_command_3
+recruit_character = CEN_army_high_command_4
+recruit_character = CEN_army_high_command_5
+recruit_character = CEN_army_high_command_6
+recruit_character = CEN_army_high_command_7
+recruit_character = CEN_army_high_command_8
+recruit_character = CEN_army_high_command_9
+recruit_character = CEN_air_chief_1
+recruit_character = CEN_air_chief_2
+recruit_character = CEN_air_chief_3
+recruit_character = CEN_navy_chief_1
+recruit_character = CEN_navy_chief_2
+recruit_character = CEN_army_chief_1
+recruit_character = CEN_army_chief_2
+recruit_character = CEN_army_chief_3
+recruit_character = CEN_army_chief_4
+recruit_character = CEN_navy_theorist_1
+recruit_character = CEN_navy_theorist_2
+recruit_character = CEN_navy_theorist_3
+recruit_character = CEN_air_theorist_1
+recruit_character = CEN_air_theorist_2
+recruit_character = CEN_air_theorist_3
+recruit_character = CEN_air_theorist_4
+recruit_character = CEN_air_theorist_5
+recruit_character = CEN_army_theorist_1
+recruit_character = CEN_army_theorist_2
+recruit_character = CEN_navy_high_command_1
+recruit_character = CEN_admiral_1
+recruit_character = CEN_admiral_2
+recruit_character = CEN_navy_chief_1
+recruit_character = CEN_navy_chief_2
+recruit_character = CEN_general_1
+recruit_character = CEN_general_2
+recruit_character = CEN_general_3
+recruit_character = CEN_general_4
+recruit_character = CEN_general_5
+recruit_character = CEN_air_high_command_1
+recruit_character = CEN_air_high_command_2
+recruit_character = CEN_air_high_command_3
+recruit_character = CEN_fascist_leader
+recruit_character = CEN_democratic_leader
+recruit_character = CEN_communist_leader
+recruit_character = CEN_authoritarian_leader
+recruit_character = CEN_anarchism_leader
+recruit_character = CEN_socialism_leader
+recruit_character = CEN_monarchism_leader
+recruit_character = CEN_religious_leader
+
 set_popularities = {
 
 	absolute_monarchy = 7
@@ -167,146 +230,5 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
-}
-
-
-create_country_leader = {
-	name = "DemirhanSözüdüz"
-	desc = "POLITICS_JEROLD_MCGRORY_DESC"
-	picture = "gfx/leaders/DemirhanSözüdüz.dds"
-	expire = "1976.4.10"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "DemirhanSözüdüz"
-	desc = "POLITICS_TOWNIE_DOUGHERTY_DESC"
-	picture = "gfx/leaders/DemirhanSözüdüz.dds"
-	expire = "1972.3.19"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "DemirhanSözüdüz"
-	desc = "POLITICS_FERINAND_SPENCER_DESC"
-	picture = "gfx/leaders/DemirhanSözüdüz.dds"
-	expire = "1979.4.11"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "DemirhanSözüdüz"
-	desc = "POLITICS_LUCIANO_INNES_DESC"
-	picture = "gfx/leaders/DemirhanSözüdüz.dds"
-	expire = "1975.5.4"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Josh Halliwell"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Mathias Thom"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Vasili Rapson"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Partha Nineham"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Valdemar Daniells"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Lazare Mcguire"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	maneuvering_skill = 4
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Hoyt Keffler"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 1
-	maneuvering_skill = 4
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "Say Tonks"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "Ripley Craig"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 2
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Redford Ludlow"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = {}
-	attack_skill = 4
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 3
 }
 

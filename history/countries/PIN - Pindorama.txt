@@ -159,100 +159,72 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = PIN_political_advisor_1
+recruit_character = PIN_political_advisor_2
+recruit_character = PIN_political_advisor_3
+recruit_character = PIN_political_advisor_4
+recruit_character = PIN_political_advisor_5
+recruit_character = PIN_political_advisor_6
+recruit_character = PIN_political_advisor_7
+recruit_character = PIN_political_advisor_8
+recruit_character = PIN_political_advisor_9
+recruit_character = PIN_political_advisor_10
+recruit_character = PIN_political_advisor_11
+recruit_character = PIN_political_advisor_12
+recruit_character = PIN_political_advisor_13
+recruit_character = PIN_army_high_command_1
+recruit_character = PIN_army_high_command_2
+recruit_character = PIN_army_high_command_3
+recruit_character = PIN_army_high_command_4
+recruit_character = PIN_army_high_command_5
+recruit_character = PIN_army_high_command_6
+recruit_character = PIN_army_high_command_7
+recruit_character = PIN_army_high_command_8
+recruit_character = PIN_army_high_command_9
+recruit_character = PIN_air_chief_1
+recruit_character = PIN_air_chief_2
+recruit_character = PIN_air_chief_3
+recruit_character = PIN_navy_chief_1
+recruit_character = PIN_navy_chief_2
+recruit_character = PIN_army_chief_1
+recruit_character = PIN_army_chief_2
+recruit_character = PIN_army_chief_3
+recruit_character = PIN_army_chief_4
+recruit_character = PIN_navy_theorist_1
+recruit_character = PIN_navy_theorist_2
+recruit_character = PIN_navy_theorist_3
+recruit_character = PIN_air_theorist_1
+recruit_character = PIN_air_theorist_2
+recruit_character = PIN_air_theorist_3
+recruit_character = PIN_air_theorist_4
+recruit_character = PIN_air_theorist_5
+recruit_character = PIN_army_theorist_1
+recruit_character = PIN_army_theorist_2
+recruit_character = PIN_navy_high_command_1
+recruit_character = PIN_admiral_1
+recruit_character = PIN_admiral_2
+recruit_character = PIN_navy_chief_1
+recruit_character = PIN_navy_chief_2
+recruit_character = PIN_general_1
+recruit_character = PIN_general_2
+recruit_character = PIN_general_3
+recruit_character = PIN_general_4
+recruit_character = PIN_general_5
+recruit_character = PIN_air_high_command_1
+recruit_character = PIN_air_high_command_2
+recruit_character = PIN_air_high_command_3
+recruit_character = PIN_fascist_leader
+recruit_character = PIN_democratic_leader
+recruit_character = PIN_communist_leader
+recruit_character = PIN_authoritarian_leader
+recruit_character = PIN_anarchism_leader
+recruit_character = PIN_socialism_leader
+recruit_character = PIN_monarchism_leader
+recruit_character = PIN_religious_leader
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = No
 }
-
-create_country_leader = {
-	name = "Flumenise"
-	desc = "POLITICS_HUSSEIN_ELDRIDGE_DESC"
-	picture = "gfx/leaders/Flumenise.dds"
-	expire = "1973.2.15"
-	ideology = social_democrat
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Flumenise"
-	desc = "POLITICS_JORDAN_ROFF_DESC"
-	picture = "gfx/leaders/Flumenise.dds"
-	expire = "1967.5.14"
-	ideology = stalinism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Flumenise"
-	desc = "POLITICS_ABDEL_FOSTER_DESC"
-	picture = "gfx/leaders/Flumenise.dds"
-	expire = "1975.4.11"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Flumenise"
-	desc = "POLITICS_NELSEN_JOHNSON_DESC"
-	picture = "gfx/leaders/Flumenise.dds"
-	expire = "1967.2.17"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_corps_commander = {
-	name = "Skelly Derrick"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 5
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Duffie Stone"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Charlton Everdell"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {}
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Bobby Thornley"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {}
-	attack_skill = 1
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Sherlock Rick"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {}
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 5
-	logistics_skill = 1
-}
-
