@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+
+		the_travelling_advisor_1 = {
+			picture = the_travelling_advisor-568649
+			modifier = {
+				political_power_factor = 0.05
+
+				stability_factor = 0.05
+
+
+			}
+		}
+		
+		the_travelling_advisor_2 = {
+			picture = the_travelling_advisor-568649
+			modifier = {
+				political_power_factor = 0.05
+
+				stability_factor = 0.05
+
+
+			}
+		}
+		
+		contacts_to_oscaremn = {
+			picture = the_travelling_advisor-568649
+			modifier = {
+				political_power_factor = -0.01
+
+
+			}
+		}
+		bribed_oscaremn = {
+			picture = the_travelling_advisor-568649
+			modifier = {
+				consumer_goods_factor = 0.01
+
+
+			}
+		}
+	}
+}

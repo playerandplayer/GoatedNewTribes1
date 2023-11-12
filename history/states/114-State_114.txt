@@ -1,6 +1,7 @@
 state={
 	id=114
 	name="STATE_114"
+	manpower = 1
 	history = {
 		owner = XXX
 		add_core_of = XXX

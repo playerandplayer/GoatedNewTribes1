@@ -1,0 +1,44 @@
+spriteTypes = { 
+	##Icon For Category: The Travelling Advisor
+	SpriteType = { 
+		name = "decision_category_icon_the_travelling_advisor"
+		texturefile = "gfx/interface/decisions/decision_category_icon_the_travelling_advisor.dds"
+	}
+
+	##Icon For: Moving inside our borders
+	SpriteType = { 
+		name = "decision_icon_moving_inside_our_borders"
+		texturefile = "gfx/interface/decisions/decision_icon_moving_inside_our_borders.dds"
+	}
+
+	##Icon For: Bribe OscarEMN
+	SpriteType = { 
+		name = "decision_icon_bribe_oscaremn"
+		texturefile = "gfx/interface/decisions/decision_icon_bribe_oscaremn.dds"
+	}
+
+	##Icon For: Establish Long Term Contact
+	SpriteType = { 
+		name = "decision_icon_establish_long_term_contact"
+		texturefile = "gfx/interface/decisions/decision_icon_establish_long_term_contact.dds"
+	}
+
+	##Icon For: Create a permanent headquarter
+	SpriteType = { 
+		name = "decision_icon_create_a_permanent_headquarter"
+		texturefile = "gfx/interface/decisions/decision_icon_create_a_permanent_headquarter.dds"
+	}
+
+	##Icon For: Kill OscarEMN
+	SpriteType = { 
+		name = "decision_icon_kill_oscaremn"
+		texturefile = "gfx/interface/decisions/decision_icon_kill_oscaremn.dds"
+	}
+
+	##Icon For: Use OscarEMN For Sabotage
+	SpriteType = { 
+		name = "decision_icon_use_oscaremn_for_sabotage"
+		texturefile = "gfx/interface/decisions/decision_icon_use_oscaremn_for_sabotage.dds"
+	}
+
+}

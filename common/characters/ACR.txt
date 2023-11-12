@@ -25,6 +25,9 @@ characters={
 			ideology=social_democrat
 			expire="1965.1.1.1"
 			id=-1
+			traits = {
+				pacifist
+			}
 		}
 	}
 
@@ -97,7 +100,9 @@ characters={
 		}
 		country_leader={
 			ideology=absolutism
-			traits={ }
+			traits = {
+				pacifist
+			}
 			expire="1965.1.1.1"
 			id=-1
 		}

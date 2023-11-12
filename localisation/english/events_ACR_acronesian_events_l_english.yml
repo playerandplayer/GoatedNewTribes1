@@ -1,0 +1,35 @@
+﻿l_english:
+ACR_acronesian_events.1.t:0 "Acronesia asks for Oraclas"
+ACR_acronesian_events.1.d:0 "Acronesia has come to us today to ask if we were polite enough to transfer some of our coastal territory, including the city of Oraclas, to them. In exchange, they offer some economic compensation.\nThis land is pretty much useless to us, as there is no industry upon it.\n\nWill we befriend Acronesia and grant them their wish or will we reject their demands?"
+ACR_acronesian_events.1.a:0 "We grant them their wish"
+ACR_acronesian_events.1.b:0 "Reject their demands!"
+
+ACR_acronesian_events.2.t:0 "Acronesia asks for Clashcity"
+ACR_acronesian_events.2.d:0 "Acronesia has come to us today to ask if we were polite enough to transfer some of Vessel's coastal territory, including Clashcity, to them. In exchange, they offer us political power.\nThis land is pretty much useless to us, as there is no industry upon it.\n\nWill we befriend Acronesia and grant them their wish or will we reject their demands?"
+ACR_acronesian_events.2.a:0 "We grant them their wish"
+ACR_acronesian_events.2.b:0 "Reject their demands!"
+
+ACR_acronesian_events.3.t:0 "Acronesia asks for our coastline"
+ACR_acronesian_events.3.d:0 "Acronesia has come to us today to ask if we were polite enough to transfer most of our coastal territory, including the city of Oraclas, to them. In exchange, they offer some economic compensation.\nThis land is pretty much useless to us, as there is no industry upon it.\n\nWill we befriend Acronesia and grant them their wish or will we reject their demands?"
+ACR_acronesian_events.3.a:0 "We grant them their wish"
+ACR_acronesian_events.3.b:0 "Reject their demands!"
+
+ACR_acronesian_events.4.t:0 "Acronesia asks for our coastline"
+ACR_acronesian_events.4.d:0 "Acronesia has come to us today to ask if we were polite enough to transfer most of our coastal territory as well as all of Vessel's coastal territory to them. In exchange, they offer some economic compensation.\nWill we befriend Acronesia and grant them their wish or will we reject their demands?"
+ACR_acronesian_events.4.a:0 "We grant them their wish"
+ACR_acronesian_events.4.b:0 "Reject their demands!"
+
+ACR_acronesian_events.5.t:0 "CAN and Shitpost demand our withdrawal!"
+ACR_acronesian_events.5.d:0 "As we just took over the Islands, we are bound to our promise to give up all continental territory to our neighbors. This was promised by Oracle just before. \nWill we keep our promise or will we reject their demands?"
+ACR_acronesian_events.5.a:0 "A promise is a promise!"
+ACR_acronesian_events.5.b:0 "We shall never withdraw!"
+
+ACR_acronesian_events.6.t:0 "CAN rejects our proposal!"
+ACR_acronesian_events.6.d:0 "We have asked for territory from CAN and even offered fair economic compensation. Yet they still rejected our demands!\nWill this mean war between us or is it irrelevant?"
+ACR_acronesian_events.6.a:0 "To war we go!"
+ACR_acronesian_events.6.b:0 "It's not that relevant..."
+
+ACR_acronesian_events.7.t:0 "Shitpost rejects our proposal!"
+ACR_acronesian_events.7.d:0 "We have asked for territory from the Shitpost Clan and even offered fair economic compensation. Yet they still rejected our demands!\nWill this mean war between us or is it irrelevant?"
+ACR_acronesian_events.7.a:0 "To war we go!"
+ACR_acronesian_events.7.b:0 "It's not that relevant..."

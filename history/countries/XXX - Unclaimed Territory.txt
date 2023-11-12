@@ -21,6 +21,16 @@ set_popularities = {
 	religious = 0
 }
 
+recruit_character = XXX_fascist_leader
+recruit_character = XXX_democratic_leader
+recruit_character = XXX_communist_leader
+recruit_character = XXX_authoritarian_leader
+recruit_character = XXX_anarchism_leader
+recruit_character = XXX_socialism_leader
+recruit_character = XXX_monarchism_leader
+recruit_character = XXX_religious_leader
+
+
 set_politics = {
 	ruling_party = anarchism
 	last_election = "1932.11.8"

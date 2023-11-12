@@ -8,16 +8,205 @@ focus_tree = {
 			tag = ACR
 		}
 	}
-	#Take the islands
+	#The Tribe Of Many Flags
 	focus = {
-		id = ACR_take_the_islands
-		icon = GFX_goal_generic_demand_territory
+		id = ACR_tribe_of_many_flags
+		icon = GFX_ACR_l-569031
 		x = 40
 		y = 0
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	#The Territorial Question
+	focus = {
+		id = ACR_territorial_question
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 40
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_tribe_of_many_flags  }
+		completion_reward = {
+			# Gains claims on all of the beach
+			# Gains cores on the islands
+			add_state_core = 52
+			add_state_core = 748
+			add_state_core = 53
+			add_state_core = 746
+			add_state_core = 747
+			add_state_core = 51
+			add_state_core = 744
+			
+			add_state_claim = 665
+			add_state_claim = 40
+			add_state_claim = 39
+			add_state_claim = 43
+			add_state_claim = 675
+			
+			add_state_claim = 688
+			add_state_claim = 718
+			add_state_claim = 682
+			add_state_claim = 692
+			
+			add_state_claim = 661
+			add_state_claim = 672
+			add_state_claim = 652
+			add_state_claim = 679
+			add_state_claim = 710
+			add_state_claim = 727
+			add_state_claim = 730
+			add_state_claim = 723
+			add_state_claim = 709
+			add_state_claim = 711
+			
+			add_state_claim = 726
+			add_state_claim = 731
+			add_state_claim = 738
+			add_state_claim = 50
+			
+		}
+	}
+	#Clash's Proposal
+	focus = {
+		id = ACR_proposal_of_clash
+		icon = GFX_ACR_p-569046
+		x = 39
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_territorial_question  }
+		mutually_exclusive = { focus = ACR_proposal_of_oracle }
+		completion_reward = {
+			# Add 5% authoritarian support
+			# Loses claims on non-historical beach land but gains cores on historical beach land
+			add_popularity = {
+				ideology = authoritarian
+				popularity = 0.05
+			}
+			add_state_core = 738
+			add_state_core = 50
+			
+			add_state_core = 665
+			add_state_core = 40
+			add_state_core = 39
+			add_state_core = 43
+			add_state_core = 675
+			
+			remove_state_claim = 688
+			remove_state_claim = 718
+			remove_state_claim = 682
+			remove_state_claim = 692
+			
+			remove_state_claim = 661
+			remove_state_claim = 672
+			remove_state_claim = 652
+			remove_state_claim = 679
+			remove_state_claim = 710
+			remove_state_claim = 727
+			remove_state_claim = 730
+			remove_state_claim = 723
+			remove_state_claim = 709
+			remove_state_claim = 711
+			
+			remove_state_claim = 726
+			remove_state_claim = 731
+		}
+	}
+	#Oracles's Proposal
+	focus = {
+		id = ACR_proposal_of_oracle
+		icon = GFX_ACR_w-569047
+		x = 41
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		mutually_exclusive = { focus = ACR_proposal_of_clash }
+		prerequisite = { focus = ACR_territorial_question  }
+		completion_reward = {
+			add_timed_idea = { idea = ACR_naval_focus days = 365 }
+			add_popularity = {
+				ideology = absolute_monarchy
+				popularity = 0.05
+			}
+		}
+	}
+	#Assert Acronesian Claims
+	focus = {
+		id = ACR_assert_acronesian_claims
+		icon = GFX_focus_generic_support_the_left_right
+		x = 40
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available = {
+			has_army_manpower = {
+				size > 9999
+			}
+		}	
+		prerequisite = { 
+		focus = ACR_proposal_of_clash 
+		focus = ACR_proposal_of_oracle}
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = {
+					has_completed_focus = ACR_proposal_of_clash
+				}
+				CEN = {
+				country_event = {
+					id = ACR_acronesian_events.1
+				}
+				}
+				SHI = {
+				country_event = {
+					id = ACR_acronesian_events.2
+				}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ACR_proposal_of_oracle
+				}
+				CEN = {
+					country_event = {
+						id = ACR_acronesian_events.3
+					}
+				}
+				SHI = {
+					country_event = {
+						id = ACR_acronesian_events.4
+					}
+				}
+				
+			}
+			
+		}
+	}
+	#Take the islands
+	focus = {
+		id = ACR_take_the_islands
+		icon = GFX_focus_jap_strike_south
+		x = 40
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ACR_assert_acronesian_claims  }
 		available = {
 			has_navy_size = {
 				size > 9
@@ -26,6 +215,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_capital = 52
+			add_state_core = 51
+			add_state_core = 52
+			add_state_core = 748
+			add_state_core = 53
+			add_state_core = 746
+			add_state_core = 747
+			add_state_core = 744
 			transfer_state = 52
 			transfer_state = 51
 			transfer_state = 748
@@ -33,15 +230,22 @@ focus_tree = {
 			transfer_state = 746
 			transfer_state = 747
 			transfer_state = 744
-			51 = { add_core_of = FROM }
-			52 = { add_core_of = FROM }
-			748 = { add_core_of = FROM }
-			53 = { add_core_of = FROM }
-			746 = { add_core_of = FROM }
-			747 = { add_core_of = FROM }
-			744 = { add_core_of = FROM }
+			
+			
+			if = {
+				limit = {
+					has_completed_focus = ACR_proposal_of_oracle
+				}
+				ACR = {
+				country_event = {
+					id = ACR_acronesian_events.5
+				}
+				}
+				}
+			}
+			
 		}
-	}
+	
 	#The Acronesian Industrial Plan
 	focus = {
 		id = ACR_the_acronesian_industrial_plan
@@ -53,7 +257,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = {
-			add_timed_idea = { idea = ACR_industrial_developement  days = 730 }
+			add_timed_idea = { idea = ACR_industrial_development  days = 730 }
 		}
 	}
 
@@ -97,7 +301,7 @@ focus_tree = {
 		id = ACR_fortify_our_islands
 		icon = GFX_goal_generic_fortify_city
 		x = 6
-		y = 2
+		y = 4
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -105,7 +309,159 @@ focus_tree = {
 		available = {
 			owns_state = 52
 		}
-		prerequisite = { focus = ACR_get_resources_from_the_ocean  }
+		prerequisite = { focus = ACR_fortify_the_mainland  }
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = bunker
+					province = 3043
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1087
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 2676
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 2348
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3351
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 19628
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 19629
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 5115
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 19591
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 3021
+					level = 5
+					instant_build = yes
+				}
+				
+				
+			}
+			
+			748 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 84
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 7224
+					level = 5
+					instant_build = yes
+				}
+			}
+			53 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 5251
+					level = 5
+					instant_build = yes
+				}
+				
+			}
+			
+			746 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 5587
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 19593
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 7031
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 1506
+					level = 5
+					instant_build = yes
+				}
+			}
+			747 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 1716
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 19625
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+			51 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 19565
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 6599
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 19577
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Oil Refineries
@@ -134,7 +490,201 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
-		prerequisite = { focus = ACR_fortify_our_islands  }
+		bypass = {
+					has_completed_focus = ACR_proposal_of_oracle
+					NOT = {
+						owns_state = 675
+					}
+				
+
+			
+		}
+		prerequisite = { focus = ACR_fortify_our_home  }
+		available = {
+			owns_state = 675
+		}
+		completion_reward = {
+			675 = {
+				add_building_construction = {
+					type = bunker
+					province = 18877
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 13
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18881
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 2767
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 2767
+					level = 5
+					instant_build = yes
+				}
+				
+				add_building_construction = {
+					type = bunker
+					province = 19079
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 19016
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18946
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18794
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18719
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			
+			43 = {
+				add_building_construction = {
+					type = bunker
+					province = 18640
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1232
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			
+			39 = {
+				add_building_construction = {
+					type = bunker
+					province = 6078
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 5089
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18397
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18384
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18398
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6431
+					level = 2
+					instant_build = yes
+				}
+			}
+			40 = {
+				add_building_construction = {
+					type = bunker
+					province = 2242
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18440
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4837
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18441
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18517
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18502
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 2914
+					level = 2
+					instant_build = yes
+				}
+				
+			}
+			
+			665 = {
+				add_building_construction = {
+					type = bunker
+					province = 595
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 7610
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
 	}
 
 	#Fortify Our Home
@@ -142,12 +692,151 @@ focus_tree = {
 		id = ACR_fortify_our_home
 		icon = GFX_goal_generic_fortify_city
 		x = 6
-		y = 4
+		y = 2
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
-		prerequisite = { focus = ACR_fortify_the_mainland  }
+		bypass = {
+			NOT = {
+				controls_state = 44
+			}
+		}
+		prerequisite = { focus = ACR_get_resources_from_the_ocean  }
+		completion_reward = {
+			44 = {
+				add_building_construction = {
+					type = bunker
+					province = 18795
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18853
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 5271
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 18853
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 5271
+					level = 5
+					instant_build = yes
+				}
+				
+				add_building_construction = {
+					type = bunker
+					province = 2036
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1537
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4296
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4161
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18782
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18854
+					level = 2
+					instant_build = yes
+				}
+			}
+			660 = {
+				add_building_construction = {
+					type = bunker
+					province = 18738
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 18738
+					level = 5
+					instant_build = yes
+				}
+				
+				add_building_construction = {
+					type = bunker
+					province = 3231
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18580
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1684
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4765
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18720
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 2247
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 18803
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 5050
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Resource Improvements
@@ -177,6 +866,9 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ACR_resource_improvements  }
+		completion_reward = {
+			add_ideas = ACR_improved_production
+		}
 	}
 
 	#The Acronesian Naval Industry
@@ -189,7 +881,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = ACR_improve_our_production  } prerequisite = { focus = ACR_fortify_our_home  }
+		prerequisite = { focus = ACR_improve_our_production  } prerequisite = { focus = ACR_fortify_our_islands  }
 		completion_reward = {
 			add_ideas = ACR_a_naval_industry
 		}
@@ -319,9 +1011,9 @@ focus_tree = {
 		
 	}
 
-	#Further Industrial Developement
+	#Further Industrial Development
 	focus = {
-		id = ACR_further_industrial_developement
+		id = ACR_further_industrial_development
 		icon = GFX_goal_generic_construct_civilian
 		x = 13
 		y = 3
@@ -330,6 +1022,9 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ACR_clashgamersindustrialplan  focus = ACR_oraclesindustrialplan  }
+		completion_reward = {
+			add_timed_idea = { idea = ACR_industrial_development_2  days = 730 }
+		}
 	}
 
 	#Military Industry I
@@ -342,7 +1037,53 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = ACR_further_industrial_developement  }
+		prerequisite = { focus = ACR_further_industrial_development  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Military Industry II
@@ -357,6 +1098,52 @@ focus_tree = {
 		}
 		prerequisite = { focus = ACR_military_industry_i  }
 		mutually_exclusive = { focus = ACR_civilian_industry_ii  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Civilian Industry I
@@ -369,7 +1156,53 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = ACR_further_industrial_developement  }
+		prerequisite = { focus = ACR_further_industrial_development  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
 	}
 
 	#Civilian Industry II
@@ -384,6 +1217,51 @@ focus_tree = {
 		}
 		prerequisite = { focus = ACR_civilian_industry_i  }
 		mutually_exclusive = { focus = ACR_military_industry_ii  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Infrastructure Improvements I
@@ -396,7 +1274,76 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = ACR_further_industrial_developement  }
+		prerequisite = { focus = ACR_further_industrial_development  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Infrastructure Improvements II
@@ -410,6 +1357,75 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ACR_infrastructure_improvements_i  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Improve Our Mainland Industry
@@ -422,7 +1438,15 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = ACR_civilian_industry_ii  } prerequisite = { focus = ACR_infrastructure_improvements_ii  focus = ACR_military_industry_ii  } prerequisite = { focus = ACR_infrastructure_improvements_ii  }
+		prerequisite = { focus = ACR_civilian_industry_ii  focus = ACR_military_industry_ii  } prerequisite = { focus = ACR_infrastructure_improvements_ii  }
+		available = {
+			owns_state = 675
+		}
+		completion_reward = {
+			add_timed_idea = { idea = ACR_improve_mainland_industry days = 365 }
+		}
+		
+
 	}
 
 	#Modernize Our Nation
@@ -961,6 +1985,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		available = {
+			always = no
+		}
 		mutually_exclusive = { focus = ACR_condemn_can  } mutually_exclusive = { focus = ACR_play_both_sides  }
 	}
 
@@ -1060,12 +2087,31 @@ focus_tree = {
 		id = ACR_extra_research_slot
 		icon = GFX_focus_research
 		x = 9
-		y = 5
+		y = 6
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
 		prerequisite = { focus = ACR_improve_our_production  }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#Extra Research Slot II
+	focus = {
+		id = ACR_extra_research_slot_ii
+		icon = GFX_focus_research
+		x = 11
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_extra_research_slot} prerequisite = { focus = ACR_improve_our_mainland_industry }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Become A Part Of The Central Asian Nomads
@@ -1105,6 +2151,9 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		available = {
+			always = no
+		}
 		mutually_exclusive = { focus = ACR_our_allies_to_the_west  } mutually_exclusive = { focus = ACR_play_both_sides  }
 	}
 
@@ -1130,6 +2179,9 @@ focus_tree = {
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			always = no
 		}
 		mutually_exclusive = { focus = ACR_our_allies_to_the_west  } mutually_exclusive = { focus = ACR_condemn_can  }
 	}

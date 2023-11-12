@@ -8,8 +8,15 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
+		
+		ACR_improve_mainland_industry = {
+			picture = ACR_develope_the_island-122647
+			modifier = {
+				cic_construction_boost = 0.1
+			}
+		}
 
-		ACR_industrial_developement = {
+		ACR_industrial_development = {
 			picture = ACR_industrial_developement-122465
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
@@ -17,6 +24,60 @@ ideas = {
 				production_speed_dockyard_factor = 0.3
 				production_speed_naval_base_factor = 0.3
 
+			}
+		}
+		
+		ACR_industrial_development_2 = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+
+			}
+		}
+		
+		ACR_improved_production = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		ACR_naval_focus = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				industrial_capacity_dockyard = 2
+			}
+		}
+		
+		ACR_economic_compensation_1 = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			cancel = {
+				has_war_with = ACR
+			}
+		}
+		
+		ACR_economic_compensation_2 = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+			cancel = {
+				has_war_with = CEN
+			}
+		}
+		
+		ACR_economic_compensation_3 = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+			cancel = {
+				has_war_with = SHI
 			}
 		}
 

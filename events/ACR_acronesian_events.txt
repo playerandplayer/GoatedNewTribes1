@@ -1,0 +1,402 @@
+add_namespace = ACR_acronesian_events
+
+#Acronesia proposes territorial trade
+country_event = { # Acronesia demands Oraclas from CAN
+	id = ACR_acronesian_events.1
+	title = ACR_acronesian_events.1.t
+	desc = ACR_acronesian_events.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 100 }
+		add_timed_idea = { idea = ACR_economic_compensation_1 days = 365 }
+		ACR = {
+		add_timed_idea = { idea = ACR_economic_compensation_2 days = 365 }
+		
+		add_state_core = 675
+		add_state_core = 43
+		add_state_core = 39
+		add_state_core = 40
+		add_state_core = 665
+		
+		transfer_state = 675
+		transfer_state = 43
+		transfer_state = 39
+		transfer_state = 40
+		transfer_state = 665
+		
+		}
+
+
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 0 }
+		ACR = {create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CEN
+		}}
+
+
+
+		add_political_power = -100
+
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # Acronesia demands Clashcity from Vessel
+	id = ACR_acronesian_events.2
+	title = ACR_acronesian_events.2.t
+	desc = ACR_acronesian_events.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		VES = {
+			add_political_power = 50
+		}
+		ACR = {
+		transfer_state = 50
+		transfer_state = 738
+		
+		add_state_core = 50
+		add_state_core = 738
+
+		}
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.2.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 0 }
+		ACR = {create_wargoal = {
+			type = puppet_wargoal_focus
+			target = VES
+		}}
+		add_political_power = -50
+		VES = {
+			add_political_power = -50
+		}
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # Acronesia demands the entire coast from CAN
+	id = ACR_acronesian_events.3
+	title = ACR_acronesian_events.3.t
+	desc = ACR_acronesian_events.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.3.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		add_timed_idea = { idea = ACR_economic_compensation_1 days = 730 }
+		ACR = {
+		add_timed_idea = { idea = ACR_economic_compensation_2 days = 730 }
+		add_state_core = 675
+		add_state_core = 43
+		add_state_core = 39
+		add_state_core = 40
+		add_state_core = 665
+		add_state_core = 692
+		add_state_core = 682
+		add_state_core = 718
+		add_state_core = 688
+		
+		transfer_state = 675
+		transfer_state = 43
+		transfer_state = 39
+		transfer_state = 40
+		transfer_state = 665
+		transfer_state = 692
+		transfer_state = 682
+		transfer_state = 718
+		transfer_state = 688
+
+		}
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.3.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		ACR = {
+				country_event = {
+					id = ACR_acronesian_events.6
+				}
+				}
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # Acronesia demands the entire coast from the Shitpost Clan
+	id = ACR_acronesian_events.4
+	title = ACR_acronesian_events.4.t
+	desc = ACR_acronesian_events.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.4.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		add_timed_idea = { idea = ACR_economic_compensation_1 days = 730 }
+		ACR = {
+		add_timed_idea = { idea = ACR_economic_compensation_3 days = 730 }
+		
+		transfer_state = 661
+		transfer_state = 672
+		transfer_state = 652
+		transfer_state = 679
+		transfer_state = 710
+		transfer_state = 727
+		transfer_state = 730
+		transfer_state = 723
+		transfer_state = 709
+		transfer_state = 711
+		
+		transfer_state = 726
+		transfer_state = 731
+		transfer_state = 50
+		transfer_state = 738
+
+		}
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.4.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		ACR = {
+				country_event = {
+					id = ACR_acronesian_events.7
+				}
+				}
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # Acronesia withdraws from the continent to the island
+	id = ACR_acronesian_events.5
+	title = ACR_acronesian_events.5.t
+	desc = ACR_acronesian_events.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.5.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 } # Acronesia decides to withdraw from the continent as promised
+		
+		CEN = {
+		
+					add_state_core = 675
+					add_state_core = 43
+					add_state_core = 39
+					add_state_core = 40
+					add_state_core = 665
+					add_state_core = 660
+					add_state_core = 44
+					
+					
+					transfer_state = 675
+					transfer_state = 43
+					transfer_state = 39
+					transfer_state = 40
+					transfer_state = 665
+					transfer_state = 660
+					transfer_state = 44
+					
+					transfer_state = 682
+					transfer_state = 692
+					transfer_state = 718
+					transfer_state = 688
+			}
+			
+			SHI = {
+				transfer_state = 661
+				transfer_state = 672
+				transfer_state = 652
+				transfer_state = 679
+				transfer_state = 710
+				transfer_state = 727
+				transfer_state = 730
+				transfer_state = 723
+				transfer_state = 709
+				transfer_state = 711
+		
+		
+			}
+			
+			VES = {
+			
+			transfer_state = 726
+			transfer_state = 731
+			transfer_state = 50
+			transfer_state = 738
+		
+		}
+			
+		
+
+		
+
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.4.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 } #Acronesia doesnt withdraw from the continent
+		CEN = {create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ACR
+		}}
+		SHI = {create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ACR
+		}}
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # CAN rejects our demands!
+	id = ACR_acronesian_events.6
+	title = ACR_acronesian_events.6.t
+	desc = ACR_acronesian_events.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.6.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 } # We go to war
+		ACR = {create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CEN
+		}}
+		add_war_support = 0.1
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.6.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 } # No war
+		
+		add_political_power = -25
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # Shitpost rejects our demands!
+	id = ACR_acronesian_events.7
+	title = ACR_acronesian_events.7.t
+	desc = ACR_acronesian_events.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = ACR_acronesian_events.7.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 } # We go to war
+		ACR = {create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SHI
+		}}
+		add_war_support = 0.1
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.7.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 } # No war
+		
+		add_political_power = -25
+
+		hidden_effect = {
+			
+		}
+	}
+}
+

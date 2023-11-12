@@ -1,0 +1,119 @@
+bookmarks = {
+	bookmark = {
+		name = "TRIBAL_EXPANSION_NAME"
+		desc = "TRIBAL_EXPANSION_DESC"
+		date = 1933.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CEN"
+		default = yes
+		
+		"ACR"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = absolute_monarchy
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+			
+		"YOR"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = absolute_monarchy
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"MTG"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = fascism
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+			
+		"CEN"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = authoritarian
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}}
+			
+		"SHI"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = authoritarian
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"PAZ"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = authoritarian
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+			
+
+
+		# minors from DLC ####
+		"JUT"={
+			minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ELO"={
+			minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

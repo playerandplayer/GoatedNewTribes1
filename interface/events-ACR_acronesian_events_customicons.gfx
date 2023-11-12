@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: Acronesia proposes territorial trade
+	SpriteType = { 
+		name = "ACR_acronesia_proposes_territorial_trade-460"
+		texturefile = "gfx/interface/events/acronesian_events-event/ACR_acronesia_proposes_territorial_trade-460.dds"
+	}
+
+ 
+ }

@@ -1,0 +1,53 @@
+add_namespace = oscaremn
+
+#OscarEMN leaves us!
+country_event = {
+	id = oscaremn.1
+	title = oscaremn.1.t
+	desc = oscaremn.1.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		name = oscaremn.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 100 }
+		random_neighbor_country = {
+			add_ideas = the_travelling_advisor_1
+			country_event = {
+					id = oscaremn.2
+				}
+			activate_mission = moving_inside_our_borders
+		}
+		remove_ideas = the_travelling_advisor_1
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # OscarEMN appears in a new country
+	id = oscaremn.2
+	title = oscaremn.2.t
+	desc = oscaremn.2.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		name = oscaremn.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 100 }
+		add_political_power = 10
+
+		}
+
+		hidden_effect = {
+			
+		}
+	}
+}

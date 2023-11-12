@@ -9,7 +9,6 @@ state={
         state_category = town
 		history={
 		owner = CEN
-		add_core_of = CEN
 		buildings = {
 			infrastructure = 2
 		

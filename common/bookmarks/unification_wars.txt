@@ -1,0 +1,317 @@
+bookmarks = {
+	bookmark = {
+		name = "UNIFICATION_WARS_NAME"
+		desc = "UNIFICATION_WARS_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CEN"
+		default = yes
+		
+		"ACR"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = absolute_monarchy
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+			
+		"YOR"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = absolute_monarchy
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"MTG"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = fascism
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+			
+		"CEN"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = authoritarian
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}}
+			
+		"SHI"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = authoritarian
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"PAZ"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = authoritarian
+			
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+			
+
+
+		# minors from DLC ####
+		"JUT"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"AND"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ARO"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"BTE"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ETA"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"FRC"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"FRE"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"FRO"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"GAC"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"GOA"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"LNR"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"MAG"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"NOT"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"PAZ"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"PIN"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"REM"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"SHA"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"SPJ"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"VES"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"WBR"={
+			minor = yes
+			history = ""
+			ideology = social_democracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

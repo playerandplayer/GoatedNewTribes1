@@ -1,10 +1,12 @@
+
+
 capital = 44
 
 set_research_slots = 2
 
-set_stability = 0.8
+set_stability = 0.25
 
-set_war_support = 0
+set_war_support = 0.55
 
 add_political_power = 2
 
@@ -14,11 +16,11 @@ set_oob = "ENG_1936"
 
 set_popularities = {
 
-	absolute_monarchy = 0
+	absolute_monarchy = 32
 	authoritarian = 10
 	fascism = 33
 	anarchism = 0
-	social_democracy = 37
+	social_democracy = 5
 	democratic_socialism = 20
 	stalinism = 0
 	religious = 0
@@ -68,8 +70,6 @@ recruit_character = ACR_army_theorist_2
 recruit_character = ACR_navy_high_command_1
 recruit_character = ACR_admiral_1
 recruit_character = ACR_admiral_2
-recruit_character = ACR_navy_chief_1
-recruit_character = ACR_navy_chief_2
 recruit_character = ACR_general_1
 recruit_character = ACR_general_2
 recruit_character = ACR_general_3
@@ -91,7 +91,7 @@ recruit_character = ACR_religious_leader
 
 
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = absolute_monarchy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = Yes
@@ -231,5 +231,15 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	set_power_balance = {
+		id = ACR_balance_of_power
+		set_default = no  # whether or not to reset the power balance to the initial value, default = no
+		set_value = -1
+	}
 
 

@@ -9,6 +9,7 @@ set_war_support = 0.6
 add_ideas = CEN_nomad_society
 add_ideas = CEN_the_great_outback
 add_ideas = CEN_the_noble_court
+add_ideas = the_travelling_advisor_1
 
 add_political_power = 2
 

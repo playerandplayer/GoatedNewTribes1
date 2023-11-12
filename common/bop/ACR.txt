@@ -1,0 +1,414 @@
+ACR_balance_of_power = {
+	initial_value = -1
+	left_side = ACR_pacifist_side	
+	right_side = ACR_warmonger_side
+	decision_category = ACR_balance_of_power_category
+
+#### WELFARE ####
+	side = {
+		id = ACR_pacifist_side	
+		icon = GFX_bop_DEN_welfare_side
+
+		range = {
+			id = ACR_pacifist_low_range
+			min = -0.3
+			max = -0
+			modifier = {
+				stability_factor = 0.07
+				war_support_factor = -0.07
+				justify_war_goal_time = 0.11
+				offence = -0.03
+				defence = -0.03
+				production_speed_buildings_factor = 0.04
+				industrial_capacity_factory = -0.04
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_pacifist_medium_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				stability_factor = 0.21
+				war_support_factor = -0.21
+				justify_war_goal_time = 0.32
+				offence = -0.09
+				defence = -0.09
+				production_speed_buildings_factor = 0.13
+				industrial_capacity_factory = -0.13
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_pacifist_high_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				stability_factor = 0.36
+				war_support_factor = -0.36
+				justify_war_goal_time = 0.54
+				offence = -0.14
+				defence = -0.14
+				production_speed_buildings_factor = 0.21
+				industrial_capacity_factory = -0.21
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_pacifist_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				stability_factor = 0.5
+				war_support_factor = -0.5
+				justify_war_goal_time = 0.75
+				offence = -0.2
+				defence = -0.2
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = -0.3
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = ACR_balance_of_power
+					side = ACR_pacifist_side
+					gfx = GFX_bop_DEN_welfare_improved_side
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = ACR_balance_of_power
+					side = ACR_pacifist_side
+					gfx = GFX_bop_DEN_welfare_side
+				}
+			}
+
+		}
+	}
+
+#### WARFARE ####
+	side = {
+		id = ACR_warmonger_side	
+		icon = GFX_bop_DEN_warfare_side
+
+		range = {
+			id = ACR_warmonger_low_range
+			min = 0
+			max = 0.3
+			modifier = {
+				stability_factor = -0.07
+				war_support_factor = 0.07
+				justify_war_goal_time = -0.11
+				offence = 0.03
+				defence = 0.03
+				production_speed_buildings_factor = -0.04
+				industrial_capacity_factory = 0.04
+				}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_warmonger_medium_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				stability_factor = -0.21
+				war_support_factor = 0.21
+				justify_war_goal_time = -0.32
+				offence = 0.09
+				defence = 0.09
+				production_speed_buildings_factor = -0.13
+				industrial_capacity_factory = 0.13
+				}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_warmonger_high_range
+			min = 0.6
+			max = 0.9
+			modifier = {
+				stability_factor = -0.36
+				war_support_factor = 0.36
+				justify_war_goal_time = -0.54
+				offence = 0.14
+				defence = 0.14
+				production_speed_buildings_factor = -0.21
+				industrial_capacity_factory = 0.21
+				}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_warmonger_max_range
+			min = 0.9
+			max = 1
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = 0.5
+				justify_war_goal_time = -0.75
+				offence = 0.2
+				defence = 0.2
+				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = 0.3
+				}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = ACR_balance_of_power
+					side = ACR_warmonger_side
+					gfx = GFX_bop_DEN_warfare_improved_side
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = ACR_balance_of_power
+					side = ACR_warmonger_side
+					gfx = GFX_bop_DEN_warfare_side
+				}
+			}
+
+		}
+	}
+}
+
+########################
+########################
+#### OCCUPATION BOP ####
+########################
+########################
+ACR_occupation_balance = {
+	initial_value = 0.0
+	left_side = ACR_annexation_side
+	right_side = ACR_autonomy_side	
+	decision_category = ACR_occupation_category
+#### ANNEXATION ####
+	side = {
+		id = ACR_annexation_side	
+		icon = GFX_bop_DEN_annexation_side
+
+		range = {
+			id = ACR_annexation_low_range
+			min = -0.3
+			max = -0
+			modifier = {
+				autonomy_gain = -0.1
+				political_power_gain = -0.05
+				master_ideology_drift = 0.05
+				
+				extra_trade_to_overlord_factor = 0.05 
+				overlord_trade_cost_factor = -0.05
+				production_speed_buildings_factor = 0.025
+				license_subject_master_purchase_cost = -0.05
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_annexation_medium_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				autonomy_gain = -0.15
+				political_power_gain = -0.1
+				master_ideology_drift = 0.1
+				
+				extra_trade_to_overlord_factor = 0.1
+				overlord_trade_cost_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				license_subject_master_purchase_cost = -0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_annexation_high_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				autonomy_gain = -0.2
+				political_power_gain = -0.15
+				master_ideology_drift = 0.15
+				
+				extra_trade_to_overlord_factor = 0.15
+				overlord_trade_cost_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				license_subject_master_purchase_cost = -0.15
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_annexation_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				autonomy_gain = -0.25
+				political_power_gain = -0.2
+				master_ideology_drift = 0.2
+				
+				extra_trade_to_overlord_factor = 0.2
+				overlord_trade_cost_factor = -0.2
+				production_speed_buildings_factor = 0.15
+				license_subject_master_purchase_cost = -0.2
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = ACR_occupation_balance
+					side = ACR_annexation_side
+					gfx = GFX_bop_DEN_annexation_improved_side
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = ACR_occupation_balance
+					side = ACR_annexation_side
+					gfx = GFX_bop_DEN_annexation_side
+				}
+			}
+		}
+	}
+#### Autonomy ####
+	side = {
+		id = ACR_autonomy_side	
+		icon = GFX_bop_DEN_autonomy_side
+
+		range = {
+			id = ACR_autonomy_low_range
+			min = 0
+			max = 0.3
+			modifier = {
+				autonomy_gain = 0.1
+				political_power_gain = 0.025 
+				
+				extra_trade_to_overlord_factor = -0.05 
+				overlord_trade_cost_factor = 0.05
+				production_speed_buildings_factor = -0.025
+				license_subject_master_purchase_cost = 0.05
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_autonomy_medium_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				autonomy_gain = 0.2
+				political_power_gain = 0.05
+				
+				extra_trade_to_overlord_factor = -0.1
+				overlord_trade_cost_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				license_subject_master_purchase_cost = 0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+			
+			}
+
+		}
+		range = {
+			id = ACR_autonomy_high_range
+			min = 0.6
+			max = 0.9
+			modifier = {
+				autonomy_gain = 0.3
+				political_power_gain = 0.1
+				
+				extra_trade_to_overlord_factor = -0.15
+				overlord_trade_cost_factor = 0.15
+				production_speed_buildings_factor = -0.1
+				license_subject_master_purchase_cost = 0.15
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+			
+			}
+		}
+		range = {
+			id = ACR_autonomy_max_range
+			min = 0.9
+			max = 1
+			modifier = {
+				autonomy_gain = 0.4
+				political_power_gain = 0.15
+				
+				extra_trade_to_overlord_factor = -0.2
+				overlord_trade_cost_factor = 0.2
+				production_speed_buildings_factor = -0.15
+				license_subject_master_purchase_cost = 0.2
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = ACR_occupation_balance
+					side = ACR_autonomy_side
+					gfx = GFX_bop_DEN_autonomy_improved_side
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = ACR_occupation_balance
+					side = ACR_autonomy_side
+					gfx = GFX_bop_DEN_autonomy_side
+				}
+			}
+		}
+	}
+}
+

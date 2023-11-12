@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: OscarEMN leaves us!
+	SpriteType = { 
+		name = "oscaremn_leaves_us-806"
+		texturefile = "gfx/interface/events/oscaremn-event/oscaremn_leaves_us-806.dds"
+	}
+
+ 
+ }

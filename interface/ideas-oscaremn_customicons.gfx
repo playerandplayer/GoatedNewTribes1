@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: The Travelling Advisor
+	SpriteType = { 
+		name = "GFX_idea_the_travelling_advisor-568649"
+		texturefile = "gfx/interface/ideas/oscaremn-ideas/the_travelling_advisor-568649.dds"
+	}
+
+ 
+ }
