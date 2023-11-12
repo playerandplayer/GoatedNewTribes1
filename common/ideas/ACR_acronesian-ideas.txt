@@ -15,6 +15,13 @@ ideas = {
 				cic_construction_boost = 0.1
 			}
 		}
+		
+		ACR_building_church = {
+			picture = ACR_industrial_developement-122465
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
 
 		ACR_industrial_development = {
 			picture = ACR_industrial_developement-122465

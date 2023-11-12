@@ -1,0 +1,210 @@
+##########################
+##########################
+#### BALANCE OF POWER ####
+##########################
+##########################
+
+ACR_balance_of_power_category = {
+
+	#### BOP DECISIONS ####
+
+
+	ACR_hold_parade = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 30
+
+		cost = 50
+
+		complete_effect = {
+
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.05
+			}
+		}
+	}
+	
+	ACR_speech_war_propaganda = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 90
+		
+		days_remove = 7
+
+		cost = 50
+
+		remove_effect = {
+
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.1
+			}
+		}
+	}
+	
+	ACR_let_clash_speak = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 7
+		
+
+		cost = 10
+
+		remove_effect = {
+
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.05
+			}
+		}
+	}
+	
+	ACR_let_oracle_speak = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 7
+		
+
+		cost = 10
+
+		remove_effect = {
+
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = -0.05
+			}
+		}
+	}
+	
+	ACR_strengthen_opposition = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 90
+		
+		days_remove = 14
+
+		cost = 80
+
+		remove_effect = {
+			add_popularity = {
+				ideology = absolute_monarchy
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = religious
+				popularity = -0.05
+			}
+			add_stability = -0.05
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.1
+			}
+		}
+	}
+	
+	ACR_build_church = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 40
+		days_remove = 10
+		cost = 60
+		
+		complete_effect = {
+			add_ideas = ACR_building_church
+			
+		}
+
+		remove_effect = {
+			remove_ideas = ACR_building_church
+			add_popularity = {
+				ideology = religious
+				popularity = 0.05
+			}
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = -0.05
+			}
+		}
+	}
+	
+	ACR_donate_to_the_poor = {
+		priority = 99
+		icon = GFX_decision_generic_speech
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = ACR
+		}
+
+		days_re_enable = 90
+		cost = 20
+		
+		complete_effect = {
+			add_stability = 0.05
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = -0.05
+			}
+			
+		}
+
+	}
+}

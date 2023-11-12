@@ -1,0 +1,17 @@
+ACR_balance_of_power_category = {
+	#icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		original_tag = ACR
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+	priority = 100
+	
+	visible = {
+		always = yes
+	}
+	
+
+}
+
