@@ -12,11 +12,11 @@ focus_tree = {
 	focus = {
 		id = ACR_tribe_of_many_flags
 		icon = GFX_ACR_l-569031
-		x = 40
+		x = 45
 		y = 0
 		cost = 5
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -27,11 +27,12 @@ focus_tree = {
 	focus = {
 		id = ACR_territorial_question
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		x = 40
+		x = 0
 		y = 1
+		relative_position_id = ACR_tribe_of_many_flags
 		cost = 5
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_tribe_of_many_flags  }
 		completion_reward = {
@@ -78,11 +79,12 @@ focus_tree = {
 	focus = {
 		id = ACR_proposal_of_clash
 		icon = GFX_ACR_p-569046
-		x = 39
+		x = -1
 		y = 2
+		relative_position_id = ACR_tribe_of_many_flags
 		cost = 5
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_territorial_question  }
 		mutually_exclusive = { focus = ACR_proposal_of_oracle }
@@ -126,8 +128,9 @@ focus_tree = {
 	focus = {
 		id = ACR_proposal_of_oracle
 		icon = GFX_ACR_w-569047
-		x = 41
+		x = 1
 		y = 2
+		relative_position_id = ACR_tribe_of_many_flags
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -146,11 +149,12 @@ focus_tree = {
 	focus = {
 		id = ACR_assert_acronesian_claims
 		icon = GFX_focus_generic_support_the_left_right
-		x = 40
+		x = 0
 		y = 3
+		relative_position_id = ACR_tribe_of_many_flags
 		cost = 5
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_POLITICAL
 		}
 		available = {
 			has_army_manpower = {
@@ -199,12 +203,13 @@ focus_tree = {
 	#Take the islands
 	focus = {
 		id = ACR_take_the_islands
-		icon = GFX_focus_jap_strike_south
-		x = 40
+		icon = GFX_ACR_take_the_islands
+		x = 14
 		y = 4
+		relative_position_id = ACR_tribe_of_many_flags
 		cost = 5
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_assert_acronesian_claims  }
 		available = {
@@ -245,6 +250,373 @@ focus_tree = {
 			}
 			
 		}
+		
+	#The Great Identity Crisis
+	focus = {
+		id = ACR_great_identity_crisis
+		icon = noicon
+		x = 0
+		y = 4
+		relative_position_id = ACR_tribe_of_many_flags
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_assert_acronesian_claims  }
+		available = {
+		}
+		completion_reward = {
+			add_stability = -0.2
+			set_politics = {
+			ruling_party = authoritarian
+			elections_allowed = no
+		}
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.1
+			}
+			add_ideas = ACR_oracle
+			#bop
+			
+		}
+			
+	}
+	
+	focus = {
+		id = ACR_tribe_of_many_names
+		icon = noicon
+		x = 0
+		y = 5
+		relative_position_id = ACR_tribe_of_many_flags
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_force_oracles_abdication }
+		mutually_exclusive = { focus = ACR_delegate_power_to_people }
+		mutually_exclusive = { focus = ACR_mobilize_loyalists }
+		mutually_exclusive = { focus = ACR_united_in_faith }
+		prerequisite = { focus = ACR_great_identity_crisis  }
+		available = {
+		}
+		completion_reward = {
+		set_cosmetic_tag = manynames
+		set_politics = {
+			ruling_party = absolute_monarchy
+			elections_allowed = no
+		}
+		add_stability = 0.1
+		add_popularity = {
+				ideology = absolute_monarchy
+				popularity = -0.05
+			}
+		add_ideas = ACR_clashgamer_disloyal
+		
+		
+		
+		}
+			
+	}
+	
+	focus = {
+		id = ACR_force_oracles_abdication
+		icon = noicon
+		x = -4
+		y = 5
+		relative_position_id = ACR_tribe_of_many_flags
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_delegate_power_to_people }
+		mutually_exclusive = { focus = ACR_tribe_of_many_names }
+		mutually_exclusive = { focus = ACR_mobilize_loyalists }
+		mutually_exclusive = { focus = ACR_united_in_faith }
+		prerequisite = { focus = ACR_great_identity_crisis  }
+		available = {
+		}
+		completion_reward = {
+		add_popularity = {
+				ideology = absolute_monarchy
+				popularity = -0.15
+			}
+		add_stability = -0.1
+		add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.2
+			}
+		if = {
+			limit = {
+				has_ideas = ACR_oracle
+			}
+			remove_ideas = ACR_oracle
+		}
+			
+		}
+	}
+	
+	focus = {
+		id = ACR_delegate_power_to_people
+		icon = noicon
+		x = -8
+		y = 5
+		relative_position_id = ACR_tribe_of_many_flags
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_force_oracles_abdication }
+		mutually_exclusive = { focus = ACR_tribe_of_many_names }
+		mutually_exclusive = { focus = ACR_mobilize_loyalists }
+		mutually_exclusive = { focus = ACR_united_in_faith }
+		prerequisite = { focus = ACR_great_identity_crisis  }
+		available = {
+		}
+		completion_reward = {
+		add_popularity = {
+				ideology = social_democracy
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = absolute_monarchy
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = authoritarian
+				popularity = -0.1
+			}
+			set_politics = {
+			ruling_party = authoritarian
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+			
+		}
+		
+	}
+	
+	focus = {
+		id = ACR_clashs_oath
+		icon = noicon
+		x = 0
+		y = 1
+		relative_position_id = ACR_tribe_of_many_names
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_tribe_of_many_names  }
+		available = {
+		}
+		completion_reward = {
+		
+		swap_ideas = { 
+		  remove_idea = ACR_clashgamer_disloyal 
+		  add_idea = ACR_clashgamer 
+		}
+		add_popularity = {
+				ideology = absolute_monarchy
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = ACR_never_again_divided
+		icon = noicon
+		x = 0
+		y = 2
+		relative_position_id = ACR_tribe_of_many_names
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ACR_clashs_oath  }
+		available = {
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 25
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = -0.05
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = ACR_mobilize_loyalists
+		icon = noicon
+		x = 4
+		y = 5
+		relative_position_id = ACR_tribe_of_many_flags
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		mutually_exclusive = { focus = ACR_force_oracles_abdication }
+		mutually_exclusive = { focus = ACR_tribe_of_many_names }
+		mutually_exclusive = { focus = ACR_delegate_power_to_people }
+		mutually_exclusive = { focus = ACR_united_in_faith }
+		prerequisite = { focus = ACR_great_identity_crisis  }
+		available = {
+		}
+		completion_reward = {
+		add_popularity = {
+				ideology = absolute_monarchy
+				popularity = 0.05
+			}
+		add_stability = -0.1
+		add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = 0.1
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = ACR_united_in_faith
+		icon = noicon
+		x = 8
+		y = 5
+		relative_position_id = ACR_tribe_of_many_flags
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = ACR_force_oracles_abdication }
+		mutually_exclusive = { focus = ACR_tribe_of_many_names }
+		mutually_exclusive = { focus = ACR_mobilize_loyalists }
+		mutually_exclusive = { focus = ACR_delegate_power_to_people }
+		prerequisite = { focus = ACR_great_identity_crisis  }
+		available = {
+		}
+		completion_reward = {
+		add_popularity = {
+				ideology = religious
+				popularity = 0.1
+			}
+			add_stability = 0.05
+			add_power_balance_value = {
+				id = ACR_balance_of_power
+				value = -0.05
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = ACR_rising_star
+		icon = noicon
+		x = 0
+		y = 2
+		relative_position_id = ACR_take_the_islands
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {focus = ACR_delegate_power_to_people focus = ACR_tribe_of_many_names  } prerequisite = { focus = ACR_take_the_islands }
+		available = {
+		}
+		completion_reward = {
+		}
+		
+	}
+	
+	focus = {
+		id = ACR_begin_recruitment
+		icon = noicon
+		x = -2
+		y = 3
+		relative_position_id = ACR_take_the_islands
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = {focus = ACR_rising_star }
+		available = {
+		}
+		completion_reward = {
+			add_manpower = 200000
+		}
+		
+	}
+	
+	focus = {
+		id = ACR_pro_government_propaganda
+		icon = noicon
+		x = 0
+		y = 3
+		relative_position_id = ACR_take_the_islands
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {focus = ACR_rising_star }
+		available = {
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		
+	}
+	
+	focus = {
+		id = ACR_rile_up_the_masses
+		icon = noicon
+		x = 2
+		y = 3
+		relative_position_id = ACR_take_the_islands
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = {focus = ACR_rising_star }
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		
+	}
+	
+	#Extra Research Slot
+	focus = {
+		id = ACR_extra_research_slot
+		icon = GFX_focus_research
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_improve_our_production  }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#Extra Research Slot II
+	focus = {
+		id = ACR_extra_research_slot_ii
+		icon = GFX_focus_research
+		x = 11
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ACR_extra_research_slot} prerequisite = { focus = ACR_improve_our_mainland_industry }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	
 	
 	#The Acronesian Industrial Plan
 	focus = {
@@ -1470,8 +1842,9 @@ focus_tree = {
 	focus = {
 		id = ACR_to_the_army
 		icon = GFX_goal_generic_army_doctrines
-		x = 22
+		x = -6
 		y = 1
+		relative_position_id = ACR_modernize_our_nation
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1491,8 +1864,9 @@ focus_tree = {
 	focus = {
 		id = ACR_to_the_airforce
 		icon = GFX_goal_generic_air_doctrine
-		x = 28
+		x = 0
 		y = 1
+		relative_position_id = ACR_modernize_our_nation
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1512,8 +1886,9 @@ focus_tree = {
 	focus = {
 		id = ACR_to_the_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 34
+		x = 6
 		y = 1
+		relative_position_id = ACR_modernize_our_nation
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1533,8 +1908,9 @@ focus_tree = {
 	focus = {
 		id = ACR_infantry_research
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 20
-		y = 2
+		x = -2
+		y = 1
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1553,8 +1929,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_infantry_production
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 20
-		y = 3
+		x = -2
+		y = 2
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1570,8 +1947,9 @@ focus_tree = {
 	focus = {
 		id = ACR_artillery_research
 		icon = GFX_goal_generic_army_artillery2
-		x = 22
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1590,8 +1968,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_artillery_production
 		icon = GFX_goal_generic_army_artillery2
-		x = 22
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1607,8 +1986,9 @@ focus_tree = {
 	focus = {
 		id = ACR_tank_research
 		icon = GFX_goal_generic_army_tanks
-		x = 24
-		y = 2
+		x = 2
+		y = 1
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1627,8 +2007,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_tank_production
 		icon = GFX_goal_generic_army_tanks
-		x = 24
-		y = 3
+		x = 2
+		y = 2
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1644,8 +2025,9 @@ focus_tree = {
 	focus = {
 		id = ACR_fighter_research
 		icon = GFX_goal_generic_air_fighter2
-		x = 26
-		y = 2
+		x = -2
+		y = 1
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1665,8 +2047,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_fighter_production
 		icon = GFX_goal_generic_air_fighter2
-		x = 26
-		y = 3
+		x = -2
+		y = 2
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1682,8 +2065,9 @@ focus_tree = {
 	focus = {
 		id = ACR_cas_research
 		icon = GFX_goal_generic_air_fighter
-		x = 28
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1703,8 +2087,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_cas_production
 		icon = GFX_goal_generic_air_fighter
-		x = 28
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1721,8 +2106,9 @@ focus_tree = {
 	focus = {
 		id = ACR_bomber_research
 		icon = GFX_goal_generic_air_bomber
-		x = 30
-		y = 2
+		x = 2
+		y = 1
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1742,8 +2128,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_bomber_production
 		icon = GFX_goal_generic_air_bomber
-		x = 30
-		y = 3
+		x = 2
+		y = 2
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1759,8 +2146,9 @@ focus_tree = {
 	focus = {
 		id = ACR_submarine_research
 		icon = GFX_goal_generic_navy_submarine
-		x = 32
-		y = 2
+		x = -2
+		y = 1
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1779,8 +2167,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_submarines
 		icon = GFX_goal_generic_navy_submarine
-		x = 32
-		y = 3
+		x = -2
+		y = 2
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -1797,8 +2186,9 @@ focus_tree = {
 	focus = {
 		id = ACR_destroyer_research
 		icon = GFX_focus_generic_destroyer
-		x = 34
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1817,8 +2207,9 @@ focus_tree = {
 	focus = {
 		id = ACR_better_destroyers
 		icon = GFX_focus_generic_destroyer
-		x = 34
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -1834,8 +2225,9 @@ focus_tree = {
 	focus = {
 		id = ACR_battleship_research
 		icon = GFX_ACR_battleship_research-404
-		x = 36
-		y = 2
+		x = 2
+		y = 1
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1853,9 +2245,10 @@ focus_tree = {
 	#Better Battleships
 	focus = {
 		id = ACR_better_battleships
-		icon = GFX_ACR_better_battleships-404
-		x = 36
-		y = 3
+		icon = GFX_ACR_battleship_research-404
+		x = 2
+		y = 2
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -1871,8 +2264,9 @@ focus_tree = {
 	focus = {
 		id = ACR_army_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		x = 22
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = ACR_to_the_army
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1892,8 +2286,9 @@ focus_tree = {
 	focus = {
 		id = ACR_air_doctrine
 		icon = GFX_goal_generic_air_doctrine
-		x = 28
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = ACR_to_the_airforce
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1913,8 +2308,9 @@ focus_tree = {
 	focus = {
 		id = ACR_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 34
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = ACR_to_the_navy
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1934,8 +2330,9 @@ focus_tree = {
 	focus = {
 		id = ACR_infantry_air_support
 		icon = GFX_goal_generic_CAS
-		x = 25
+		x = -3
 		y = 5
+		relative_position_id = ACR_modernize_our_nation
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -1956,8 +2353,9 @@ focus_tree = {
 	focus = {
 		id = ACR_naval_aviation
 		icon = GFX_goal_generic_air_fighter2
-		x = 31
+		x = 3
 		y = 5
+		relative_position_id = ACR_modernize_our_nation
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1979,160 +2377,373 @@ focus_tree = {
 	focus = {
 		id = ACR_our_allies_to_the_west
 		icon = GFX_goal_generic_major_alliance
-		x = 48
+		x = 65
 		y = 0
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-			always = no
+			
 		}
 		mutually_exclusive = { focus = ACR_condemn_can  } mutually_exclusive = { focus = ACR_play_both_sides  }
+		completion_reward = {
+			CEN = {
+				country_event = {id = ACR_acronesian_events.8 }
+			}
+			
+		}
 	}
 
 	#Sign The Non-Aggression-Pact
 	focus = {
 		id = ACR_sign_the_nonaggressionpact
 		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 49
+		x = 1
 		y = 1
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_our_allies_to_the_west  focus = ACR_play_both_sides  }
+		completion_reward = {
+			add_political_power = 50
+			diplomatic_relation = { 
+				country = CEN 
+				relation = non_aggression_pact 
+			}
+		}
 	}
 
 	#An Alliance With The Nomads
 	focus = {
 		id = ACR_an_alliance_with_the_nomads
 		icon = GFX_goal_generic_alliance
-		x = 48
+		x = 0
 		y = 2
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_closer_ties_to_can  } prerequisite = { focus = ACR_sign_the_nonaggressionpact  }
+		completion_reward = {
+			CEN = {
+			create_faction = "Nomad Alliance"
+			add_to_faction = ACR
+			}
+			
+		}
 	}
 
 	#Closer Ties to CAN
 	focus = {
 		id = ACR_closer_ties_to_can
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 47
+		x = -1
 		y = 1
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_our_allies_to_the_west  }
+		completion_reward = {
+			remove_opinion_modifier = {
+				target = CEN
+				modifier = good_relations
+			}
+			add_opinion_modifier = {
+					target = CEN
+					modifier = great_relations
+				}
+			CEN = {
+			remove_opinion_modifier = {
+				target = ACR
+				modifier = good_relations
+			}
+			add_opinion_modifier = {
+					target = ACR
+					modifier = great_relations
+				}
+			}
+			
+		}
 	}
 
 	#The Prospect Of A Union
 	focus = {
 		id = ACR_the_prospect_of_a_union
 		icon = GFX_focus_AST_rats_tobruk
-		x = 47
+		x = -1
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_an_alliance_with_the_nomads  }
+		completion_reward = {
+			add_political_power = 100
+			CEN = {
+				add_political_power = 100
+			}
+			remove_opinion_modifier = {
+				target = CEN
+				modifier = great_relations
+			}
+			add_opinion_modifier = {
+					target = CEN
+					modifier = superb_relations
+				}
+			CEN = {
+			remove_opinion_modifier = {
+				target = ACR
+				modifier = great_relations
+			}
+			add_opinion_modifier = {
+					target = ACR
+					modifier = superb_relations
+				}
+			}
+		}
 	}
 
 	#Economic Cooperation
 	focus = {
 		id = ACR_economic_cooperation
 		icon = GFX_focus_generic_industry_1
-		x = 49
+		x = 1
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ACR_an_alliance_with_the_nomads  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			CEN = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			}
+		}
 	}
 
 	#Enact Diplomacy Through CAN
 	focus = {
 		id = ACR_enact_diplomacy_through_can
 		icon = GFX_ACR_enact_diplomacy_through_can-59
-		x = 47
+		x = -1
 		y = 4
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_the_prospect_of_a_union  } prerequisite = { focus = ACR_economic_cooperation  }
+		completion_reward = {
+			add_stability = -0.1
+			CEN = {
+				puppet = ACR
+			}
+		}
 	}
 
 	#Economic Integration
 	focus = {
 		id = ACR_economic_integration
 		icon = GFX_focus_generic_industry_2
-		x = 49
+		x = 1
 		y = 4
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = ACR_economic_cooperation  }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			CEN = {
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			}
+		}
 	}
 
-	#Extra Research Slot
-	focus = {
-		id = ACR_extra_research_slot
-		icon = GFX_focus_research
-		x = 9
-		y = 6
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		prerequisite = { focus = ACR_improve_our_production  }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	
-	#Extra Research Slot II
-	focus = {
-		id = ACR_extra_research_slot_ii
-		icon = GFX_focus_research
-		x = 11
-		y = 7
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		prerequisite = { focus = ACR_extra_research_slot} prerequisite = { focus = ACR_improve_our_mainland_industry }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 
 	#Become A Part Of The Central Asian Nomads
 	focus = {
 		id = ACR_become_a_part_of_the_central_asian_nomads
 		icon = GFX_goal_anschluss
-		x = 48
+		x = 0
 		y = 5
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ACR_enact_diplomacy_through_can  } prerequisite = { focus = ACR_economic_integration  }
+		completion_reward = {
+			every_core_state = {
+				add_core_of = CEN
+			}
+			CEN = { 
+			
+			annex_country = { target = ACR transfer_troops = yes }
+			change_tag_from = ACR
+			}
+		}
 	}
 
 	#Elon Musk!
 	focus = {
 		id = ACR_elonmusk
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		x = 55
+		x = 7
 		y = 1
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2145,14 +2756,12 @@ focus_tree = {
 	focus = {
 		id = ACR_condemn_can
 		icon = GFX_goal_generic_political_pressure
-		x = 57
+		x = 9
 		y = 0
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
-		}
-		available = {
-			always = no
 		}
 		mutually_exclusive = { focus = ACR_our_allies_to_the_west  } mutually_exclusive = { focus = ACR_play_both_sides  }
 	}
@@ -2161,8 +2770,9 @@ focus_tree = {
 	focus = {
 		id = ACR_the_secret_agreement
 		icon = GFX_goal_generic_forceful_treaty
-		x = 53
+		x = 5
 		y = 1
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2174,14 +2784,12 @@ focus_tree = {
 	focus = {
 		id = ACR_play_both_sides
 		icon = GFX_goal_generic_neutrality_focus
-		x = 51
+		x = 3
 		y = 0
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
-		}
-		available = {
-			always = no
 		}
 		mutually_exclusive = { focus = ACR_our_allies_to_the_west  } mutually_exclusive = { focus = ACR_condemn_can  }
 	}
@@ -2190,8 +2798,9 @@ focus_tree = {
 	focus = {
 		id = ACR_yorkshire
 		icon = GFX_focus_generic_befriend_turkey
-		x = 59
+		x = 11
 		y = 1
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2204,8 +2813,9 @@ focus_tree = {
 	focus = {
 		id = ACR_join_the_fup
 		icon = GFX_goal_generic_alliance
-		x = 54
+		x = 6
 		y = 2
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2217,8 +2827,9 @@ focus_tree = {
 	focus = {
 		id = ACR_invest_in_the_volcano
 		icon = GFX_goal_generic_production
-		x = 56
+		x = 8
 		y = 2
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -2230,8 +2841,9 @@ focus_tree = {
 	focus = {
 		id = ACR_fortify_the_border_with_can
 		icon = GFX_goal_generic_fortify_city
-		x = 56
+		x = 8
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
@@ -2243,8 +2855,9 @@ focus_tree = {
 	focus = {
 		id = ACR_an_empire_for_ourselves
 		icon = GFX_goal_generic_demand_territory
-		x = 55
+		x = 7
 		y = 4
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2256,8 +2869,9 @@ focus_tree = {
 	focus = {
 		id = ACR_the_fup_emergency_meeting
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 52
+		x = 4
 		y = 5
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2273,8 +2887,9 @@ focus_tree = {
 	focus = {
 		id = ACR_profits_from_both_sides
 		icon = GFX_focus_generic_self_management
-		x = 53
+		x = 5
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -2286,8 +2901,9 @@ focus_tree = {
 	focus = {
 		id = ACR_peacesecured
 		icon = GFX_goal_tripartite_pact
-		x = 51
+		x = 3
 		y = 6
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2304,8 +2920,9 @@ focus_tree = {
 	focus = {
 		id = ACR_therewillbenopeace
 		icon = GFX_goal_generic_major_war
-		x = 53
+		x = 5
 		y = 6
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2322,8 +2939,9 @@ focus_tree = {
 	focus = {
 		id = ACR_destroy_the_nomads
 		icon = GFX_goal_demand_sudetenland
-		x = 55
+		x = 7
 		y = 7
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2335,8 +2953,9 @@ focus_tree = {
 	focus = {
 		id = ACR_the_question_of_gachidemia
 		icon = GFX_focus_AST_war_japan
-		x = 55
+		x = 7
 		y = 8
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2348,8 +2967,9 @@ focus_tree = {
 	focus = {
 		id = ACR_believe_in_allah
 		icon = GFX_focus_generic_concessions
-		x = 58
+		x = 10
 		y = 2
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2361,8 +2981,9 @@ focus_tree = {
 	focus = {
 		id = ACR_the_world_is_our_enemy
 		icon = GFX_goal_generic_major_war
-		x = 60
+		x = 12
 		y = 2
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2374,8 +2995,9 @@ focus_tree = {
 	focus = {
 		id = ACR_denounce_oracle
 		icon = GFX_goal_generic_propaganda
-		x = 58
+		x = 10
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2387,8 +3009,9 @@ focus_tree = {
 	focus = {
 		id = ACR_prepare_for_the_coup
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
-		x = 60
+		x = 12
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2400,8 +3023,9 @@ focus_tree = {
 	focus = {
 		id = ACR_our_most_important_hour
 		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = 59
+		x = 11
 		y = 4
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2413,8 +3037,9 @@ focus_tree = {
 	focus = {
 		id = ACR_friendship_missions_to_yorkshire
 		icon = GFX_goal_generic_improve_relations
-		x = 62
+		x = 14
 		y = 2
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2426,8 +3051,9 @@ focus_tree = {
 	focus = {
 		id = ACR_investments_from_yorkshire
 		icon = GFX_goal_generic_production
-		x = 62
+		x = 14
 		y = 3
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -2439,8 +3065,9 @@ focus_tree = {
 	focus = {
 		id = ACR_research_cooperation_with_yorkshire
 		icon = GFX_focus_research2
-		x = 62
+		x = 14
 		y = 4
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -2452,8 +3079,9 @@ focus_tree = {
 	focus = {
 		id = ACR_formulate_an_alliance
 		icon = GFX_goal_generic_alliance
-		x = 59
+		x = 11
 		y = 5
+		relative_position_id = ACR_our_allies_to_the_west
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL

@@ -1,5 +1,7 @@
 add_namespace = ACR_acronesian_events
 
+
+
 #Acronesia proposes territorial trade
 country_event = { # Acronesia demands Oraclas from CAN
 	id = ACR_acronesian_events.1
@@ -391,6 +393,51 @@ country_event = { # Shitpost rejects our demands!
 			
 		}
 		ai_chance = { factor = 75 } # No war
+		
+		add_political_power = -25
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { # Acronesia asks CAN to improve relations
+	id = ACR_acronesian_events.8
+	title = ACR_acronesian_events.8.t
+	desc = ACR_acronesian_events.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		name = ACR_acronesian_events.8.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 100 } # They accept the improved relations
+		add_political_power = 100
+			add_opinion_modifier = {
+					target = CEN
+					modifier = good_relations
+				}
+			CEN = {
+				add_political_power = 50
+				add_opinion_modifier = {
+					target = ACR
+					modifier = good_relations
+				}
+			}
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ACR_acronesian_events.8.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 0 } # They dont want to improve relations
 		
 		add_political_power = -25
 

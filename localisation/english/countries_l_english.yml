@@ -4,17 +4,19 @@
  CEN_DEF:0 "The Central Asian Nomads"
  CEN_ADJ:0 "Central Asian"
  
- ACR_fascism:0 "Acronesia"
- ACR_fascism_DEF:0 "Acronesia"
- ACR_democratic:0 "Acornesia"
- ACR_democratic_DEF:0 "Acornesia"
- ACR_neutrality:0 "Acornesia"
- ACR_neutrality_DEF:0 "Acornesia"
- ACR_communism:0 "Acor/ronesia"
- ACR_communism_DEF:0 "Acor/ronesia"
+ 
+
+ ACR_social_democracy:0 "Acornesia"
+ ACR_social_democracy_DEF:0 "Acornesia"
+ ACR_religious:0 "Acornesia"
+ ACR_religious_DEF:0 "Acornesia"
  ACR:0 "Acronesia"
  ACR_DEF:0 "Acronesia"
  ACR_ADJ:0 "Acronesian"
+ 
+ manynames:0 "Acor/ronesia"
+ manynames_DEF:0 "Acor/ronesia"
+ manynames_ADJ:0 "Acor/ronesian"
  
  KAI:0 "Kaiserreich"
  KAI_DEF:0 "Das Kaiserreich"

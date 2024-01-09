@@ -27,10 +27,6 @@ country_event = {id = oscaremn.1}
 		icon = decision_icon_bribe_oscaremn
 		cost = 20
 		days_remove = 7
-		ai_will_do = {
-			base =1
-			
-		}
 		available = {
 			has_idea = the_travelling_advisor_1
 
@@ -49,10 +45,6 @@ country_event = {id = oscaremn.1}
 		icon = decision_icon_establish_long_term_contact
 		cost = 20
 		days_remove = 7
-		ai_will_do = {
-			base =1
-			
-		}
 		available = {
 			has_idea = the_travelling_advisor_1
 			has_idea = bribed_oscaremn
@@ -74,10 +66,6 @@ country_event = {id = oscaremn.1}
 		icon = decision_icon_create_a_permanent_headquarter
 		cost = 50
 		days_remove = 14
-		ai_will_do = {
-			base =1
-			
-		}
 		available = {
 		OR = {
 			has_idea = the_travelling_advisor_1
@@ -134,10 +122,6 @@ country_event = {id = oscaremn.1}
 		icon = decision_icon_use_oscaremn_for_sabotage
 		cost = 50
 		days_remove = 30
-		ai_will_do = {
-			base =1
-			
-		}
 		days_re_enable = 30
 
 		available = {

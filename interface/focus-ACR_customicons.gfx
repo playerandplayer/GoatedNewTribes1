@@ -3,6 +3,11 @@ spriteTypes = {	##Icon For:
 		name = "GFX_ACR_battleship_research-404"
 		texturefile = "gfx/interface/goals/GFX_ACR_battleship_research-404.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_ACR_take_the_islands"
+		texturefile = "gfx/interface/goals/GFX_ACR_take_the_islands.dds"
+	}
 
 	##Icon Shine For: 
 	SpriteType = { 

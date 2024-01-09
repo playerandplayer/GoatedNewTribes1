@@ -16,6 +16,31 @@ ideas = {
 			}
 		}
 		
+		ACR_oracle = {
+			picture = GFX_ACR_w-569047
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+		ACR_clashgamer = {
+			picture = GFX_ACR_p-569047
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		
+		ACR_clashgamer_disloyal = {
+			picture = GFX_ACR_p-569047
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		
 		ACR_building_church = {
 			picture = ACR_industrial_developement-122465
 			modifier = {
