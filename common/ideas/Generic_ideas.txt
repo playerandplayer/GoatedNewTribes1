@@ -1,0 +1,125 @@
+ideas = {
+	country = {
+		ALL_prioritize_artillery = {
+			picture = chi_hyper_inflation
+			equipment_bonus = {
+					artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+			}
+		}
+		ALL_prioritize_guns = {
+			picture = chi_hyper_inflation
+				equipment_bonus = {
+					infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			
+		}
+		
+		ALL_prioritize_tanks = {
+			picture = chi_hyper_inflation
+			equipment_bonus = {
+					light_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			equipment_bonus = {
+					medium_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			equipment_bonus = {
+					heavy_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+			equipment_bonus = {
+					modern_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ALL_prioritize_fighters = {
+			picture = chi_hyper_inflation
+				equipment_bonus = {
+					fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				
+			}
+		}
+		
+		ALL_prioritize_cas = {
+			picture = chi_hyper_inflation
+				equipment_bonus = {
+					cas_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				
+			}
+		}
+		
+		ALL_prioritize_bombers = {
+			picture = chi_hyper_inflation
+				equipment_bonus = {
+					tac_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+				equipment_bonus = {
+					strat_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+			}
+		}
+		
+		
+
+		
+		ALL_prioritize_submarines = {
+			picture = chi_hyper_inflation
+			equipment_bonus = {
+					submarine = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ALL_prioritize_screens = {
+			picture = chi_hyper_inflation
+			equipment_bonus = {
+					screen_ship = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		ALL_prioritize_capital_ships = {
+			picture = chi_hyper_inflation
+			equipment_bonus = {
+					capital_ship = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				}
+		}
+		
+		
+	}
+	
+}

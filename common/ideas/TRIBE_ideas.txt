@@ -1,16 +1,6 @@
 ideas = {
 
 	country = {
-
-		TRIBE_tribal_society = {
-			picture = chi_hyper_inflation
-			modifier = {
-				consumer_goods_factor = 0.25
-				production_speed_buildings_factor = -0.33
-				production_lack_of_resource_penalty_factor = 0.1
-				industrial_capacity_factory = -0.1
-			}
-		}
 		
 		YOR_the_modern_state = {
 			picture = man_five_year_plan_industry
@@ -20,5 +10,2965 @@ ideas = {
 				production_lack_of_resource_penalty_factor = 0.9
 			}
 		}
+		
+		improved_supply_chain = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_supply_node_factor = 2
+				production_speed_rail_way_factor = 0.75
+				attrition = -0.2
+				out_of_supply_factor = -0.2
+				supply_consumption_factor = -0.2
+				supply_factor = 0.2
+				
+			}
+		}
+		
+		society_1_base = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.3
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.4
+				stability_factor = -0.4
+				local_resources_factor = -0.5
+			}
+		}
+		society_2_base_currency = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.35
+				stability_factor = -0.35
+				local_resources_factor = -0.5
+			}
+		}
+		society_3_base_currency_commercial = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.3
+				local_resources_factor = -0.4
+			}
+		}
+		society_4_base_currency_commercial_property = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_4_base_currency_commercial_trade = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.3
+				local_resources_factor = -0.3
+			}
+		}
+		society_5_base_currency_commercial_property_trade = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_4_base_currency_commercial_workforce = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.3
+				local_resources_factor = -0.4
+			}
+		}
+		society_5_base_currency_commercial_property_workforce = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_5_base_currency_commercial_trade_workforce = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.3
+				local_resources_factor = -0.3
+			}
+		}
+		society_6_base_currency_commercial_property_trade_workforce = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_4_base_currency_commercial_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_5_base_currency_commercial_property_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_5_base_currency_commercial_trade_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_6_base_currency_commercial_property_trade_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_5_base_currency_commercial_workforce_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_6_base_currency_commercial_property_workforce_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_6_base_currency_commercial_trade_workforce_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_property_trade_workforce_border = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_6_base_currency_commercial_trade_border_autonomy = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.1
+				local_resources_factor = -0.25
+			}
+		}
+		society_7_base_currency_commercial_property_trade_border_autonomy = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_7_base_currency_commercial_trade_workforce_border_autonomy = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_border_autonomy = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_6_base_currency_commercial_property_workforce_school = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_property_trade_workforce_school = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_property_workforce_border_school = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_border_school = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_autonomy_school = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_6_base_currency_commercial_property_trade_urban = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_property_trade_workforce_urban = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_property_trade_border_urban = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_border_urban = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_property_trade_border_autonomy_urban = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_autonomy_urban = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_school_urban = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_school_urban = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_5_base_currency_commercial_workforce_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.35
+				local_resources_factor = -0.4
+			}
+		}
+		society_6_base_currency_commercial_property_workforce_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.25
+				local_resources_factor = -0.4
+			}
+		}
+		society_6_base_currency_commercial_trade_workforce_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.35
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_property_trade_workforce_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_6_base_currency_commercial_workforce_border_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.25
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_property_workforce_border_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.15
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_trade_workforce_border_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_border_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_trade_workforce_border_autonomy_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.45
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_autonomy_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_7_base_currency_commercial_property_workforce_school_labour = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.25
+				local_resources_factor = -0.4
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_school_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_property_workforce_border_school_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.15
+				local_resources_factor = -0.4
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_school_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_urban_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_urban_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_school_urban_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_school_urban_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_trade_border_autonomy_urban_railway = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_urban_railway = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_railway = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_school_urban_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_school_urban_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_school_urban_labour_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_5_base_currency_commercial_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.15
+				local_resources_factor = -0.4
+			}
+		}
+		society_6_base_currency_commercial_property_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.05
+				local_resources_factor = -0.4
+			}
+		}
+		society_6_base_currency_commercial_trade_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_property_trade_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_6_base_currency_commercial_workforce_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.15
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_property_workforce_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.05
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_trade_workforce_border_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_border_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_trade_border_autonomy_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_trade_border_autonomy_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.25
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_trade_workforce_border_autonomy_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_autonomy_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_workforce_border_school_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.05
+				local_resources_factor = -0.4
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_school_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_school_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_trade_border_urban_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_urban_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_border_autonomy_urban_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.15
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_urban_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_school_urban_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_7_base_currency_commercial_workforce_border_labour_security = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_8_base_currency_commercial_property_workforce_border_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_8_base_currency_commercial_trade_workforce_border_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_trade_workforce_border_autonomy_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_workforce_border_school_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_school_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_urban_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_urban_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_border_autonomy_urban_railway_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_urban_railway_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_railway_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_urban_teams_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_teams_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway_teams_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_8_base_currency_commercial_property_workforce_school_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_school_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.2
+			}
+		}
+		society_9_base_currency_commercial_property_workforce_border_school_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_school_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_school_urban_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.25
+				local_resources_factor = -0.2
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_urban_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_school_urban_labour_teams_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.25
+				local_resources_factor = -0.2
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_10_base_currency_commercial_property_workforce_border_school_labour_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_labour_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_urban_labour_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_6_base_currency_commercial_workforce_labour_penal = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.35
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_property_workforce_labour_penal = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.4
+			}
+		}
+		society_7_base_currency_commercial_trade_workforce_labour_penal = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.35
+				local_resources_factor = -0.3
+			}
+		}
+		society_8_base_currency_commercial_property_trade_workforce_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_7_base_currency_commercial_workforce_border_labour_penal = {
+			picture = chi_hyper_inflation
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.4
+			}
+		}
+		society_8_base_currency_commercial_property_workforce_border_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.4
+			}
+		}
+		society_8_base_currency_commercial_trade_workforce_border_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_border_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_trade_workforce_border_autonomy_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_autonomy_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_8_base_currency_commercial_property_workforce_school_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.4
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_school_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_9_base_currency_commercial_property_workforce_border_school_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.4
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_school_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_9_base_currency_commercial_property_trade_workforce_urban_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_urban_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_school_urban_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_urban_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_railway_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_school_urban_labour_teams_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.25
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_8_base_currency_commercial_workforce_border_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.2
+				local_resources_factor = -0.4
+			}
+		}
+		society_9_base_currency_commercial_property_workforce_border_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_9_base_currency_commercial_trade_workforce_border_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.2
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_border_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_trade_workforce_border_autonomy_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.25
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_autonomy_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.3
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_10_base_currency_commercial_property_workforce_border_school_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.4
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_urban_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_urban_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_urban_labour_railway_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.3
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.25
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_9_base_currency_commercial_property_workforce_school_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.25
+				local_resources_factor = -0.3
+			}
+		}
+		society_10_base_currency_commercial_property_trade_workforce_school_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.2
+			}
+		}
+		society_10_base_currency_commercial_property_workforce_border_school_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_border_school_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_11_base_currency_commercial_property_trade_workforce_school_urban_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.2
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_urban_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_school_urban_labour_teams_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.2
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_11_base_currency_commercial_property_workforce_border_school_labour_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.1
+				local_resources_factor = -0.3
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_border_school_labour_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_labour_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.2
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_school_urban_labour_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.2
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway_teams_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway_teams_security_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_penal_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.15
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_penal_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_12_base_currency_commercial_property_trade_workforce_school_urban_labour_teams_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.25
+				local_resources_factor = -0.15
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.15
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.05
+				local_resources_factor = -0.1
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = 0.0
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = -0.1
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.0
+				local_resources_factor = -0.1
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = 0.0
+			}
+		}
+		society_13_base_currency_commercial_property_trade_workforce_school_urban_labour_teams_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.15
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.15
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.1
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.0
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.15
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.1
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.0
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_research_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = 0.0
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = 0.0
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_research_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.0
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.0
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_research_synthetic_oil = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research_synthetic_oil = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_research_synthetic_oil = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		society_19_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+			}
+		}
+		society_14_base_currency_commercial_property_trade_workforce_school_urban_labour_teams_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				local_resources_factor = -0.1
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.15
+				local_resources_factor = -0.1
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_school_urban_labour_teams_security_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.1
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_teams_security_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_research_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		society_19_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+			}
+		}
+		society_19_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_research_synthetic_oil_autarky = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.1
+			}
+		}
+		society_20_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.1
+			}
+		}
+		society_15_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_railway_teams_security_research_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.0
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_16_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_research_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_17_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_penal_research_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_18_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research_synthetic_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = 0.0
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_19_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.0
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_19_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research_synthetic_oil_production = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_20_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_production = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_20_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_autarky_production = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_21_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky_production = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_20_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_research_synthetic_oil_production_supply = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_21_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_production_supply = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_22_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky_production_supply = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.0
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_20_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_resource_penal_research_synthetic_oil_autarky_mining = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+				local_resources_factor = 0.2
+			}
+		}
+		society_21_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky_mining = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.2
+			}
+		}
+		society_22_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky_production_mining = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_23_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky_production_supply_mining = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.0
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.0
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		society_24_base_currency_commercial_property_trade_workforce_border_autonomy_school_urban_labour_railway_teams_security_resource_penal_research_synthetic_oil_autarky_production_supply_mining_military = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				consumer_goods_factor = 0.0
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.0
+				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+
+
 	}
 }

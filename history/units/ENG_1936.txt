@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry-Division"
+	name = "Experimental Infantry Brigade"
 
 	division_names_group = ENG_Inf_01
 
@@ -7,93 +7,12 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		artillery_brigade = { x = 3 y = 0 }
 	}
 	
-	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-	}
 }
+
 division_template = {
-	name = "Tank-Division"
-
-	division_names_group = ENG_Arm_01
-
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		light_armor = { x = 0 y = 3 }
-        light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		light_armor = { x = 1 y = 2 }
-		light_armor = { x = 1 y = 3 }
-		motorized = { x = 2 y = 0 }
-        motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		light_armor = { x = 4 y = 0 }
-	}
-	support = {
-        mot_recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
-	}
-}
-division_template = {
-	name = "Motorized Infantry Division"
-
-	division_names_group = GER_MOT_02
-
-	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
-	    motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		
-		mot_artillery_brigade = { x = 0 y = 3 }
-		mot_artillery_brigade = { x = 1 y = 3 }
-		mot_artillery_brigade = { x = 2 y = 3 }
-	}
-	support = {
-        mot_recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
-	}
-}
-division_template = {
-	name = "Mountaineers"
-	division_names_group = ENG_Mnt_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "Cavalry Division"
+	name = "Horseback Riders"
 
 	division_names_group = ENG_Cav_01
 
@@ -102,19 +21,10 @@ division_template = {
         cavalry = { x = 0 y = 1 }
         cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
-	name = "Cheap Cavalry Division"
-
-	division_names_group = ENG_Cav_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
 	}
 }
+
