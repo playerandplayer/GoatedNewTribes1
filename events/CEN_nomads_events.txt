@@ -1,0 +1,1246 @@
+add_namespace = CEN_nomads_events
+
+
+
+# CAN can choose if they want to ally or rival with the Shitpost Clan
+country_event = {
+	id = CEN_nomads_events.1
+	title = CEN_nomads_events.1.t
+	desc = CEN_nomads_events.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # We want to become their rival
+		name = CEN_nomads_events.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		add_opinion_modifier = {
+				target = SHI
+				modifier = worst_enemy
+			}
+		SHI = {
+			
+			country_event = SHI_shitpost_events.3 # This will inform SHI that we have chosen to become their rival
+		}	
+		complete_national_focus = CEN_the_rival_in_the_east
+		
+		
+
+	}
+	option = { # We want to become their ally
+		name = CEN_nomads_events.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		SHI = {
+			country_event = SHI_shitpost_events.2 # This ask Shitpost if they want to become our ally
+		}
+
+	}
+
+}
+
+# CAN gets asked by Shitpost if they want to become their ally
+country_event = {
+	id = CEN_nomads_events.2
+	title = CEN_nomads_events.2.t
+	desc = CEN_nomads_events.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # We want to become their rival
+		name = CEN_nomads_events.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		add_opinion_modifier = {
+				target = SHI
+				modifier = worst_enemy
+			}
+		complete_national_focus = CEN_the_rival_in_the_east
+		SHI = {
+
+			country_event = SHI_shitpost_events.3 # This will inform SHI that we have chosen to become their rival
+		}
+
+	}
+	option = { # We want to become their ally
+		name = CEN_nomads_events.2.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		complete_national_focus = CEN_the_ally_in_the_east
+		SHI = {
+			country_event = SHI_shitpost_events.4 # This will inform SHI that we have chosen to become their ally
+		}
+
+	}
+
+}
+
+# We get informed that Shitpost will be our rival
+country_event = {
+	id = CEN_nomads_events.3
+	title = CEN_nomads_events.3.t
+	desc = CEN_nomads_events.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # So be it
+		name = CEN_nomads_events.3.a
+		trigger = {
+			
+		}
+		complete_national_focus = CEN_the_rival_in_the_east
+		add_opinion_modifier = {
+				target = SHI
+				modifier = worst_enemy
+			}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that Shitpost accepts to be our ally
+country_event = {
+	id = CEN_nomads_events.4
+	title = CEN_nomads_events.4.t
+	desc = CEN_nomads_events.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # So be it
+		name = CEN_nomads_events.4.a
+		trigger = {
+			
+		}
+		complete_national_focus = CEN_the_ally_in_the_east
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We demand that the Trade Tribe becomes a puppet of us
+country_event = {
+	id = CEN_nomads_events.5
+	title = CEN_nomads_events.5.t
+	desc = CEN_nomads_events.5.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # The Trade Tribe accepts the puppeting
+		name = CEN_nomads_events.5.a
+		trigger = {
+			
+		}
+		add_political_power = 50
+		CEN = {
+			puppet = TRD
+			country_event = CEN_nomads_events.7
+		}
+		
+		ai_chance = { factor = 9 }
+
+	}
+	option = { # The Trade Tribe rejects the puppeting
+		name = CEN_nomads_events.5.b
+		trigger = {
+			
+		}
+		CEN = {
+			country_event = CEN_nomads_events.6
+		}
+		
+		ai_chance = { factor = 1 }
+
+	}
+
+}
+
+
+# We get informed that the Trade Tribe has rejected becoming a puppet
+country_event = {
+	id = CEN_nomads_events.6
+	title = CEN_nomads_events.6.t
+	desc = CEN_nomads_events.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get a puppet wargoal
+		name = CEN_nomads_events.6.a
+		trigger = {
+			
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = TRD
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that the Trade Tribe has accepted becoming a puppet
+country_event = {
+	id = CEN_nomads_events.7
+	title = CEN_nomads_events.7.t
+	desc = CEN_nomads_events.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = CEN_nomads_events.7.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+country_event = { # We demand that the country we influenced becomes our dominion
+	id = CEN_nomads_events.8
+	title = CEN_nomads_events.8.t
+	desc = CEN_nomads_events.8.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # They accept the puppeting
+		name = CEN_nomads_events.8.a
+		trigger = {
+			
+		}
+		CEN = {
+		set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			country_event = CEN_nomads_events.10
+		}
+		ai_chance = { factor = 9 }
+
+	}
+	option = { # They reject the puppeting, but want to join our alliance
+		name = CEN_nomads_events.8.b
+		trigger = {
+			
+		}
+		set_country_flag = betrayed_CEN
+		CEN = {
+			country_event = CEN_nomads_events.11
+		}
+		
+		
+		ai_chance = { factor = 1 }
+
+	}
+	
+	option = { # They want nothing to do with us
+		name = CEN_nomads_events.8.c
+		trigger = {
+			
+		}
+		set_country_flag = betrayed_CEN
+		CEN = {
+			country_event = CEN_nomads_events.9
+		}
+		
+		
+		ai_chance = { factor = 0 }
+
+	}
+
+}
+
+
+# We get informed that they have rejected becoming a puppet
+country_event = {
+	id = CEN_nomads_events.9
+	title = CEN_nomads_events.9.t
+	desc = CEN_nomads_events.9.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get an annex wargoal
+		name = CEN_nomads_events.9.a
+		trigger = {
+			
+		}
+		every_country = {
+			limit = {
+				has_country_flag = betrayed_CEN
+			}
+			CEN = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+			clr_country_flag = betrayed_CEN
+		}
+		
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that they have accepted becoming a puppet
+country_event = {
+	id = CEN_nomads_events.10
+	title = CEN_nomads_events.10.t
+	desc = CEN_nomads_events.10.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = CEN_nomads_events.10.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# We get informed that they have rejected becoming a puppet, but want to join our alliance
+country_event = {
+	id = CEN_nomads_events.11
+	title = CEN_nomads_events.11.t
+	desc = CEN_nomads_events.11.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get an annex wargoal
+		name = CEN_nomads_events.11.a
+		trigger = {
+			
+		}
+		every_country = {
+			limit = {
+				has_country_flag = betrayed_CEN
+			}
+			CEN = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+			clr_country_flag = betrayed_CEN
+		}
+		
+		ai_chance = { factor = 0 }
+
+	}
+	
+	option = { # Leave them be independent and have them join our faction
+		name = CEN_nomads_events.11.b
+		trigger = {
+			
+		}
+		every_country = {
+			limit = {
+				has_country_flag = betrayed_CEN
+			}
+			country_event = CEN_nomads_events.12
+			clr_country_flag = betrayed_CEN
+			
+			CEN = {
+				add_to_faction = PREV
+			}
+			
+		}
+		
+		
+		
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# They get informed that we have accepted their compromise
+country_event = {
+	id = CEN_nomads_events.12
+	title = CEN_nomads_events.12.t
+	desc = CEN_nomads_events.12.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = CEN_nomads_events.12.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we established contact
+country_event = {
+	id = CEN_nomads_events.13
+	title = CEN_nomads_events.13.t
+	desc = CEN_nomads_events.13.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.13.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# The country we influenced gets informed that our leader visited them
+country_event = {
+	id = CEN_nomads_events.14
+	title = CEN_nomads_events.14.t
+	desc = CEN_nomads_events.14.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.14.a
+		trigger = {
+			
+		}
+		add_stability = 0.01
+		
+		
+		ai_chance = { factor = 10 }
+		
+		
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we hosted a ceremony for them
+country_event = {
+	id = CEN_nomads_events.15
+	title = CEN_nomads_events.15.t
+	desc = CEN_nomads_events.15.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.15.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		add_stability = 0.02
+		add_war_support = 0.02
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+	}
+
+}
+
+
+
+# The country we influenced gets informed that we had private talks with them
+country_event = {
+	id = CEN_nomads_events.16
+	title = CEN_nomads_events.16.t
+	desc = CEN_nomads_events.16.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.16.a
+		trigger = {
+			
+		}
+		add_ideas = CEN_contacts_to_the_nomads
+			
+		ai_chance = { factor = 10 }
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+
+# The country we influenced gets informed that we created partner cities
+country_event = {
+	id = CEN_nomads_events.17
+	title = CEN_nomads_events.17.t
+	desc = CEN_nomads_events.17.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.17.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		every_owned_state = {
+					limit = {
+						is_capital = yes
+					}
+					add_dynamic_modifier = {
+						modifier = CEN_partner_city_of_goatcity
+					}
+				}	
+
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+		
+		
+			
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we had a youth exchange
+country_event = {
+	id = CEN_nomads_events.18
+	title = CEN_nomads_events.18.t
+	desc = CEN_nomads_events.18.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.18.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		add_stability = 0.02
+		add_popularity = {
+			ideology = CEN
+			popularity = 0.02
+			}
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+# The country we influenced gets informed that we recognized their borders
+country_event = {
+	id = CEN_nomads_events.19
+	title = CEN_nomads_events.19.t
+	desc = CEN_nomads_events.19.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.19.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		add_stability = 0.02
+				add_political_power = 25
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+# The country we influenced gets informed that we want a NAP
+country_event = {
+	id = CEN_nomads_events.20
+	title = CEN_nomads_events.20.t
+	desc = CEN_nomads_events.20.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.20.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		diplomatic_relation = {
+				country = CEN
+				relation = non_aggression_pact
+				active = yes
+			}
+		add_stability = 0.02
+				add_war_support = 0.02
+				
+		
+		
+		
+		
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+			
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we send military advisors
+country_event = {
+	id = CEN_nomads_events.21
+	title = CEN_nomads_events.21.t
+	desc = CEN_nomads_events.21.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.21.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+		add_war_support = 0.02
+		
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we sent economic aid
+country_event = {
+	id = CEN_nomads_events.22
+	title = CEN_nomads_events.22.t
+	desc = CEN_nomads_events.22.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = CEN_nomads_events.22.a
+		trigger = {
+			
+		}
+		add_offsite_building = { type = arms_factory level = 3 }
+		ai_chance = { factor = 10 }
+		
+		add_opinion_modifier = {
+			target = CEN
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+# We demand that the Trade Tribe gets annexed by us
+country_event = {
+	id = CEN_nomads_events.23
+	title = CEN_nomads_events.23.t
+	desc = CEN_nomads_events.23.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # The Trade Tribe accepts the annexation
+		name = CEN_nomads_events.23.a
+		trigger = {
+			
+		}
+		add_political_power = 50
+		every_state = {
+			limit = {
+				is_owned_by = TRD
+			}
+			add_core_of = CEN
+		}
+		CEN = {
+		annex_country = {
+			target = TRD
+			transfer_troops = yes
+		}
+		country_event = CEN_nomads_events.10
+		}
+		
+		
+		ai_chance = { factor = 9 }
+
+	}
+	option = { # The Trade Tribe rejects the annexation
+		name = CEN_nomads_events.23.b
+		trigger = {
+			
+		}
+		CEN = {
+			country_event = CEN_nomads_events.9
+		}
+		
+		
+		ai_chance = { factor = 1 }
+
+	}
+
+}
+
+
+# We get informed that the Trade Tribe has rejected getting annexed
+country_event = {
+	id = CEN_nomads_events.24
+	title = CEN_nomads_events.24.t
+	desc = CEN_nomads_events.24.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get a puppet wargoal
+		name = CEN_nomads_events.24.a
+		trigger = {
+			
+		}
+		create_wargoal = {
+			target = TRD
+			type = annex_everything
+		}
+		every_state = {
+			limit = {
+				is_owned_by = TRD
+			}
+			add_core_of = CEN
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that the Trade Tribe has accepted getting annexed
+country_event = {
+	id = CEN_nomads_events.25
+	title = CEN_nomads_events.25.t
+	desc = CEN_nomads_events.25.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = CEN_nomads_events.25.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# Pazal gets informed that we extracted resources
+country_event = {
+	id = CEN_nomads_events.26
+	title = "The Central Asian Nomads wants to help us extract more resources"
+	desc = "The Central Asian Nomads has just come to us with an offer to start extracting more resources in our desert. They will help us drill for more oil if we in return hand them fifty percent of the newly acquired resources. This joint resource extraction program will help foster a more mutual cooperation between our two tribes."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "Drill, Baby, Drill!"
+		trigger = {
+			
+		}
+		374 = {
+		add_resource = {
+			type = oil
+			amount = 50
+		}
+			
+		set_state_flag = new_oil
+			
+		}
+			
+		give_resource_rights = {
+			receiver = SHI
+			state = 374
+			resources = { oil }
+		}
+		
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { has_state_flag = new_oil }
+			}
+			add_resource = {
+				type = oil
+				amount = 50
+			}
+
+		}
+		every_state = {
+			limit = {
+				has_state_flag = new_oil
+			}
+			clr_state_flag = new_oil
+		}
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+
+# Pazal gets informed that we built infrastructure
+country_event = {
+	id = CEN_nomads_events.27
+	title = "The Central Asian Nomads wants a mutual infrastructure project"
+	desc = "The Central Asian Nomads has just come to us with an offer to initiate a mutual infrastructure build up process. This project will lead to both of our tribes improving their infrastructure which will help us greatly."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "All roads lead to Pazal"
+		trigger = {
+			
+		}
+		
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { infrastructure > 4 }
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+		}
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { infrastructure > 3 }
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+
+		}
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { infrastructure > 2 }
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+
+		}
+		
+		
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+
+# Pazal / MTG gets informed that we want to hold a military exercise
+country_event = {
+	id = CEN_nomads_events.28
+	title = "The Central Asian Nomads wants a joint military exercise"
+	desc = "The Central Asian Nomads has offered us to initiate a joint military training exercise, from which both tribes will greatly benefit. Furthermore, this will help the formation of a joint military command structure, which many in both our tribes have been demanding for quite some time."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "I saw, I conquered, I came."
+		trigger = {
+			
+		}
+		
+		add_war_support = 0.03
+		add_stability = 0.01
+		army_experience = 50
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+# Montenegro gets informed that we want to build forts
+country_event = {
+	id = CEN_nomads_events.29
+	title = "The Central Asian Nomads wants a joint fortification program"
+	desc = "The Central Asian Nomads has offered us to start an extensive bunker building program, which will help fortify both of our capitals."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "These forts shall be impenetrable!"
+		trigger = {
+			
+		}
+		20 = {
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 2287
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 13944
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 6791
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 14032
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 14101
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 14013
+		}
+		}
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+# We split the Magyar Nomads once they capitulate
+country_event = {
+	id = CEN_nomads_events.30
+	title = "Splitting the Magyars"
+	desc = "As we have just conquered the Magyar Nomads, it is now time to split them upon the agreed borders."
+
+	fire_only_once = no
+	is_triggered_only = no
+	timeout_days = 14
+	trigger = {
+		OR = {
+			tag = CEN
+			tag = SHI
+		}
+		any_state = {
+			is_core_of = MAG
+			is_claimed_by = ROOT
+			is_owned_by = ROOT
+		}
+		CEN = { has_completed_focus = CEN_split_the_nomads }
+		OR = {
+			NOT = { country_exists = MAG }
+			MAG = { 
+				OR = {
+					is_puppet_of = CEN
+					is_puppet_of = SHI
+					}
+				}
+			}
+		}
+		
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = { #
+		name = "Treaty Obligations must be followed."
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		every_state = {
+			limit = {
+				is_core_of = MAG
+				is_claimed_by = CEN
+			}
+			transfer_state_to = CEN
+		}
+		every_state = {
+			limit = {
+				is_core_of = MAG
+				is_claimed_by = SHI
+			}
+			transfer_state_to = SHI
+		}
+
+	}
+
+}
+
+
+
+country_event = {
+	id = CEN_nomads_events.31
+	title = "The Nomads propose a trade"
+	desc = "The Central Asian Nomads have just offered us that they give up the foothold they have across the Goated lake, if we are willing to compensate their loss of industry. With this trade, we'll have finally concluded any possible territorial dispute and the future can be one of total cooperation."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = "This is more than a trade - it's a vision."
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		transfer_state = 31
+		transfer_state = 532
+		532 = {
+			remove_building = {
+				type = industrial_complex
+				level = 5
+			}
+		}
+		add_timed_idea = {
+				idea = CEN_paying_economic_compensation
+				days = 365
+			}
+		CEN = {
+			add_timed_idea = {
+				idea = CEN_receiving_economic_compensation
+				days = 365
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 4
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+
+
+
+}
+
+
+
+
+
+# We demand that the Magyars becomes a puppet of us
+country_event = {
+	id = CEN_nomads_events.32
+	title = CEN_nomads_events.32.t
+	desc = CEN_nomads_events.32.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # The Magyars accept the puppeting
+		name = CEN_nomads_events.32.a
+		trigger = {
+			
+		}
+		add_political_power = 50
+		CEN = {
+			puppet = MAG
+			country_event = CEN_nomads_events.34
+		}
+		
+		ai_chance = { factor = 75 }
+
+	}
+	option = { # The Magyars reject the puppeting
+		name = CEN_nomads_events.32.b
+		trigger = {
+			
+		}
+		CEN = {
+			country_event = CEN_nomads_events.33
+		}
+		
+		ai_chance = { factor = 25 }
+
+	}
+
+}
+
+
+# We get informed that the Magyars has rejected becoming a puppet
+country_event = {
+	id = CEN_nomads_events.33
+	title = CEN_nomads_events.33.t
+	desc = CEN_nomads_events.33.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get a puppet wargoal
+		name = CEN_nomads_events.33.a
+		trigger = {
+			
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = MAG
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that the Trade Tribe has accepted becoming a puppet
+country_event = {
+	id = CEN_nomads_events.34
+	title = CEN_nomads_events.34.t
+	desc = CEN_nomads_events.34.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = CEN_nomads_events.34.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}

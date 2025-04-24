@@ -1,0 +1,11 @@
+spriteTypes = { 
+	##Icon For Partner City Dynamic Modifier
+	SpriteType = { 
+		name = "dynamic_modifier_partner_city"
+		texturefile = "gfx/interface/ideas/pp_unity_bonus.dds"
+	}
+
+
+	
+
+}

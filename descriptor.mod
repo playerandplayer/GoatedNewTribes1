@@ -5,7 +5,7 @@ tags={
 	"Map"
 	"Utilities"
 }
-picture="blank_map_template_5632x2048.jpg"
+picture="thumbnail.png"
 supported_version="1.13.*"
 
 replace_path="history/states"

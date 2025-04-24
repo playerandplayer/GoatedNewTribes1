@@ -1,8 +1,12 @@
 focus_tree = {
 	id = generic_focus
 	country = {
-		factor = 1
-	}
+    factor = 0
+    modifier = {
+        add = 1
+        NOT = { original_tag = XXX }
+    }
+}
 	default = yes
 	continuous_focus_position = { x = -40 y = 2090 } 
 	#Prioritize Artillery Production
@@ -419,6 +423,9 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 		available= {
+			has_army_manpower = {
+				size > 299999
+			}
     any_neighbor_country = {
             not = {
                 is_guaranteed_by = ROOT # not guaranteed by us
@@ -477,6 +484,9 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 		available= {
+		has_army_manpower = {
+				size > 399999
+			}
     any_neighbor_country = {
             not = {
                 is_guaranteed_by = ROOT # not guaranteed by us
@@ -576,18 +586,7 @@ focus_tree = {
 		prerequisite = { focus = Generic_a_firm_stance  }
 		completion_reward = {
 		
-			if = {
-				limit = {
-					tag = ELO
-				}
-				create_faction = "Freedom Unity Pact"
-			}
-			else_if = {
-				limit = {
-					is_major = yes
-				}
-				create_faction = "Major Alliance"
-			}
+			
 			
 		}
 	}
@@ -6827,6 +6826,7 @@ else = {
     }
 		set_technology = {
 			synth_oil_experiments = 1
+			fuel_silos = 1
 		}
 		
 		

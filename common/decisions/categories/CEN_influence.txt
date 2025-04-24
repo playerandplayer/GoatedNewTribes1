@@ -1,0 +1,18 @@
+CEN_influence = {
+	icon = decision_category_icon_the_travelling_advisor
+	priority = 100
+	
+	allowed = {
+	always = yes
+	}
+	visible = {
+		tag = CEN
+		OR = {
+		has_completed_focus = CEN_influence_the_west
+		has_completed_focus = CEN_influence_the_north	
+		has_completed_focus = CEN_sway_their_backyard
+		
+		}
+
+	}
+}

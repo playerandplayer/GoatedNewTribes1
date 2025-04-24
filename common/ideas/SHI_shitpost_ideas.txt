@@ -1,0 +1,38 @@
+ideas = {
+
+	country = {
+
+		SHI_Gachidemian_Research = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+				research_sharing_per_country_bonus_factor = 2
+			}
+		}
+		
+		SHI_Yorkian_Embargo = {
+			picture = GFX_generic_research_bonus
+			modifier = {
+				trade_opinion_factor = -1
+			}
+		}
+		
+		SHI_contacts_to_shitpost = { # The nations that we influence will receive this idea
+			picture = generic_deal_with_the_devil2
+			modifier = {
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		SHI_sending_economic_aid = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+
+		
+		
+	}
+}

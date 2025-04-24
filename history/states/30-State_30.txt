@@ -5,7 +5,7 @@ state={
 		2845 4298 4364 5464 6778 16128 16166 16201 16244 16266 16322 16357 16372 16412 16484 16498 16617 
 	}
 	buildings_max_level_factor=1.000
-        manpower=75000
+        manpower=1475000
         state_category = town
 		history={
 		owner = CEN

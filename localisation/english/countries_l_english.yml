@@ -74,9 +74,9 @@
  GAC_DEF:0 "Gachidemia"
  GAC_ADJ:0 "Gachidemia"
  
- AND:0 "Andorra"
- AND_DEF:0 "the Principality of Andorra"
- AND_ADJ:0 "Andorran"
+ ADR:0 "Andorra"
+ ADR_DEF:0 "the Principality of Andorra"
+ ADR_ADJ:0 "Andorran"
  
  BTE:0 "BTEP"
  BTE_DEF:0 "BTEP"
@@ -102,9 +102,9 @@
  FRE_DEF:0 "The Free Lands"
  FRE_ADJ:0 "Free"
  
- NOT:0 "Notenfunie"
- NOT_DEF:0 "Notenfunie"
- NOT_ADJ:0 "Notenfunian"
+ NTF:0 "Notenfunie"
+ NTF_DEF:0 "Notenfunie"
+ NTF_ADJ:0 "Notenfunian"
  
  ARO:0 "Aros Chiefdom"
  ARO_DEF:0 "The Aros Chiefdom"

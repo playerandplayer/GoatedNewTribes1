@@ -10,8 +10,8 @@ state={
 		chromium = 0
 	}
 	history = {
-		owner = NOT
-		add_core_of = NOT
+		owner = NTF
+		add_core_of = NTF
 		victory_points = {
 			6876 5
 		}

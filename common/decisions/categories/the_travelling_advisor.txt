@@ -10,6 +10,7 @@ the_travelling_advisor = {
 		has_idea = the_travelling_advisor_1
 		has_idea = contacts_to_oscaremn
 	}
+	NOT = { has_global_flag = Travelling_Advisor_Killed }
 
 	}
 }

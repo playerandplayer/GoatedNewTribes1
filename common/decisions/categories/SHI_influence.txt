@@ -1,0 +1,53 @@
+SHI_influence = {
+	icon = decision_category_icon_the_travelling_advisor
+	priority = 100
+	
+	allowed = {
+	always = yes
+	}
+	visible = {
+		tag = SHI
+		OR = {
+		has_completed_focus = SHI_influence_the_east
+		has_completed_focus = SHI_align_the_caliphate
+		has_completed_focus = SHI_visit_the_mountain	
+		has_completed_focus = SHI_sway_their_backyard
+		
+		}
+
+	}
+}
+
+SHI_trade_war = {
+	icon = decision_category_icon_the_travelling_advisor
+	priority = 99
+	
+	allowed = {
+	always = yes
+	}
+	visible = {
+		tag = SHI
+		OR = {
+		has_completed_focus = SHI_blockade_the_yorkish
+		
+		}
+
+	}
+}
+
+
+YOR_trade_war = {
+	icon = decision_category_icon_the_travelling_advisor
+	priority = 99
+	
+	allowed = {
+	always = yes
+	}
+	visible = {
+		tag = YOR
+		SHI = { has_completed_focus = SHI_blockade_the_yorkish }
+		
+		
+
+	}
+}

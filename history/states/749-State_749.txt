@@ -1,6 +1,6 @@
 state={
 	id=749
-	name="STATE_749"
+	name="Andorra"
 	resources = {
 		oil = 0
 		aluminium = 10
@@ -20,8 +20,8 @@ state={
 		victory_points = {
 		17714 25
 	}
-		owner = AND
-		add_core_of = AND
+		owner = ADR
+		add_core_of = ADR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2

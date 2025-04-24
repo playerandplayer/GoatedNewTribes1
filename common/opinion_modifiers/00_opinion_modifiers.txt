@@ -1175,5 +1175,32 @@ opinion_modifiers = {
 	worst_enemy = {
 		value = -100
 	}
+	influence_1 = {
+		value = 10
+	}
+	influence_2 = {
+		value = 20
+	}
+	influence_3 = {
+		value = 30
+	}
+	influence_4 = {
+		value = 40
+	}
+	influence_5 = {
+		value = 50
+	}
+	influence_6 = {
+		value = 60
+	}
+	influence_7 = {
+		value = 70
+	}
+	influence_8 = {
+		value = 80
+	}
+	influence_9 = {
+		value = 90
+	}
 	
 }

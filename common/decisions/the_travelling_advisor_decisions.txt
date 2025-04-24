@@ -3,11 +3,12 @@ the_travelling_advisor = {
 	
 		icon = decision_icon_moving_inside_our_borders
 		available = {
-			always = no
+			has_global_flag = Travelling_Advisor_Killed
 		}
 		
 		activation = {
 			has_idea = the_travelling_advisor_1
+			
 		}
 		days_mission_timeout = 30
 		timeout_effect = {
@@ -91,6 +92,7 @@ country_event = {id = oscaremn.1}
 			has_idea = the_travelling_advisor_1
 		}
 		remove_effect = {
+			set_global_flag = Travelling_Advisor_Killed
 			every_country = {
 				limit = {
 					has_idea = the_travelling_advisor_1

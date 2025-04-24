@@ -1,0 +1,120 @@
+﻿l_english:
+CEN_nomads_events.1.t:0 "The Shitpost Question"
+CEN_nomads_events.1.d:0 "We have recently come across the tribe of the Central Asian Nomads. They are - beside us - one of the largest powerhouses in the region. Thus, the decision whether or not they will be one of our core allies or our archenemy is of key importance for our foreign policy. We can either rally everyone behind us to crush them or we can ally together with them to conquer the rest of the tribes."
+CEN_nomads_events.1.a:0 "They shall be our archenemy!"
+CEN_nomads_events.1.b:0 "Maybe we can come to a mutual understanding..."
+
+CEN_nomads_events.2.t:0 "The Central Asian Nomads wants to become our ally"
+CEN_nomads_events.2.d:0 "Just now messengers of the Central Asian Nomads have arrived at Goatcity with a request from Finnik himself. He wants to put tensions between the Nomads and the Central Asian Nomads beside us and come to a mutual understanding. He offers to ally and take on the other tribes together, as us two tribes would be unbeatable. Shall we accept their offer or can the future between our two powerful tribes only be one of war and bloodshed?"
+CEN_nomads_events.2.a:0 "No alliance with our archenemy!"
+CEN_nomads_events.2.b:0 "Let's take on the world together!"
+
+CEN_nomads_events.3.t:0 "The Central Asian Nomads has announced their rivalry."
+CEN_nomads_events.3.d:0 "The Central Asian Nomads has just informed us that any attempts to foster an alliance between us are and always will be futile. They have declared us their archenemy and will put every ounch of their strength into preparing our downfall."
+CEN_nomads_events.3.a:0 "If that's what they wish..."
+
+CEN_nomads_events.4.t:0 "The Central Asian Nomads has accepted our alliance"
+CEN_nomads_events.4.d:0 "The Central Asian Nomads has just announced that they will gladly accept our proposal for an alliance. A meeting between Demir and Finnik has been scheduled to discuss further strategy. Now there is nothing that stands between a glorious future between our two powerful tribes!"
+CEN_nomads_events.4.a:0 "Let's take on the world together!"
+
+CEN_nomads_events.5.t:0 "The Central Asian Nomads demand our subjugation!"
+CEN_nomads_events.5.d:0 "We have just received an ultimatum from the Central Asian Nomads, demanding us to become their puppet. If we accept, they promise us economic welfare and cooperation, but if we reject, we can expect the worst."
+CEN_nomads_events.5.a:0 "Let's work together."
+CEN_nomads_events.5.b:0 "Yield no ground!"
+
+CEN_nomads_events.6.t:0 "The Trade Tribe has rejected submission"
+CEN_nomads_events.6.d:0 "The Trade Tribe has just announced they will not be submitting to us."
+CEN_nomads_events.6.a:0 "Let's teach them otherwise!"
+
+CEN_nomads_events.7.t:0 "The Trade Tribe has accepted submission"
+CEN_nomads_events.7.d:0 "The Trade Tribe has just announced they will become our puppet."
+CEN_nomads_events.7.a:0 "Onwards for a prosperous future!"
+
+CEN_nomads_events.8.t:0 "The Central Asian Nomads want us to join them!"
+CEN_nomads_events.8.d:0 "We have just received a proposal from the Central Asian Nomads, asking us to join their faction and also becoming a dominion of them. Thus, we could prosperously work together in the future, they say. Should we accept the proposal and become both puppet and faction member? Should we reject it outright? Or should we try to find a compromise, that sees us joining their faction but staying independent? Though if they don't accept the compromise they might want to puppet us by force."
+CEN_nomads_events.8.a:0 "We are better of as their dominion!"
+CEN_nomads_events.8.b:0 "Let's try to find a compromise."
+CEN_nomads_events.8.c:0 "We will never join them in any way!"
+
+CEN_nomads_events.9.t:0 "They have rejected submission"
+CEN_nomads_events.9.d:0 "They have just announced they will not become our dominion nor join our faction."
+CEN_nomads_events.9.a:0 "Let's bring them in by force then!"
+
+CEN_nomads_events.10.t:0 "They have accepted submission"
+CEN_nomads_events.10.d:0 "They have just announced they will become our dominion."
+CEN_nomads_events.10.a:0 "Another nation to submit."
+
+CEN_nomads_events.11.t:0 "They want to seek a compromise"
+CEN_nomads_events.11.d:0 "They have come forth with a counterproposal: Joining our faction but remaining indepedent. Whilst they will support us in our future wars, they are not willing to fully give themselves up to us."
+CEN_nomads_events.11.a:0 "No compromise! Let's integrate them by force!"
+CEN_nomads_events.11.b:0 "A compromise it is!"
+
+CEN_nomads_events.12.t:0 "The Central Asian Nomads have accepted our compromise"
+CEN_nomads_events.12.d:0 "The Central Asian Nomads have just told us that they will have no issue with us staying independent as long as we join their faction."
+CEN_nomads_events.12.a:0 "Great!"
+
+CEN_nomads_events.13.t:0 "We have received envoys from the Central Asian Nomads"
+CEN_nomads_events.13.d:0 "The Central Asian Nomads have just established contact with us, most likely in an attempt to influence us. Let's see what they will offer us in the future."
+CEN_nomads_events.13.a:0 "Great news!"
+
+CEN_nomads_events.14.t:0 "Demir wants to visit us"
+CEN_nomads_events.14.d:0 "The leader of Central Asian Nomads - Demir - has just requested a formal visit to our tribe. This will surely increase our popularity with our people."
+CEN_nomads_events.14.a:0 "Let him come!"
+
+CEN_nomads_events.15.t:0 "The Central Asian Nomads invites us for a ceremony"
+CEN_nomads_events.15.d:0 "The Central Asian Nomads have just told us that they would gladly host a ceremony for us in their capital. This will definitely increase our standing with our people."
+CEN_nomads_events.15.a:0 "We will gladly attend!"
+
+CEN_nomads_events.16.t:0 "Diplomats of the Central Asian Nomads want to meet in private"
+CEN_nomads_events.16.d:0 "We have just received the message from leading diplomats of the Central Asian Nomads, that they are willing to sit down with us and give us insights into how their tribe handles politics and the economy, in hopes that we learn something from that and can improve our tribe."
+CEN_nomads_events.16.a:0 "Let's meet up!"
+
+CEN_nomads_events.17.t:0 "The Central Asian Nomads want to establish partner cities"
+CEN_nomads_events.17.d:0 "The Central Asian Nomads have just offered us the creation of a partner city: Shitpostis and our own capital. By creating this link, we can expect our capital to flourish and become a popular destination for likeminded people from Shitpostis."
+CEN_nomads_events.17.a:0 "That sounds like a plan!"
+
+CEN_nomads_events.18.t:0 "The Central Asian Nomads want to make a youth exchange"
+CEN_nomads_events.18.d:0 "The Central Asian Nomads has just told us that they would really appreciate it, if both tribes would send over young people for a couple weeks each, just so that both youths can experience how the other tribe is like and foster new perspectives."
+CEN_nomads_events.18.a:0 "Let's go ahead with that!"
+
+CEN_nomads_events.19.t:0 "The Central Asian Nomads recognize our border"
+CEN_nomads_events.19.d:0 "The Central Asian Nomads have just signed a treaty honoring the integrety of our borders and yielding all potential claims. This is a huge step in formalizing our tribe and their support will be of great importance."
+CEN_nomads_events.19.a:0 "A surprise to be sure, but a welcome one!"
+
+CEN_nomads_events.20.t:0 "The Central Asian Nomads want to sign a Non-Agression-Pact"
+CEN_nomads_events.20.d:0 "The Central Asian Nomads have just told us that they would gladly sign a treaty of non-agression between our two tribes, which will stabilize the relations between us and set us on a course of future cooperation."
+CEN_nomads_events.20.a:0 "Let's sign it!"
+
+CEN_nomads_events.21.t:0 "The Central Asian Nomads want to send military advisors"
+CEN_nomads_events.21.d:0 "The Central Asian Nomads have just offered us to send a couple high ranking military personell over to our tribe to help us in the ways of warfare and strategy."
+CEN_nomads_events.21.a:0 "We gladly accept!"
+
+CEN_nomads_events.22.t:0 "The Central Asian Nomads want to send economic aid"
+CEN_nomads_events.22.d:0 "The Central Asian Nomads have offered us to help us in constructing factories. They have offered up parts of their own construction just to help us in our efforts."
+CEN_nomads_events.22.a:0 "Their help honors us!"
+
+CEN_nomads_events.23.t:0 "The Central Asian Nomads demand our integration!"
+CEN_nomads_events.23.d:0 "We have just received an ultimatum from the Central Asian Nomads, demanding us to fully integrate within their tribe, thus getting annexed. If we accept, they promise us economic welfare and full priviledges, but if we reject, we can expect the worst."
+CEN_nomads_events.23.a:0 "Let's get annexed!"
+CEN_nomads_events.23.b:0 "This means a fight to the death!"
+
+CEN_nomads_events.24.t:0 "The Trade Tribe has rejected integration"
+CEN_nomads_events.24.d:0 "The Trade Tribe has just announced they will not get peacefully integrated."
+CEN_nomads_events.24.a:0 "Let's integrate them forcefully then!"
+
+CEN_nomads_events.25.t:0 "The Trade Tribe has accepted integration"
+CEN_nomads_events.25.d:0 "The Trade Tribe has just announced they will get peacefully incorporated into our tribe."
+CEN_nomads_events.25.a:0 "We are stronger as one tribe!" 
+
+CEN_nomads_events.32.t:0 "The Central Asian Nomads demand our subjugation!"
+CEN_nomads_events.32.d:0 "We have just received an ultimatum from the Central Asian Nomads, demanding us to become their puppet. If we accept, they promise us economic welfare and cooperation, but if we reject, we can expect the worst."
+CEN_nomads_events.32.a:0 "Let's work together."
+CEN_nomads_events.32.b:0 "Yield no ground!"
+
+CEN_nomads_events.33.t:0 "The Magyar Nomads have rejected submission"
+CEN_nomads_events.33.d:0 "The Magyar Nomads have just announced they will not be submitting to us."
+CEN_nomads_events.33.a:0 "Let's teach them otherwise!"
+
+CEN_nomads_events.34.t:0 "The Magyar Nomads have accepted submission"
+CEN_nomads_events.34.d:0 "The Magyar Nomads have just announced they will become our puppet."
+CEN_nomads_events.34.a:0 "Onwards for a prosperous future!"

@@ -308,62 +308,178 @@ focus_tree = {
 		prerequisite = { focus = SHI_subsidize_key_industries  } prerequisite = { focus = SHI_a_functioning_government  } prerequisite = { focus = SHI_create_a_military_youth focus = SHI_armed_neutrality  }
 	}
 
-	#Make Contact With Other Tribes
+	
+	
+	
+	
+	
+	
+	
+	
+	#The Shitpost Question
 	focus = {
-		id = SHI_make_contact_with_other_tribes
-		icon = GFX_goal_generic_major_alliance
+		id = SHI_the_nomad_question
+		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 0
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		bypass = {
+			OR = {
+				has_completed_focus = SHI_the_rival_in_the_west
+				has_completed_focus = SHI_the_ally_in_the_west
+			}
+		}
+		available = {
+			NOT = {
+				CEN = {
+					focus_progress = {
+					  focus = CEN_the_shitpost_question
+					  progress > 0
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 150
+			country_event = SHI_shitpost_events.1
+		}
+		# We unlock the decisions to influence minor nations as majors or for same-level cooperations between minors
+		# No Contact - Established Contact - Positive Relations / Small Cooperations - Economic / Military Cooperation - Alliance
+		# Minor-Minor Power 1. Make Contact with X, 2. Visit X, Host Ceremony for X, Private Talks with X, 3. Create Partner Cities with X, Youth Exchange with X, Recognize their borders, 4. Sign a NAP, Joint Military Research, Exchange Industrial Knowledge, 5. Mutual Guarantees, Mutual Military Access, Economic Union
+		# Major-Minor Power 1. Make Contact with X, 2. Visit X, Host Ceremony for X, Private Talks with X, 3. Create Partner Cities with X, Youth Exchange with X, Recognize their borders, 4. Sign a NAP, Send Military Advisors, Send Economic Aid, 5. Make them join the alliance
 	}
 
-	#Spread Our Wings
+	#The Rival in the East
 	focus = {
-		id = SHI_spread_our_wings
-		icon = GFX_goal_anschluss
+		id = SHI_the_rival_in_the_west
+		icon = GFX_goal_generic_attack_allies
 		x = 1
 		y = 1
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_make_contact_with_other_tribes  }
-		mutually_exclusive = { focus = SHI_contain_ourselves  }
+		available = {
+			always = no
+		}
+		prerequisite = { focus = SHI_the_nomad_question  }
+		mutually_exclusive = { focus = SHI_the_ally_in_the_west  }
 	}
 
-	#Contain Ourselves
+	#The Ally in the East
 	focus = {
-		id = SHI_contain_ourselves
-		icon = GFX_goal_generic_improve_relations
+		id = SHI_the_ally_in_the_west
+		icon = GFX_goal_tripartite_pact
 		x = 7
 		y = 1
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_make_contact_with_other_tribes  }
-		mutually_exclusive = { focus = SHI_spread_our_wings  }
+		available = {
+			always = no
+		}
+		prerequisite = { focus = SHI_the_nomad_question  }
+		mutually_exclusive = { focus = SHI_the_rival_in_the_west  }
 	}
 
-	#Close Cooperation
+	#Economic Cooperation
 	focus = {
-		id = SHI_close_cooperation
-		icon = GFX_goal_generic_national_unity
+		id = SHI_economic_cooperation
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 8
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_contain_ourselves  }
+		completion_reward = {
+		add_political_power = 50
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 3
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	
+	
+	CEN = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 3
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+		prerequisite = { focus = SHI_the_ally_in_the_west  }
 	}
+	
 
 	#Influence Through Overwhelming Force
 	focus = {
-		id = SHI_influence_through_overwhelming_force
+		id = SHI_align_the_caliphate
 		icon = GFX_goal_demand_sudetenland
 		x = 0
 		y = 2
@@ -371,92 +487,269 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_spread_our_wings  }
+		available = {
+			has_army_manpower = {
+				size > 249999
+			}
+		}
+		prerequisite = { focus = SHI_the_rival_in_the_west  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = SHI_influence
+		}
 	}
 
 	#A Firm Stance
 	focus = {
-		id = SHI_a_firm_stance
-		icon = GFX_focus_generic_coastal_fort
+		id = SHI_align_gachidemia
+		icon = GFX_goal_generic_improve_relations
 		x = 4
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_spread_our_wings  focus = SHI_contain_ourselves  }
+		available = {
+			has_army_manpower = {
+				size > 99999
+			}
+		}
+		will_lead_to_war_with = GAC
+		prerequisite = { focus = SHI_the_ally_in_the_west  focus = SHI_the_rival_in_the_west  }
+		completion_reward = {
+			add_political_power = 50
+			GAC = {
+				country_event = SHI_shitpost_events.5
+			}
+			
+			
+		}
 	}
 
-	#Rally Our Ranks
+	#Influence the west
 	focus = {
-		id = SHI_rally_our_ranks
-		icon = GFX_PAZ_rally_our_ranks-645951
+		id = SHI_influence_the_east
+		icon = GFX_goal_generic_dangerous_deal
 		x = 2
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_spread_our_wings  }
+		available = {
+			has_army_manpower = {
+				size > 249999
+			}
+		}
+		prerequisite = { focus = SHI_the_rival_in_the_west  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = SHI_influence
+		}
 	}
 
-	#Mutually Assured Non-Aggression
+	#Trade territory for economic support
 	focus = {
-		id = SHI_mutually_assured_nonaggression
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = SHI_military_cooperation
+		icon = GFX_focus_generic_little_entente
 		x = 6
-		y = 2
+		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_contain_ourselves  }
+		available = {
+			has_army_manpower = {
+				size > 99999
+			}
+			CEN = {
+				has_army_manpower = {
+					size > 99999
+				}
+			}
+		}
+		prerequisite = { focus = SHI_shared_resource_extraction  }
+		prerequisite = { focus = SHI_economic_cooperation  }
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			
+			add_ideas = SHI_military_cooperation
+			
+			CEN = {
+				add_ideas = SHI_military_cooperation
+			}
+		}
 	}
 
 	#Subjugate The Trade Tribe
 	focus = {
-		id = SHI_subjugate_the_trade_tribe
-		icon = GFX_goal_generic_demand_territory
+		id = SHI_visit_the_mountain
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
-		prerequisite = { focus = SHI_influence_through_overwhelming_force  } prerequisite = { focus = SHI_rally_our_ranks  }
-		completion_reward = {
-			create_wargoal = {
-				target = GAC
-				type = annex_everything
+		available = {
+			has_army_manpower = {
+				size > 399999
 			}
+		}
+		prerequisite = { focus = SHI_align_the_caliphate  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = SHI_influence
 		}
 	}
 
 	#Integrate Our Domain
 	focus = {
-		id = SHI_integrate_our_domain
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		id = SHI_sway_their_backyard
+		icon = GFX_goal_generic_political_pressure
 		x = 2
 		y = 3
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = SHI_influence_through_overwhelming_force  } prerequisite = { focus = SHI_rally_our_ranks  }
+		available = {
+			has_army_manpower = {
+				size > 499999
+			}
+		}
+		prerequisite = { focus = SHI_align_the_nomads  } prerequisite = { focus = SHI_influence_the_east  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = SHI_influence
+		}
 	}
 
-	#There Can Be Only One Nomad Society
+	#Ignite the flame
 	focus = {
-		id = SHI_there_can_be_only_one_nomad_society
-		icon = GFX_goal_generic_territory_or_war
+		id = SHI_ignite_the_flame
+		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
-		prerequisite = { focus = SHI_subjugate_the_trade_tribe  } prerequisite = { focus = SHI_integrate_our_domain  }
+		will_lead_to_war_with = CEN
+		available = {
+			has_army_manpower = {
+				size > 799999
+			}
+		}
+		prerequisite = { focus = SHI_visit_the_mountain  } prerequisite = { focus = SHI_sway_their_backyard  }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.1
+			add_war_support = 0.1
+			create_wargoal = {
+				target = CEN
+				type = annex_everything
+			}
+		}
+	}
+
+	#Split the Nomads
+	focus = {
+		id = SHI_shared_resource_extraction
+		icon = GFX_focus_generic_steel
+		x = 6
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_tech = excavation1
+		}
+		prerequisite = { focus = SHI_the_ally_in_the_west  }
+		completion_reward = {
+			add_political_power = 50
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rubber
+					amount = 26
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 45
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 19
+				}
+			}
+			
+			CEN = {
+				random_owned_controlled_state = {
+				add_resource = {
+					type = rubber
+					amount = 26
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 45
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 17
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 19
+				}
+			}
+			}
+		}
+		
+	}
+
+	#Conquests in the west
+	focus = {
+		id = SHI_conquests_in_the_east
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_army_manpower = {
+				size > 399999
+			}
+		}
+		will_lead_to_war_with = ARO
+		will_lead_to_war_with = NTF
+		will_lead_to_war_with = FRE
+		will_lead_to_war_with = ELO
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.025
+			add_war_support = 0.025
 			create_wargoal = {
 				target = ARO
 				type = annex_everything
@@ -469,111 +762,172 @@ focus_tree = {
 				target = FRE
 				type = annex_everything
 			}
-		}
-	}
-
-	#Economic Integration
-	focus = {
-		id = SHI_economic_integration
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 6
-		y = 3
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = SHI_close_cooperation  } prerequisite = { focus = SHI_mutually_assured_nonaggression  }
-	}
-
-	#Cultural Integration
-	focus = {
-		id = SHI_cultural_integration
-		icon = GFX_PAZ_cultural_integration-645936
-		x = 8
-		y = 3
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = SHI_close_cooperation  } prerequisite = { focus = SHI_mutually_assured_nonaggression  }
-	}
-
-	#A Seamless Unification
-	focus = {
-		id = SHI_a_seamless_unification
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 6
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
-		prerequisite = { focus = SHI_economic_integration  } prerequisite = { focus = SHI_cultural_integration  }
-		completion_reward = {
-			every_state = {
-				limit = {
-					is_owned_by = GAC
-				}
-				add_core_of = SHI
-				transfer_state_to = SHI
-			}
-		}
-	}
-
-	#One People United At Last
-	focus = {
-		id = SHI_one_people_united_at_last
-		icon = GFX_goal_anschluss
-		x = 8
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
-		prerequisite = { focus = SHI_economic_integration  } prerequisite = { focus = SHI_cultural_integration  }
-		completion_reward = {
-			every_state = {
-				limit = {
-					is_owned_by = VES
-				}
-				add_core_of = SHI
-				transfer_state_to = SHI
-			}
-		}
-	}
-
-	#Rally The Faction
-	focus = {
-		id = SHI_rally_the_faction
-		icon = GFX_goal_generic_alliance
-		x = 4
-		y = 3
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = SHI_a_firm_stance  }
-		
-	}
-
-	#Commence The Inevitable
-	focus = {
-		id = SHI_commence_the_inevitable
-		icon = GFX_PAZ_commence_the_inevitable-412
-		x = 4
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = SHI_rally_the_faction  }
-		completion_reward = {
 			create_wargoal = {
-				target = CEN
+				target = ELO
+				type = annex_everything
+			}
+		
+		}
+		prerequisite = { focus = SHI_economic_cooperation  } prerequisite = { focus = SHI_trade_territory_for_economic_support  }
+	}
+
+	
+
+	#The Desert Enemy
+	focus = {
+		id = SHI_the_desert_enemy
+		icon = GFX_goal_generic_major_war
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		available = {
+			has_army_manpower = {
+				size > 799999
+			}
+		}
+		will_lead_to_war_with = PAZ
+		prerequisite = { focus = SHI_military_cooperation  } prerequisite = { focus = SHI_conquests_in_the_east  }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_war_support = 0.05
+			create_wargoal = {
+				target = PAZ
 				type = annex_everything
 			}
 		}
 	}
+
+	#Integrate the Trade Tribe
+	focus = {
+		id = SHI_blockade_the_yorkish
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_navy_size = {
+				size > 9
+			}
+		}
+		will_lead_to_war_with = YOR
+		prerequisite = { focus = SHI_align_gachidemia  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = SHI_trade_war
+			
+		}
+		
+	}
+
+	#Rally the Faction
+	focus = {
+		id = SHI_rally_the_faction
+		icon = GFX_goal_generic_military_sphere
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = SHI_the_ally_in_the_west
+				}
+				NOT = {
+				CEN = {
+					focus_progress = {
+					  focus = CEN_rally_the_faction
+					  progress > 0
+					}
+				}
+			}
+			}
+			
+		}
+		prerequisite = { focus = SHI_blockade_the_yorkish  }
+		completion_reward = {
+			add_political_power = 50
+			
+			if = {
+				limit = {
+					has_completed_focus = SHI_the_ally_in_the_west
+				}
+				create_faction = "Unholy Alliance"
+				add_to_faction = CEN
+			}
+			else = {
+				
+				create_faction = "Freedom Unity Pact"
+			}
+		}
+	}
+	
+	#The New Order
+	focus = {
+		id = SHI_the_new_order
+		icon = GFX_focus_SOV_panslavic_nationalism
+		x = 4
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = SHI_the_ally_in_the_west
+				}
+				OR = {
+					NOT = { country_exists = PAZ }
+					PAZ = { is_puppet_of = SHI }
+				}
+			}
+			else = {
+				
+				OR = {
+					NOT = { country_exists = CEN }
+					CEN = { is_puppet_of = SHI }
+				}
+			}
+			
+			
+		}
+		prerequisite = { focus = SHI_rally_the_faction  } prerequisite = { focus = SHI_ignite_the_flame focus = SHI_the_desert_enemy  }
+		completion_reward = {
+			add_political_power = 200
+			dismantle_faction = yes
+			every_country = {
+				limit = {
+					NOT = { tag = SHI }
+					NOT = { is_puppet_of = SHI }
+					NOT = { tag = XXX }
+				}
+				SHI = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 
 	#Implement A Currency
 	focus = {
@@ -6797,6 +7151,7 @@ else = {
     }
 		set_technology = {
 			synth_oil_experiments = 1
+			fuel_silos = 1
 		}
 		
 		

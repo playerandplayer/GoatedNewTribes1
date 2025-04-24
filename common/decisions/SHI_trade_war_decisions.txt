@@ -1,0 +1,622 @@
+SHI_trade_war = {
+	
+	embargo_york = {
+		icon = GFX_decision_generic_construction
+		cost = 20
+		fire_only_once = yes
+		days_remove = 14
+		available = {
+		}
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			
+		}
+			
+		remove_effect = {
+		
+			send_embargo = YOR
+			
+			every_country = {
+				limit = {
+					is_subject_of = SHI
+				}
+				send_embargo = YOR
+			}
+			set_country_flag = {
+				flag = trade_war_progress
+				value = 1
+			}
+		
+		}
+	}
+	
+	blockade_the_river = {
+		icon = GFX_decision_generic_naval
+		cost = 25
+		fire_only_once = no
+		days_remove = 30
+		available = {
+			if = { # If Shitpost is a player, they actually have to deploy their navy in the sea zone to blockade the river
+					limit = {
+						is_ai = no
+					}
+				
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size = 0 } }
+					}
+					ships_in_area = { area = 73 size > 9 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 0 } }
+						YOR = { has_navy_size = { size < 10 } }
+					}
+					ships_in_area = { area = 73 size > 14 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 9 } }
+						YOR = { has_navy_size = { size < 20 } }
+					}
+					ships_in_area = { area = 73 size > 29 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 19 } }
+						YOR = { has_navy_size = { size < 30 } }
+					}
+					ships_in_area = { area = 73 size > 44 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 29 } }
+						YOR = { has_navy_size = { size < 40 } }
+					}
+					ships_in_area = { area = 73 size > 59 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 39 } }
+						YOR = { has_navy_size = { size < 50 } }
+					}
+					ships_in_area = { area = 73 size > 74 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 49 } }
+						YOR = { has_navy_size = { size < 75 } }
+					}
+					ships_in_area = { area = 73 size > 112 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 74 } }
+						YOR = { has_navy_size = { size < 100 } }
+					}
+					ships_in_area = { area = 73 size > 149 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 149 } }
+					}
+					always = no
+				}
+			}
+			
+			
+			
+			if = { # If Shitpost is an AI, they just need to have a certain navy strength to blockade the river
+					limit = {
+						is_ai = yes
+					}
+				
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size = 0 } }
+					}
+					has_navy_size = { size > 9 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 0 } }
+						YOR = { has_navy_size = { size < 10 } }
+					}
+					has_navy_size = { size > 14 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 9 } }
+						YOR = { has_navy_size = { size < 20 } }
+					}
+					has_navy_size = { size > 29 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 19 } }
+						YOR = { has_navy_size = { size < 30 } }
+					}
+					has_navy_size = { size > 44 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 29 } }
+						YOR = { has_navy_size = { size < 40 } }
+					}
+					has_navy_size = { size > 59 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 39 } }
+						YOR = { has_navy_size = { size < 50 } }
+					}
+					has_navy_size = { size > 74 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 49 } }
+						YOR = { has_navy_size = { size < 75 } }
+					}
+					has_navy_size = { size > 112 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 74 } }
+						YOR = { has_navy_size = { size < 100 } }
+					}
+					has_navy_size = { size > 149 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 149 } }
+					}
+					always = no
+				}
+			}
+			
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						is_neighbor_of = YOR
+					}
+					NOT = {
+						tag = XXX
+					}
+				}
+				send_embargo = YOR
+				
+			}
+			
+			set_country_flag = {
+				flag = trade_war_progress
+				value = 2
+				
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			has_country_flag = {
+				flag = trade_war_progress
+				value > 0
+			
+			}
+			
+		}
+		
+		
+			
+		remove_effect = {
+
+			every_country = {
+				limit = {
+					NOT = {
+						is_neighbor_of = YOR
+					}
+					NOT = {
+						tag = XXX
+					}
+				}
+				diplomatic_relation = {
+					country = YOR
+					relation = embargo
+					active = no
+				}
+				
+			}
+			
+			set_country_flag = {
+				flag = trade_war_progress
+				value = 1
+			}
+			
+			
+			
+		
+		}
+		
+	
+	}
+	
+	convince_magyar_to_embargo = {
+		icon = GFX_decision_generic_political_discourse
+		cost = 5
+		fire_only_once = no
+		days_remove = 30
+		available = {
+		}
+		complete_effect = {
+			MAG = { send_embargo = YOR } 
+		}
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			has_country_flag = {
+				flag = trade_war_progress
+				value = 2
+			}
+		}
+			
+		remove_effect = {
+			
+			MAG = {
+				diplomatic_relation = {
+					country = YOR
+					relation = embargo
+					active = no
+				}
+			}
+			
+		
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+					is_owned_by = MAG
+				}
+			
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+			}
+	}
+	
+	convince_pazal_to_embargo = {
+		icon = GFX_decision_generic_political_discourse
+		cost = 5
+		fire_only_once = no
+		days_remove = 30
+		available = {
+		}
+		complete_effect = {
+			PAZ = { send_embargo = YOR }
+		}
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			has_country_flag = {
+				flag = trade_war_progress
+				value = 2
+			}
+		}
+			
+		remove_effect = {
+
+			PAZ = {
+				diplomatic_relation = {
+					country = YOR
+					relation = embargo
+					active = no
+				}
+			}
+			
+			
+		
+		}
+		
+
+	}
+	
+	
+	convince_elon_to_embargo = {
+		icon = GFX_decision_generic_political_discourse
+		cost = 5
+		fire_only_once = no
+		days_remove = 30
+		available = {
+		}
+		complete_effect = {
+			ELO = {
+				send_embargo = YOR
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			has_country_flag = {
+				flag = trade_war_progress
+				value = 2
+			}
+		}
+			
+		remove_effect = {
+
+			clr_country_flag = taking_action_against_york
+			ELO = { 
+			
+			diplomatic_relation = {
+					country = YOR
+					relation = embargo
+					active = no
+				} }
+			
+		
+		}
+	}
+	
+	skirmish_with_york = {
+		icon = GFX_decision_generic_ignite_civil_war
+		cost = 50
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 30
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+		
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size < 10 } }
+					}
+					always = no
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 9 } }
+						YOR = { has_navy_size = { size < 20 } }
+					}
+					ships_in_area = { area = 73 size < 30 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 19 } }
+						YOR = { has_navy_size = { size < 30 } }
+					}
+					ships_in_area = { area = 73 size < 45 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 29 } }
+						YOR = { has_navy_size = { size < 40 } }
+					}
+					ships_in_area = { area = 73 size < 60 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 39 } }
+						YOR = { has_navy_size = { size < 50 } }
+					}
+					ships_in_area = { area = 73 size < 75 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 49 } }
+						YOR = { has_navy_size = { size < 75 } }
+					}
+					ships_in_area = { area = 73 size < 113 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 74 } }
+						YOR = { has_navy_size = { size < 100 } }
+					}
+					ships_in_area = { area = 73 size < 150 }
+				}
+				if = {
+					limit = {
+						YOR = { ships_in_area = { area = 73 size > 149 } }
+					}
+					always = yes
+				}
+			}
+			
+			
+			
+			
+			if = {
+			limit = {
+				is_ai = yes
+			}
+		
+			if = {
+					limit = {
+						YOR = { has_navy_size = { size < 10 } }
+					}
+					always = no
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 9 } }
+						YOR = { has_navy_size = { size < 20 } }
+					}
+					has_navy_size = { size < 30 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 19 } }
+						YOR = { has_navy_size = { size < 30 } }
+					}
+					has_navy_size = { size < 45 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 29 } }
+						YOR = { has_navy_size = { size < 40 } }
+					}
+					has_navy_size = { size < 60 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 39 } }
+						YOR = { has_navy_size = { size < 50 } }
+					}
+					has_navy_size = { size < 75 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 49 } }
+						YOR = { has_navy_size = { size < 75 } }
+					}
+					has_navy_size = { size < 113 }
+				}
+				if = {
+					limit = {
+						YOR = { has_navy_size = { size > 74 } }
+						YOR = { has_navy_size = { size < 100 } }
+					}
+					has_navy_size = { size < 150 }
+				}
+				if = {
+					limit = {
+						YOR = { ships_in_area = { area = 73 size > 149 } }
+					}
+					always = yes
+				}
+			}
+			
+		}
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			base = 100
+		}
+		visible = {
+			has_country_flag = {
+				flag = trade_war_progress
+				value > 0
+			
+			}
+			NOT = {
+				has_country_flag = SHI_trade_war_escalated
+			}
+			YOR = { ships_in_area = { area = 73 size > 9 } }
+		}
+		
+		
+			
+		remove_effect = {
+
+			
+			YOR = { country_event = SHI_shitpost_events.23 }
+			
+			
+		
+		}
+		
+	
+	}
+	
+	
+
+
+
+
+escalate_the_war = {
+		icon = GFX_decision_generic_prepare_civil_war
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		available = {
+			has_army_manpower = {
+				size > 499999
+			}
+		}
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		war_with_on_remove = YOR
+		visible = {
+			has_country_flag = {
+				flag = trade_war_progress
+				value = 2
+			}
+		}
+			
+		remove_effect = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = YOR
+			}
+			
+			
+		
+		}
+		
+
+	}
+}
+
+YOR_trade_war = {
+	
+	YOR_escalate_the_war = {
+		icon = GFX_decision_generic_prepare_civil_war
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		available = {
+			has_army_manpower = {
+				size > 499999
+			}
+			custom_trigger_tooltip = {
+				tooltip = yor_trade_war_escalation		
+				SHI = {
+					has_country_flag = {
+						flag = trade_war_progress
+						value = 2
+					}
+				}
+			}
+			
+			
+			
+		}
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		war_with_on_remove = SHI
+		visible = {
+			
+		}
+			
+		remove_effect = {
+
+			create_wargoal = {
+				type = annex_everything
+				target = SHI
+			}
+			
+			
+		
+		}
+		
+
+	}
+
+}

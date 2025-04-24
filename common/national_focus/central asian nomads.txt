@@ -308,62 +308,169 @@
 		prerequisite = { focus = CEN_subsidize_key_industries  } prerequisite = { focus = CEN_a_functioning_government  } prerequisite = { focus = CEN_create_a_military_youth focus = CEN_armed_neutrality  }
 	}
 
-	#Make Contact With Other Tribes
+	#The Shitpost Question
 	focus = {
-		id = CEN_make_contact_with_other_tribes
-		icon = GFX_goal_generic_major_alliance
+		id = CEN_the_shitpost_question
+		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 0
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		bypass = {
+			OR = {
+				has_completed_focus = CEN_the_rival_in_the_east
+				has_completed_focus = CEN_the_ally_in_the_east
+			}
+		}
+		available = {
+			NOT = {
+				SHI = {
+					focus_progress = {
+					  focus = SHI_the_nomad_question
+					  progress > 0
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 150
+			country_event = CEN_nomads_events.1
+		}
+		# We unlock the decisions to influence minor nations as majors or for same-level cooperations between minors
+		# No Contact - Established Contact - Positive Relations / Small Cooperations - Economic / Military Cooperation - Alliance
+		# Minor-Minor Power 1. Make Contact with X, 2. Visit X, Host Ceremony for X, Private Talks with X, 3. Create Partner Cities with X, Youth Exchange with X, Recognize their borders, 4. Sign a NAP, Joint Military Research, Exchange Industrial Knowledge, 5. Mutual Guarantees, Mutual Military Access, Economic Union
+		# Major-Minor Power 1. Make Contact with X, 2. Visit X, Host Ceremony for X, Private Talks with X, 3. Create Partner Cities with X, Youth Exchange with X, Recognize their borders, 4. Sign a NAP, Send Military Advisors, Send Economic Aid, 5. Make them join the alliance
 	}
 
-	#Spread Our Wings
+	#The Rival in the East
 	focus = {
-		id = CEN_spread_our_wings
-		icon = GFX_goal_anschluss
+		id = CEN_the_rival_in_the_east
+		icon = GFX_goal_generic_attack_allies
 		x = 1
 		y = 1
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_make_contact_with_other_tribes  }
-		mutually_exclusive = { focus = CEN_contain_ourselves  }
+		available = {
+			always = no
+		}
+		prerequisite = { focus = CEN_the_shitpost_question  }
+		mutually_exclusive = { focus = CEN_the_ally_in_the_east  }
 	}
 
-	#Contain Ourselves
+	#The Ally in the East
 	focus = {
-		id = CEN_contain_ourselves
-		icon = GFX_goal_generic_improve_relations
+		id = CEN_the_ally_in_the_east
+		icon = GFX_goal_tripartite_pact
 		x = 7
 		y = 1
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_make_contact_with_other_tribes  }
-		mutually_exclusive = { focus = CEN_spread_our_wings  }
+		available = {
+			always = no
+		}
+		prerequisite = { focus = CEN_the_shitpost_question  }
+		mutually_exclusive = { focus = CEN_the_rival_in_the_east  }
 	}
 
-	#Close Cooperation
+	#Economic Cooperation
 	focus = {
-		id = CEN_close_cooperation
-		icon = GFX_goal_generic_national_unity
+		id = CEN_economic_cooperation
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 8
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_contain_ourselves  }
+		prerequisite = { focus = CEN_the_ally_in_the_east  }
+		completion_reward = {
+		add_political_power = 50
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 3
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	
+	
+	CEN = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 3
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
 	}
 
 	#Influence Through Overwhelming Force
 	focus = {
-		id = CEN_influence_through_overwhelming_force
+		id = CEN_align_the_nomads
 		icon = GFX_goal_demand_sudetenland
 		x = 0
 		y = 2
@@ -371,198 +478,452 @@
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_spread_our_wings  }
+		available = {
+			has_army_manpower = {
+				size > 249999
+			}
+		}
+		prerequisite = { focus = CEN_the_rival_in_the_east  }
+		completion_reward = {
+			add_political_power = 50
+			MAG = { country_event = CEN_nomads_events.32 }
+		}
 	}
 
 	#A Firm Stance
 	focus = {
-		id = CEN_a_firm_stance
-		icon = GFX_focus_generic_coastal_fort
+		id = CEN_align_the_trade_tribe
+		icon = GFX_goal_generic_improve_relations
 		x = 4
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_spread_our_wings  focus = CEN_contain_ourselves  }
+		available = {
+			has_army_manpower = {
+				size > 99999
+			}
+		}
+		prerequisite = { focus = CEN_the_ally_in_the_east  focus = CEN_the_rival_in_the_east  }
+		completion_reward = {
+			add_political_power = 50
+			TRD = {
+				country_event = CEN_nomads_events.5
+			}
+			
+			
+		}
 	}
 
-	#Rally Our Ranks
+	#Influence the west
 	focus = {
-		id = CEN_rally_our_ranks
-		icon = GFX_PAZ_rally_our_ranks-645951
+		id = CEN_influence_the_west
+		icon = GFX_goal_generic_dangerous_deal
 		x = 2
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_spread_our_wings  }
+		available = {
+			has_army_manpower = {
+				size > 249999
+			}
+		}
+		prerequisite = { focus = CEN_the_rival_in_the_east  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = CEN_influence
+		}
 	}
 
-	#Mutually Assured Non-Aggression
+	#Trade territory for economic support
 	focus = {
-		id = CEN_mutually_assured_nonaggression
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = CEN_trade_territory_for_economic_support
+		icon = GFX_focus_generic_treaty
 		x = 6
 		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_contain_ourselves  }
+		prerequisite = { focus = CEN_the_ally_in_the_east  }
+		completion_reward = {
+			add_political_power = 50
+			SHI = {
+				country_event = CEN_nomads_events.31
+			}
+		}
 	}
 
 	#Subjugate The Trade Tribe
 	focus = {
-		id = CEN_subjugate_the_trade_tribe
-		icon = GFX_goal_generic_demand_territory
+		id = CEN_influence_the_north
+		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
-		prerequisite = { focus = CEN_influence_through_overwhelming_force  } prerequisite = { focus = CEN_rally_our_ranks  }
-		completion_reward = {
-			create_wargoal = {
-				target = TRD
-				type = annex_everything
+		available = {
+			has_army_manpower = {
+				size > 399999
 			}
+		}
+		prerequisite = { focus = CEN_align_the_nomads  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = CEN_influence
 		}
 	}
 
 	#Integrate Our Domain
 	focus = {
-		id = CEN_integrate_our_domain
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		id = CEN_sway_their_backyard
+		icon = GFX_goal_generic_political_pressure
 		x = 2
 		y = 3
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_influence_through_overwhelming_force  } prerequisite = { focus = CEN_rally_our_ranks  }
+		available = {
+			has_army_manpower = {
+				size > 499999
+			}
+		}
+		prerequisite = { focus = CEN_align_the_nomads  } prerequisite = { focus = CEN_influence_the_west  }
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = CEN_influence
+		}
 	}
 
-	#There Can Be Only One Nomad Society
+	#Ignite the flame
 	focus = {
-		id = CEN_there_can_be_only_one_nomad_society
-		icon = GFX_goal_generic_territory_or_war
+		id = CEN_ignite_the_flame
+		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
-		prerequisite = { focus = CEN_subjugate_the_trade_tribe  } prerequisite = { focus = CEN_integrate_our_domain  }
+		available = {
+			has_army_manpower = {
+				size > 799999
+			}
+		}
+		prerequisite = { focus = CEN_influence_the_north  } prerequisite = { focus = CEN_sway_their_backyard  }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.1
+			add_war_support = 0.1
 			create_wargoal = {
-				target = MAG
+				target = SHI
 				type = annex_everything
 			}
 		}
 	}
 
-	#Economic Integration
+	#Split the Nomads
 	focus = {
-		id = CEN_economic_integration
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		id = CEN_split_the_nomads
+		icon = GFX_goal_molotov_ribbentrop_pact
 		x = 6
 		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_close_cooperation  } prerequisite = { focus = CEN_mutually_assured_nonaggression  }
+		available = {
+			has_army_manpower = {
+				size > 299999
+			}
+		}
+		prerequisite = { focus = CEN_trade_territory_for_economic_support  } prerequisite = { focus = CEN_mutually_assured_nonaggression  }
+		
+		completion_reward = {
+			add_political_power = 50
+			
+			# Ensure that war goal is created for SHI
+				create_wargoal = {
+					target = MAG
+					type = annex_everything
+				}
+			SHI = {
+				create_wargoal = {
+					target = MAG
+					type = annex_everything
+				}
+			}
+			
+			# Apply claims for both SHI and CEN
+			hidden_effect = {
+				22 = { add_claim_by = CEN }
+				435 = { add_claim_by = CEN }
+				438 = { add_claim_by = CEN }
+				444 = { add_claim_by = CEN }
+				398 = { add_claim_by = CEN }
+				427 = { add_claim_by = CEN }
+				495 = { add_claim_by = CEN }
+				514 = { add_claim_by = CEN }
+				501 = { add_claim_by = CEN }
+				520 = { add_claim_by = CEN }
+				421 = { add_claim_by = CEN }
+				
+				442 = { add_claim_by = SHI }
+				516 = { add_claim_by = SHI }
+				439 = { add_claim_by = SHI }
+				455 = { add_claim_by = SHI }
+				410 = { add_claim_by = SHI }
+				432 = { add_claim_by = SHI }
+				399 = { add_claim_by = SHI }
+				384 = { add_claim_by = SHI }
+				390 = { add_claim_by = SHI }
+				17 = { add_claim_by = SHI }
+				498 = { add_claim_by = SHI }
+				473 = { add_claim_by = SHI }
+				25 = { add_claim_by = SHI }
+			}
+			
+			custom_effect_tooltip = split_magyar
+		}
+				
 	}
 
-	#Cultural Integration
+	#Conquests in the west
 	focus = {
-		id = CEN_cultural_integration
-		icon = GFX_PAZ_cultural_integration-645936
+		id = CEN_conquests_in_the_west
+		icon = GFX_goal_generic_demand_territory
 		x = 8
 		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_close_cooperation  } prerequisite = { focus = CEN_mutually_assured_nonaggression  }
+		available = {
+			has_army_manpower = {
+				size > 399999
+			}
+		}
+		will_lead_to_war_with = JUT
+		will_lead_to_war_with = REM
+		will_lead_to_war_with = AND
+		will_lead_to_war_with = LNR
+		will_lead_to_war_with = BTE
+		will_lead_to_war_with = FRO
+		will_lead_to_war_with = GOA
+		will_lead_to_war_with = FRC
+		will_lead_to_war_with = KAI
+		will_lead_to_war_with = SPJ
+		will_lead_to_war_with = PIN
+		will_lead_to_war_with = ETA
+		prerequisite = { focus = CEN_economic_cooperation  } prerequisite = { focus = CEN_trade_territory_for_economic_support  }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_war_support = 0.05
+			create_wargoal = {
+				target = JUT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = REM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = AND
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LNR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BTE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = FRO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = GOA
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = FRC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KAI
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SPJ
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PIN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ETA
+				type = annex_everything
+			}
+		}
 	}
 
-	#A Seamless Unification
+	
+
+	#The Mountain Enemy
 	focus = {
-		id = CEN_a_seamless_unification
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 6
+		id = CEN_the_mountain_enemy
+		icon = GFX_goal_generic_major_war
+		x = 7
 		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
-		prerequisite = { focus = CEN_economic_integration  } prerequisite = { focus = CEN_cultural_integration  }
-		completion_reward = {
-			every_state = {
-				limit = {
-					is_owned_by = TRD
-				}
-				add_core_of = CEN
-				transfer_state_to = CEN
+		available = {
+			has_army_manpower = {
+				size > 799999
 			}
-
+		}
+		prerequisite = { focus = CEN_split_the_nomads  } prerequisite = { focus = CEN_conquests_in_the_west  }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_war_support = 0.05
+			create_wargoal = {
+				target = MTG
+				type = annex_everything
+			}
 		}
 	}
 
-	#One People United At Last
+	#Integrate the Trade Tribe
 	focus = {
-		id = CEN_one_people_united_at_last
+		id = CEN_integrate_the_trade_tribe
 		icon = GFX_goal_anschluss
-		x = 8
-		y = 4
+		x = 4
+		y = 3
 		cost = 10
 		search_filters = {
-			FOCUS_FILTER_ANNEXATION
+			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_economic_integration  } prerequisite = { focus = CEN_cultural_integration  }
-		completion_reward = {
-			every_state = {
-				limit = {
-					is_owned_by = MAG
-				}
-				add_core_of = CEN
-				transfer_state_to = CEN
+		available = {
+			has_army_manpower = {
+				size > 199999
 			}
-
 		}
+		prerequisite = { focus = CEN_align_the_trade_tribe  }
+		completion_reward = {
+			add_political_power = 50
+			TRD = {
+				country_event = CEN_nomads_events.23
+			}
+			
+			
+		}
+		
 	}
 
-	#Rally The Faction
+	#Rally the Faction
 	focus = {
 		id = CEN_rally_the_faction
-		icon = GFX_goal_generic_alliance
-		x = 4
-		y = 3
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = CEN_a_firm_stance  }
-		completion_reward = {
-			create_faction = Confederation
-		}
-	}
-
-	#Commence The Inevitable
-	focus = {
-		id = CEN_commence_the_inevitable
-		icon = GFX_PAZ_commence_the_inevitable-412
+		icon = GFX_goal_generic_military_sphere
 		x = 4
 		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = CEN_rally_the_faction  }
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = CEN_the_ally_in_the_west
+				}
+				NOT = {
+				SHI = {
+					focus_progress = {
+					  focus = SHI_rally_the_faction
+					  progress > 0
+					}
+				}
+			}
+			}
+			
+		}
+		prerequisite = { focus = CEN_integrate_the_trade_tribe  }
+		completion_reward = {
+			add_political_power = 50
+			
+			if = {
+				limit = {
+					has_completed_focus = CEN_the_ally_in_the_east
+				}
+				create_faction = "Unholy Alliance"
+				add_to_faction = SHI
+			}
+			else = {
+				create_faction = Confederation
+			}
+		}
+	}
+	
+	#The New Order
+	focus = {
+		id = CEN_the_new_order
+		icon = GFX_focus_SOV_panslavic_nationalism
+		x = 4
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			if = {
+				limit = {
+					has_completed_focus = CEN_the_ally_in_the_east
+				}
+				OR = {
+					NOT = { country_exists = MTG }
+					MTG = { is_puppet_of = CEN }
+				}
+			}
+			else = {
+				OR = {
+					NOT = { country_exists = SHI }
+					SHI = { is_puppet_of = CEN }
+				}
+			}
+			
+			
+		}
+		prerequisite = { focus = CEN_rally_the_faction  } prerequisite = { focus = CEN_ignite_the_flame focus = CEN_the_mountain_enemy  }
+		completion_reward = {
+			add_political_power = 200
+			dismantle_faction = yes
+			every_country = {
+				limit = {
+					NOT = { tag = CEN }
+					NOT = { is_puppet_of = CEN }
+					NOT = { tag = XXX }
+				}
+				CEN = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			
+		}
 	}
 
 	#Implement A Currency
@@ -6787,6 +7148,7 @@ else = {
     }
 		set_technology = {
 			synth_oil_experiments = 1
+			fuel_silos = 1
 		}
 		
 		

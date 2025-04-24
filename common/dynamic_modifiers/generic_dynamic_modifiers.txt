@@ -1,0 +1,21 @@
+
+
+SHI_partner_city_of_shitpost = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_improved_industries
+	
+	production_speed_buildings_factor = 0.05
+	monthly_population = 0.1
+}
+
+
+CEN_partner_city_of_goatcity = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_improved_industries
+	
+	production_speed_buildings_factor = 0.05
+	monthly_population = 0.1
+}
+

@@ -2427,10 +2427,16 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		available = {
+			CEN = { 
+				is_in_faction = yes 
+				is_faction_leader = yes
+			}
+			
+		}
 		prerequisite = { focus = ACR_closer_ties_to_can  } prerequisite = { focus = ACR_sign_the_nonaggressionpact  }
 		completion_reward = {
 			CEN = {
-			create_faction = "Nomad Alliance"
 			add_to_faction = ACR
 			}
 			

@@ -1,0 +1,1036 @@
+add_namespace = SHI_shitpost_events
+
+
+
+# SHI can choose if they want to ally or rival with the Central Asian Nomads
+country_event = {
+	id = SHI_shitpost_events.1
+	title = SHI_shitpost_events.1.t
+	desc = SHI_shitpost_events.1.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # We want to become their rival
+		name = SHI_shitpost_events.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		complete_national_focus = SHI_the_rival_in_the_west
+		add_opinion_modifier = {
+				target = CEN
+				modifier = worst_enemy
+			}
+		CEN = {
+			country_event = CEN_nomads_events.3 # This will inform CEN that we have chosen to become their rival
+		}
+
+	}
+	option = { # We want to become their ally
+		name = SHI_shitpost_events.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		CEN = {
+			country_event = CEN_nomads_events.2 # This ask the Nomads if they want to become our ally
+		}
+
+	}
+
+}
+
+# Shitpost gets asked by CAN if they want to become their ally
+country_event = {
+	id = SHI_shitpost_events.2
+	title = SHI_shitpost_events.2.t
+	desc = SHI_shitpost_events.2.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # We want to become their rival
+		name = SHI_shitpost_events.2.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 25 }
+		complete_national_focus = SHI_the_rival_in_the_west
+		add_opinion_modifier = {
+				target = CEN
+				modifier = worst_enemy
+			}
+		CEN = {
+			country_event = CEN_nomads_events.3 # This will inform CAN that we have chosen to become their rival
+		}
+
+	}
+	option = { # We want to become their ally
+		name = SHI_shitpost_events.2.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 75 }
+		complete_national_focus = SHI_the_ally_in_the_west
+		CEN = {
+			country_event = CEN_nomads_events.4 # This will inform CAN that we have chosen to become their ally
+		}
+
+	}
+
+}
+
+# We get informed that CAN will be our rival
+country_event = {
+	id = SHI_shitpost_events.3
+	title = SHI_shitpost_events.3.t
+	desc = SHI_shitpost_events.3.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # So be it
+		name = SHI_shitpost_events.3.a
+		trigger = {
+			
+		}
+		complete_national_focus = SHI_the_rival_in_the_west
+		add_opinion_modifier = {
+				target = CEN
+				modifier = worst_enemy
+			}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that CAN accepts to be our ally
+country_event = {
+	id = SHI_shitpost_events.4
+	title = SHI_shitpost_events.4.t
+	desc = SHI_shitpost_events.4.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # So be it
+		name = SHI_shitpost_events.4.a
+		trigger = {
+			
+		}
+		complete_national_focus = SHI_the_ally_in_the_west
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+country_event = { # We demand that Gachidemia becomes a puppet and we get Research bonuses
+	id = SHI_shitpost_events.5
+	title = SHI_shitpost_events.5.t
+	desc = SHI_shitpost_events.5.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Gachidemia accepts the puppeting
+		name = SHI_shitpost_events.5.a
+		trigger = {
+			
+		}
+		add_political_power = 50
+		SHI = {
+			puppet = GAC
+			country_event = SHI_shitpost_events.7
+			add_to_tech_sharing_group = us_research
+			add_ideas = SHI_Gachidemian_Research
+		}
+		GAC = { 
+		add_to_tech_sharing_group = us_research
+		add_ideas = SHI_Gachidemian_Research
+
+		
+		}
+		modify_tech_sharing_bonus = {
+				id = us_research
+				bonus = 0.5
+			}
+		
+		
+		ai_chance = { factor = 9 }
+
+	}
+	option = { # Gachidemia rejects the puppeting
+		name = SHI_shitpost_events.5.b
+		trigger = {
+			
+		}
+		SHI = {
+			country_event = SHI_shitpost_events.6
+		}
+		
+		ai_chance = { factor = 1 }
+
+	}
+
+}
+
+
+# We get informed that Gachidemia has rejected becoming a puppet
+country_event = {
+	id = SHI_shitpost_events.6
+	title = SHI_shitpost_events.6.t
+	desc = SHI_shitpost_events.6.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get an annex wargoal
+		name = SHI_shitpost_events.6.a
+		trigger = {
+			
+		}
+		create_wargoal = {
+			target = GAC
+			type = annex_everything
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that Gachidemia has accepted becoming a puppet
+country_event = {
+	id = SHI_shitpost_events.7
+	title = SHI_shitpost_events.7.t
+	desc = SHI_shitpost_events.7.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = SHI_shitpost_events.7.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+
+
+country_event = { # We demand that the country we influenced becomes our dominion
+	id = SHI_shitpost_events.8
+	title = SHI_shitpost_events.8.t
+	desc = SHI_shitpost_events.8.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # They accept the puppeting
+		name = SHI_shitpost_events.8.a
+		trigger = {
+			
+		}
+		SHI = {
+		set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_dominion
+				end_wars = no
+				end_civil_wars = no
+			}
+			country_event = SHI_shitpost_events.10
+		}
+		ai_chance = { factor = 9 }
+
+	}
+	option = { # They reject the puppeting, but want to join our alliance
+		name = SHI_shitpost_events.8.b
+		trigger = {
+			
+		}
+		set_country_flag = betrayed_SHI
+		SHI = {
+			country_event = SHI_shitpost_events.11
+		}
+		
+		
+		ai_chance = { factor = 1 }
+
+	}
+	
+	option = { # They want nothing to do with us
+		name = SHI_shitpost_events.8.c
+		trigger = {
+			
+		}
+		set_country_flag = betrayed_SHI
+		SHI = {
+			country_event = SHI_shitpost_events.9
+		}
+		
+		
+		ai_chance = { factor = 0 }
+
+	}
+
+}
+
+
+# We get informed that they have rejected becoming a puppet
+country_event = {
+	id = SHI_shitpost_events.9
+	title = SHI_shitpost_events.9.t
+	desc = SHI_shitpost_events.9.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get an annex wargoal
+		name = SHI_shitpost_events.9.a
+		trigger = {
+			
+		}
+		every_country = {
+			limit = {
+				has_country_flag = betrayed_SHI
+			}
+			SHI = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+			clr_country_flag = betrayed_SHI
+		}
+		
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+# We get informed that they have accepted becoming a puppet
+country_event = {
+	id = SHI_shitpost_events.10
+	title = SHI_shitpost_events.10.t
+	desc = SHI_shitpost_events.10.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = SHI_shitpost_events.10.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# We get informed that they have rejected becoming a puppet, but want to join our alliance
+country_event = {
+	id = SHI_shitpost_events.11
+	title = SHI_shitpost_events.11.t
+	desc = SHI_shitpost_events.11.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { # Get an annex wargoal
+		name = SHI_shitpost_events.11.a
+		trigger = {
+			
+		}
+		every_country = {
+			limit = {
+				has_country_flag = betrayed_SHI
+			}
+			SHI = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+			clr_country_flag = betrayed_SHI
+		}
+		
+		ai_chance = { factor = 0 }
+
+	}
+	
+	option = { # Leave them be independent and have them join our faction
+		name = SHI_shitpost_events.11.b
+		trigger = {
+			
+		}
+		every_country = {
+			limit = {
+				has_country_flag = betrayed_SHI
+			}
+			country_event = SHI_shitpost_events.12
+			clr_country_flag = betrayed_SHI
+			
+			SHI = {
+				add_to_faction = PREV
+			}
+			
+		}
+		
+		
+		
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# They get informed that we have accepted their compromise
+country_event = {
+	id = SHI_shitpost_events.12
+	title = SHI_shitpost_events.12.t
+	desc = SHI_shitpost_events.12.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = { #
+		name = SHI_shitpost_events.12.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we established contact
+country_event = {
+	id = SHI_shitpost_events.13
+	title = SHI_shitpost_events.13.t
+	desc = SHI_shitpost_events.13.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.13.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+
+	}
+
+}
+
+
+# The country we influenced gets informed that our leader visited them
+country_event = {
+	id = SHI_shitpost_events.14
+	title = SHI_shitpost_events.14.t
+	desc = SHI_shitpost_events.14.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.14.a
+		trigger = {
+			
+		}
+		add_stability = 0.01
+		
+		
+		ai_chance = { factor = 10 }
+		
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we hosted a ceremony for them
+country_event = {
+	id = SHI_shitpost_events.15
+	title = SHI_shitpost_events.15.t
+	desc = SHI_shitpost_events.15.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.15.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		add_stability = 0.02
+		add_war_support = 0.02
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+	}
+
+}
+
+
+
+# The country we influenced gets informed that we had private talks with them
+country_event = {
+	id = SHI_shitpost_events.16
+	title = SHI_shitpost_events.16.t
+	desc = SHI_shitpost_events.16.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.16.a
+		trigger = {
+			
+		}
+		add_ideas = SHI_contacts_to_shitpost
+			
+		ai_chance = { factor = 10 }
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+
+# The country we influenced gets informed that we created partner cities
+country_event = {
+	id = SHI_shitpost_events.17
+	title = SHI_shitpost_events.17.t
+	desc = SHI_shitpost_events.17.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.17.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		every_owned_state = {
+					limit = {
+						is_capital = yes
+					}
+					add_dynamic_modifier = {
+						modifier = SHI_partner_city_of_shitpost
+					}
+				}	
+
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+		
+		
+			
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we had a youth exchange
+country_event = {
+	id = SHI_shitpost_events.18
+	title = SHI_shitpost_events.18.t
+	desc = SHI_shitpost_events.18.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.18.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		add_stability = 0.02
+		add_popularity = {
+			ideology = SHI
+			popularity = 0.02
+			}
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+# The country we influenced gets informed that we recognized their borders
+country_event = {
+	id = SHI_shitpost_events.19
+	title = SHI_shitpost_events.19.t
+	desc = SHI_shitpost_events.19.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.19.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		add_stability = 0.02
+				add_political_power = 25
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+
+# The country we influenced gets informed that we want a NAP
+country_event = {
+	id = SHI_shitpost_events.20
+	title = SHI_shitpost_events.20.t
+	desc = SHI_shitpost_events.20.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.20.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		diplomatic_relation = {
+				country = SHI
+				relation = non_aggression_pact
+				active = yes
+			}
+		add_stability = 0.02
+				add_war_support = 0.02
+				
+		
+		
+		
+		
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+			
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we send military advisors
+country_event = {
+	id = SHI_shitpost_events.21
+	title = SHI_shitpost_events.21.t
+	desc = SHI_shitpost_events.21.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.21.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 10 }
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+		add_war_support = 0.02
+		
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+# The country we influenced gets informed that we sent economic aid
+country_event = {
+	id = SHI_shitpost_events.22
+	title = SHI_shitpost_events.22.t
+	desc = SHI_shitpost_events.22.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = SHI_shitpost_events.22.a
+		trigger = {
+			
+		}
+		add_offsite_building = { type = arms_factory level = 3 }
+		ai_chance = { factor = 10 }
+		
+		add_opinion_modifier = {
+			target = SHI
+			modifier = influence_1
+		}
+
+	}
+
+}
+
+
+country_event = { # We initiate a skirmish between our and the Yorkian Navy
+    id = SHI_shitpost_events.23
+    title = "Skirmish with the Shitpost Navy"
+    desc = "A brief skirmish occurred between our fleet and [SHI.GetNameDef]'s navy, as they initiated an attack on our positions. Their attack was limited in scope and their objective was not one of total war, rather it seems they wanted to test us. Still, this is an immense provocation. We have to decide if we let the provocation slide or use this opportunity to go to war."
+    picture = GFX_report_event_naval_battle
+
+    fire_only_once = no
+	is_triggered_only = no
+	timeout_days = 7
+
+    immediate = {
+		damage_units = {
+			region = 73
+			damage = 0.3
+			ratio = yes
+			navy = yes
+			limit = {
+				random_list = {
+					20 = { tag = SHI }
+					30 = {  }
+					50 = { tag = YOR }
+				}
+			}
+		}
+    }
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = "This means war!"
+		trigger = {
+		
+		}
+		ai_chance = { base = 50 }
+		SHI = { 
+		declare_war_on = {
+				target = YOR
+				type = annex_everything
+			}
+		set_country_flag = trade_war_escalated 
+		country_event = SHI_shitpost_events.25 
+			
+		}
+
+	}
+	option = { # 
+		name = "We should deescalate"
+		trigger = {
+		
+		}
+		ai_chance = { base = 50 }
+		SHI = { country_event = SHI_shitpost_events.24 }
+
+	}
+	
+
+}
+
+
+country_event = { # York decides to not intervene
+    id = SHI_shitpost_events.24
+    title = "The Yorkian Navy withdraws"
+    desc = "[YOR.GetNameDef]'s navy has disengaged after our brief skirmish, thus keeping the peace. Of course, we can choose to strike again after some time of pause."
+    picture = GFX_report_event_naval_battle
+
+    fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+
+    
+	
+	option = {
+		name = "Let's keep the peace for now."
+		ai_chance = { base = 50 }
+	}
+	
+
+}
+
+
+country_event = { # York decides to go to war
+    id = SHI_shitpost_events.25
+    title = "The Yorkian Navy attacks"
+    desc = "[YOR.GetNameDef]'s navy has entered full combat position with our navy. Furthermore, Yorkshire has announced a state of war between our two tribes. We are now at war. Repeat: We are now at war."
+    picture = GFX_report_event_naval_battle
+
+    fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+
+    
+	
+	option = {
+		name = "It was inevitable."
+		ai_chance = { base = 50 }
+	}
+	
+
+}
+
+
+
+# Pazal gets informed that we extracted resources
+country_event = {
+	id = SHI_shitpost_events.26
+	title = "The Shitpost Clan wants to help us extract more resources"
+	desc = "The Shitpost Clan has just come to us with an offer to start extracting more resources in our desert. They will help us drill for more oil if we in return hand them fifty percent of the newly acquired resources. This joint resource extraction program will help foster a more mutual cooperation between our two tribes."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "Drill, Baby, Drill!"
+		trigger = {
+			
+		}
+		374 = {
+		add_resource = {
+			type = oil
+			amount = 50
+		}
+			
+		set_state_flag = new_oil
+			
+		}
+			
+		give_resource_rights = {
+			receiver = SHI
+			state = 374
+			resources = { oil }
+		}
+		
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { has_state_flag = new_oil }
+			}
+			add_resource = {
+				type = oil
+				amount = 50
+			}
+
+		}
+		every_state = {
+			limit = {
+				has_state_flag = new_oil
+			}
+			clr_state_flag = new_oil
+		}
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+
+# Pazal gets informed that we built infrastructure
+country_event = {
+	id = SHI_shitpost_events.27
+	title = "The Shitpost Clan wants a mutual infrastructure project"
+	desc = "The Shitpost Clan has just come to us with an offer to initiate a mutual infrastructure build up process. This project will lead to both of our tribes improving their infrastructure which will help us greatly."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "All roads lead to Pazal"
+		trigger = {
+			
+		}
+		
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { infrastructure > 4 }
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+		}
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { infrastructure > 3 }
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+
+		}
+		random_owned_controlled_state = {
+			
+			limit = {
+				NOT = { infrastructure > 2 }
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+
+		}
+		
+		
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+
+# Pazal / MTG gets informed that we want to hold a military exercise
+country_event = {
+	id = SHI_shitpost_events.28
+	title = "The Shitpost Clan wants a joint military exercise"
+	desc = "The Shitpost Clan has offered us to initiate a joint military training exercise, from which both tribes will greatly benefit. Furthermore, this will help the formation of a joint military command structure, which many in both our tribes have been demanding for quite some time."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "I saw, I conquered, I came."
+		trigger = {
+			
+		}
+		
+		add_war_support = 0.03
+		add_stability = 0.01
+		army_experience = 50
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}
+
+
+# Montenegro gets informed that we want to build forts
+country_event = {
+	id = SHI_shitpost_events.29
+	title = "The Shitpost Clan wants a joint fortification program"
+	desc = "The Shitpost Clan has offered us to start an extensive bunker building program, which will help fortify both of our capitals."
+
+	fire_only_once = no
+	is_triggered_only = yes
+	timeout_days = 7
+	option = { #
+		name = "These forts shall be impenetrable!"
+		trigger = {
+			
+		}
+		20 = {
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 2287
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 13944
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 6791
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 14032
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 14101
+		}
+		add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			province = 14013
+		}
+		}
+		
+		ai_chance = { factor = 10 }
+		
+		
+
+	}
+
+}

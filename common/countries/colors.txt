@@ -66,7 +66,7 @@ GAC = {
 	color = rgb { 255 128 0 }
 	color_ui  = rgb { 225 98 0 }
 }
-AND = {
+ADR = {
 	color = rgb { 128 0 255 }
 	color_ui  = rgb { 98 0 225 }
 }
@@ -94,7 +94,7 @@ FRE = {
 	color = rgb { 255 0 255 }
 	color_ui  = rgb { 225 0 225 }
 }
-NOT = {
+NTF = {
 	color = rgb { 223 223 0 }
 	color_ui  = rgb { 193 193 0 }
 }
